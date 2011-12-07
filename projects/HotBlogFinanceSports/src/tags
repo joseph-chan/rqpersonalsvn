@@ -1,0 +1,1814 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AOP_EXTRACTKEYWORDS_ADV	TextKeyTool/inc_seg/ExKeywordsInterface.h	23;"	d
+AOP_EXTRACTKEYWORDS_ADV	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	23;"	d
+AOP_EXTRACTKEYWORDS_DEFAULT	TextKeyTool/inc_seg/ExKeywordsInterface.h	21;"	d
+AOP_EXTRACTKEYWORDS_DEFAULT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	21;"	d
+AOP_EXTRACTKEYWORDS_SORT_BY_IDF	TextKeyTool/inc_seg/ExKeywordsInterface.h	22;"	d
+AOP_EXTRACTKEYWORDS_SORT_BY_IDF	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	22;"	d
+AOP_TERM_ALL	TextKeyTool/inc_seg/phraseterm.h	42;"	d
+AOP_TERM_ALL	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	42;"	d
+AOP_TERM_MM	TextKeyTool/inc_seg/phraseterm.h	41;"	d
+AOP_TERM_MM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	41;"	d
+AOP_TERM_NOPHRASE	TextKeyTool/inc_seg/phraseterm.h	43;"	d
+AOP_TERM_NOPHRASE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	43;"	d
+APP_MARK_PHRASETERM	TextKeyTool/inc_seg/phraseterm.h	39;"	d
+APP_MARK_PHRASETERM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	39;"	d
+APP_WORD_ITEM	TextKeyTool/inc_seg/lexicon.h	/^} APP_WORD_ITEM;\/\/应用层的term$/;"	t	typeref:struct:__anon9
+APP_WORD_ITEM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^} APP_WORD_ITEM;\/\/应用层的term$/;"	t	typeref:struct:__anon25
+ATTRIBUTE	TextKeyTool/inc_seg/BaseDef.h	/^typedef unsigned long long ATTRIBUTE;$/;"	t
+ATTRIBUTE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^typedef unsigned long long ATTRIBUTE;$/;"	t
+AddAttachInfo	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		inline void AddAttachInfo(vector<int>& vecAttachInfo){m_vecAttachInfo = vecAttachInfo;}$/;"	f	class:CProcessedWeibo
+AddKeyIDs	CKeyWordsManager.cpp	/^int CKeyWordsManager::AddKeyIDs(string strName, const char* cWordFile)$/;"	f	class:CKeyWordsManager
+AddKeyIDs	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::AddKeyIDs(string strName, const char* cWordFile)$/;"	f	class:CKeyWordsManager
+AddKeyWords	CKeyWordsManager.cpp	/^int CKeyWordsManager::AddKeyWords(string strName, const char* cWordFile)$/;"	f	class:CKeyWordsManager
+AddKeyWords	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::AddKeyWords(string strName, const char* cWordFile)$/;"	f	class:CKeyWordsManager
+AttachInfo	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.h	/^		typedef map<unsigned long long, vector<int> > AttachInfo;$/;"	t	class:CWeiboPreProcessor
+BASEINFO	WeiboProcessor.h	/^		typedef struct BASEINFO$/;"	s	class:WeiboProcessor
+BASEINFO	test/New_Hot_MicroBlog/src/CEvaluater.h	/^		typedef struct BASEINFO$/;"	s	class:CEvaluater
+BAYESHM_H	test/New_Hot_MicroBlog/src/bayesHM.h	12;"	d
+BAYES_HM_MODEL	test/New_Hot_MicroBlog/src/bayesHM.h	/^struct BAYES_HM_MODEL$/;"	s
+BINPATH	Makefile	/^BINPATH = ..\/bin\/$/;"	m
+BINPATH	test/New_Hot_MicroBlog/src/Makefile	/^BINPATH = ..\/bin\/$/;"	m
+BOOL	TextKeyTool/inc_seg/searchdef.h	/^typedef int    BOOL;$/;"	t
+BOOL	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	/^typedef int    BOOL;$/;"	t
+BYTE	TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned char      BYTE;$/;"	t
+BYTE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned char      BYTE;$/;"	t
+BaseInfo	WeiboProcessor.h	/^		}BaseInfo;$/;"	t	class:WeiboProcessor	typeref:struct:WeiboProcessor::BASEINFO
+BaseInfo	test/New_Hot_MicroBlog/src/CEvaluater.h	/^		}BaseInfo;$/;"	t	class:CEvaluater	typeref:struct:CEvaluater::BASEINFO
+BeLeft	test/New_Hot_MicroBlog/src/CAmuseEvaluater.cpp	/^bool CAmuseEvaluater::BeLeft(WeiboInfo* pWeiboInfo)$/;"	f	class:CAmuseEvaluater
+BeLeft	test/New_Hot_MicroBlog/src/CBeautyEvaluater.cpp	/^bool CBeautyEvaluater::BeLeft(WeiboInfo* pWeiboInfo)$/;"	f	class:CBeautyEvaluater
+BeLeft	test/New_Hot_MicroBlog/src/CMengEvaluater.cpp	/^bool CMengEvaluater::BeLeft(WeiboInfo* pWeiboInfo)$/;"	f	class:CMengEvaluater
+BeLeft	test/New_Hot_MicroBlog/src/CStreetEvaluater.cpp	/^bool CStreetEvaluater::BeLeft(WeiboInfo* pWeiboInfo)$/;"	f	class:CStreetEvaluater
+CACHE_TIME	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^define ( 'CACHE_TIME', 3600 * 24 );$/;"	d
+CAMUSEEVALUATE_H	test/New_Hot_MicroBlog/src/CAmuseEvaluater.h	11;"	d
+CAMUSEEVALUATE_H	test/New_Hot_MicroBlog/src/CStreetEvaluater.h	11;"	d
+CAT_BOOK_NAME	TextKeyTool/inc_seg/BaseDef.h	84;"	d
+CAT_BOOK_NAME	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	84;"	d
+CAT_CORP_NAME_AACD	TextKeyTool/inc_seg/BaseDef.h	96;"	d
+CAT_CORP_NAME_AACD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	96;"	d
+CAT_CORP_NAME_ABCD	TextKeyTool/inc_seg/BaseDef.h	92;"	d
+CAT_CORP_NAME_ABCD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	92;"	d
+CAT_CORP_NAME_ABD	TextKeyTool/inc_seg/BaseDef.h	93;"	d
+CAT_CORP_NAME_ABD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	93;"	d
+CAT_CORP_NAME_ACD	TextKeyTool/inc_seg/BaseDef.h	94;"	d
+CAT_CORP_NAME_ACD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	94;"	d
+CAT_CORP_NAME_AD	TextKeyTool/inc_seg/BaseDef.h	95;"	d
+CAT_CORP_NAME_AD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	95;"	d
+CAT_CORP_NAME_BCD	TextKeyTool/inc_seg/BaseDef.h	97;"	d
+CAT_CORP_NAME_BCD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	97;"	d
+CAT_CORP_NAME_BD	TextKeyTool/inc_seg/BaseDef.h	98;"	d
+CAT_CORP_NAME_BD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	98;"	d
+CAT_CORP_NAME_OTHER	TextKeyTool/inc_seg/BaseDef.h	99;"	d
+CAT_CORP_NAME_OTHER	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	99;"	d
+CAT_CORP_SUFFIX	TextKeyTool/inc_seg/BaseDef.h	91;"	d
+CAT_CORP_SUFFIX	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	91;"	d
+CAT_DATE	TextKeyTool/inc_seg/BaseDef.h	101;"	d
+CAT_DATE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	101;"	d
+CAT_DIGITAL	TextKeyTool/inc_seg/BaseDef.h	113;"	d
+CAT_DIGITAL	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	113;"	d
+CAT_DIMING	TextKeyTool/inc_seg/BaseDef.h	86;"	d
+CAT_DIMING	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	86;"	d
+CAT_DIMING_SUFFIX	TextKeyTool/inc_seg/BaseDef.h	87;"	d
+CAT_DIMING_SUFFIX	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	87;"	d
+CAT_EMAIL	TextKeyTool/inc_seg/BaseDef.h	105;"	d
+CAT_EMAIL	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	105;"	d
+CAT_ENG_WORD	TextKeyTool/inc_seg/BaseDef.h	112;"	d
+CAT_ENG_WORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	112;"	d
+CAT_HAN_PERSON_NAME	TextKeyTool/inc_seg/BaseDef.h	78;"	d
+CAT_HAN_PERSON_NAME	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	78;"	d
+CAT_IP	TextKeyTool/inc_seg/BaseDef.h	107;"	d
+CAT_IP	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	107;"	d
+CAT_JPN_NAME	TextKeyTool/inc_seg/BaseDef.h	79;"	d
+CAT_JPN_NAME	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	79;"	d
+CAT_MAYBE_VERSION	TextKeyTool/inc_seg/BaseDef.h	108;"	d
+CAT_MAYBE_VERSION	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	108;"	d
+CAT_OUMEI_PERSON_NAME	TextKeyTool/inc_seg/BaseDef.h	80;"	d
+CAT_OUMEI_PERSON_NAME	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	80;"	d
+CAT_OVERLAP_AA	TextKeyTool/inc_seg/BaseDef.h	125;"	d
+CAT_OVERLAP_AA	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	125;"	d
+CAT_OVERLAP_AAB	TextKeyTool/inc_seg/BaseDef.h	128;"	d
+CAT_OVERLAP_AAB	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	128;"	d
+CAT_OVERLAP_AABB	TextKeyTool/inc_seg/BaseDef.h	127;"	d
+CAT_OVERLAP_AABB	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	127;"	d
+CAT_OVERLAP_ABAB	TextKeyTool/inc_seg/BaseDef.h	126;"	d
+CAT_OVERLAP_ABAB	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	126;"	d
+CAT_OVERLAP_ABB	TextKeyTool/inc_seg/BaseDef.h	129;"	d
+CAT_OVERLAP_ABB	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	129;"	d
+CAT_PN_OTHER	TextKeyTool/inc_seg/BaseDef.h	82;"	d
+CAT_PN_OTHER	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	82;"	d
+CAT_PREFIX_PHRASE	TextKeyTool/inc_seg/BaseDef.h	118;"	d
+CAT_PREFIX_PHRASE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	118;"	d
+CAT_QUANTIFIER	TextKeyTool/inc_seg/BaseDef.h	122;"	d
+CAT_QUANTIFIER	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	122;"	d
+CAT_SPACES	TextKeyTool/inc_seg/BaseDef.h	115;"	d
+CAT_SPACES	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	115;"	d
+CAT_SUF_PHRASE	TextKeyTool/inc_seg/BaseDef.h	117;"	d
+CAT_SUF_PHRASE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	117;"	d
+CAT_SURNAME_TITLE	TextKeyTool/inc_seg/BaseDef.h	81;"	d
+CAT_SURNAME_TITLE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	81;"	d
+CAT_TELEPHONE_NUM	TextKeyTool/inc_seg/BaseDef.h	104;"	d
+CAT_TELEPHONE_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	104;"	d
+CAT_TIME	TextKeyTool/inc_seg/BaseDef.h	102;"	d
+CAT_TIME	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	102;"	d
+CAT_TRADE_MARK	TextKeyTool/inc_seg/BaseDef.h	90;"	d
+CAT_TRADE_MARK	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	90;"	d
+CAT_UNKNOWN	TextKeyTool/inc_seg/BaseDef.h	76;"	d
+CAT_UNKNOWN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	76;"	d
+CAT_URL	TextKeyTool/inc_seg/BaseDef.h	106;"	d
+CAT_URL	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	106;"	d
+CAT_VAR_BIN2	TextKeyTool/inc_seg/BaseDef.h	134;"	d
+CAT_VAR_BIN2	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	134;"	d
+CAT_VAR_BU1	TextKeyTool/inc_seg/BaseDef.h	140;"	d
+CAT_VAR_BU1	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	140;"	d
+CAT_VAR_DAN3	TextKeyTool/inc_seg/BaseDef.h	137;"	d
+CAT_VAR_DAN3	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	137;"	d
+CAmuseEvaluater	test/New_Hot_MicroBlog/src/CAmuseEvaluater.cpp	/^CAmuseEvaluater::CAmuseEvaluater()$/;"	f	class:CAmuseEvaluater
+CAmuseEvaluater	test/New_Hot_MicroBlog/src/CAmuseEvaluater.h	/^class CAmuseEvaluater:public CKeywordEvaluater$/;"	c
+CBAYESCLASSIFIER_H	test/New_Hot_MicroBlog/src/CBayesClassifier.h	11;"	d
+CBEAUTYEVALUATE_H	test/New_Hot_MicroBlog/src/CBeautyEvaluater.h	11;"	d
+CBEAUTYEVALUATE_H	test/New_Hot_MicroBlog/src/CMengEvaluater.h	11;"	d
+CBayesClassifier	test/New_Hot_MicroBlog/src/CBayesClassifier.cpp	/^CBayesClassifier::CBayesClassifier()$/;"	f	class:CBayesClassifier
+CBayesClassifier	test/New_Hot_MicroBlog/src/CBayesClassifier.h	/^class CBayesClassifier:public CClassifier$/;"	c
+CBeautyEvaluater	test/New_Hot_MicroBlog/src/CBeautyEvaluater.cpp	/^CBeautyEvaluater::CBeautyEvaluater()$/;"	f	class:CBeautyEvaluater
+CBeautyEvaluater	test/New_Hot_MicroBlog/src/CBeautyEvaluater.h	/^class CBeautyEvaluater: public CClassifyEvaluater$/;"	c
+CCLASSIFIER_H	test/New_Hot_MicroBlog/src/CClassifier.h	11;"	d
+CCLASSIFYEVALUATER_H	test/New_Hot_MicroBlog/src/CClassifyEvaluater.h	11;"	d
+CCMTPREPROCESSOR_H	test/New_Hot_MicroBlog/src/CCmtPreProcessor.h	10;"	d
+CCONFIGINFO_H	CConfigInfo.h	11;"	d
+CCONFIGINFO_H	test/New_Hot_MicroBlog/src/CConfigInfo.h	11;"	d
+CClassifier	test/New_Hot_MicroBlog/src/CClassifier.cpp	/^CClassifier::CClassifier()$/;"	f	class:CClassifier
+CClassifier	test/New_Hot_MicroBlog/src/CClassifier.h	/^class CClassifier$/;"	c
+CClassifyEvaluater	test/New_Hot_MicroBlog/src/CClassifyEvaluater.cpp	/^CClassifyEvaluater::CClassifyEvaluater()$/;"	f	class:CClassifyEvaluater
+CClassifyEvaluater	test/New_Hot_MicroBlog/src/CClassifyEvaluater.h	/^class CClassifyEvaluater:public CEvaluater$/;"	c
+CCmtPreProcessor	test/New_Hot_MicroBlog/src/CCmtPreProcessor.cpp	/^CCmtPreProcessor::CCmtPreProcessor()$/;"	f	class:CCmtPreProcessor
+CCmtPreProcessor	test/New_Hot_MicroBlog/src/CCmtPreProcessor.h	/^class CCmtPreProcessor$/;"	c
+CConfigInfo	CConfigInfo.cpp	/^CConfigInfo::CConfigInfo()$/;"	f	class:CConfigInfo
+CConfigInfo	CConfigInfo.cpp	/^CConfigInfo::CConfigInfo(const char* cConfigFile,char cSplitChar)$/;"	f	class:CConfigInfo
+CConfigInfo	CConfigInfo.h	/^class CConfigInfo$/;"	c
+CConfigInfo	test/New_Hot_MicroBlog/src/CConfigInfo.cpp	/^CConfigInfo::CConfigInfo()$/;"	f	class:CConfigInfo
+CConfigInfo	test/New_Hot_MicroBlog/src/CConfigInfo.cpp	/^CConfigInfo::CConfigInfo(const char* cConfigFile)$/;"	f	class:CConfigInfo
+CConfigInfo	test/New_Hot_MicroBlog/src/CConfigInfo.h	/^class CConfigInfo$/;"	c
+CEVALUATER_H	test/New_Hot_MicroBlog/src/CEvaluater.h	11;"	d
+CEvaluater	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^CEvaluater::CEvaluater()$/;"	f	class:CEvaluater
+CEvaluater	test/New_Hot_MicroBlog/src/CEvaluater.h	/^class CEvaluater$/;"	c
+CFLAGS	Makefile	/^	CFLAGS = -DDEBUG -g -W -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE$/;"	m
+CFLAGS	Makefile	/^	CFLAGS = -g -W -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE$/;"	m
+CFLAGS	test/New_Hot_MicroBlog/src/Makefile	/^	CFLAGS = -DDEBUG -g -W -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE$/;"	m
+CFLAGS	test/New_Hot_MicroBlog/src/Makefile	/^	CFLAGS = -g -W -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE$/;"	m
+CJPARSER_H	CJParser.h	2;"	d
+CJPARSER_H	test/New_Hot_MicroBlog/src/CJParser.h	2;"	d
+CJParser	CJParser.h	/^class CJParser$/;"	c
+CJParser	test/New_Hot_MicroBlog/src/CJParser.h	/^class CJParser$/;"	c
+CKEYWORDEVALUATER_H	test/New_Hot_MicroBlog/src/CKeywordEvaluater.h	11;"	d
+CKEYWORDSMANAGER_H	CKeyWordsManager.h	11;"	d
+CKEYWORDSMANAGER_H	test/New_Hot_MicroBlog/src/CKeyWordsManager.h	11;"	d
+CKeyWordsManager	CKeyWordsManager.cpp	/^CKeyWordsManager::CKeyWordsManager()$/;"	f	class:CKeyWordsManager
+CKeyWordsManager	CKeyWordsManager.h	/^class CKeyWordsManager$/;"	c
+CKeyWordsManager	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^CKeyWordsManager::CKeyWordsManager()$/;"	f	class:CKeyWordsManager
+CKeyWordsManager	test/New_Hot_MicroBlog/src/CKeyWordsManager.h	/^class CKeyWordsManager$/;"	c
+CKeywordEvaluater	test/New_Hot_MicroBlog/src/CKeywordEvaluater.cpp	/^CKeywordEvaluater::CKeywordEvaluater()$/;"	f	class:CKeywordEvaluater
+CKeywordEvaluater	test/New_Hot_MicroBlog/src/CKeywordEvaluater.h	/^class CKeywordEvaluater:public CEvaluater$/;"	c
+CLASSIFY_H	TextKeyTool/inc_seg/classify.h	2;"	d
+CLASSIFY_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	2;"	d
+CLASSIFY_LOAD_DOMAIN	TextKeyTool/inc_seg/classifier.h	11;"	d
+CLASSIFY_LOAD_DOMAIN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifier.h	11;"	d
+CLASSIFY_LOAD_KNN	TextKeyTool/inc_seg/classifier.h	12;"	d
+CLASSIFY_LOAD_KNN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifier.h	12;"	d
+CLASSIFY_LOAD_MAXENT	TextKeyTool/inc_seg/classifier.h	13;"	d
+CLASSIFY_LOAD_MAXENT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifier.h	13;"	d
+CLASSIFY_USING_DOMAIN	TextKeyTool/inc_seg/classifier.h	7;"	d
+CLASSIFY_USING_DOMAIN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifier.h	7;"	d
+CLASSIFY_USING_KNN	TextKeyTool/inc_seg/classifier.h	8;"	d
+CLASSIFY_USING_KNN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifier.h	8;"	d
+CLASSIFY_USING_MAXENT	TextKeyTool/inc_seg/classifier.h	9;"	d
+CLASSIFY_USING_MAXENT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifier.h	9;"	d
+CMBTextTool	TextKeyTool/inc_key/CMBTextTool.h	/^class CMBTextTool$/;"	c
+CMBTextTool	test/New_Hot_MicroBlog/src/CMBTextTool.h	/^class CMBTextTool$/;"	c
+CMBTextTool	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CMBTextTool.h	/^class CMBTextTool$/;"	c
+CMengEvaluater	test/New_Hot_MicroBlog/src/CMengEvaluater.cpp	/^CMengEvaluater::CMengEvaluater()$/;"	f	class:CMengEvaluater
+CMengEvaluater	test/New_Hot_MicroBlog/src/CMengEvaluater.h	/^class CMengEvaluater: public CClassifyEvaluater$/;"	c
+COINITWORDSEGMENT	TextKeyTool/inc_seg/WordSegment.h	/^typedef int (*COINITWORDSEGMENT)(char*, unsigned int);$/;"	t
+COINITWORDSEGMENT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^typedef int (*COINITWORDSEGMENT)(char*, unsigned int);$/;"	t
+CONCEPT_MAX_LEN	TextKeyTool/inc_seg/classifydomain.h	22;"	d
+CONCEPT_MAX_LEN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	22;"	d
+CPROCESSEDCMT_H	test/New_Hot_MicroBlog/src/CProcessedCmt.h	11;"	d
+CPROCESSEDWEIBO_H	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	11;"	d
+CProcessedCmt	test/New_Hot_MicroBlog/src/CProcessedCmt.cpp	/^CProcessedCmt::CProcessedCmt()$/;"	f	class:CProcessedCmt
+CProcessedCmt	test/New_Hot_MicroBlog/src/CProcessedCmt.cpp	/^CProcessedCmt::CProcessedCmt(unsigned long long ullMid, int nScoreCount):$/;"	f	class:CProcessedCmt
+CProcessedCmt	test/New_Hot_MicroBlog/src/CProcessedCmt.h	/^class CProcessedCmt$/;"	c
+CProcessedWeibo	test/New_Hot_MicroBlog/src/CProcessedWeibo.cpp	/^CProcessedWeibo::CProcessedWeibo()$/;"	f	class:CProcessedWeibo
+CProcessedWeibo	test/New_Hot_MicroBlog/src/CProcessedWeibo.cpp	/^CProcessedWeibo::CProcessedWeibo(unsigned long long ullMid, string& strContent, int filter, unsigned long long ullUid, int srcScore):$/;"	f	class:CProcessedWeibo
+CProcessedWeibo	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^class CProcessedWeibo$/;"	c
+CREATECLASSIFYDOMAININSTANCE	TextKeyTool/inc_seg/classifydomain.h	/^typedef ClassifyDomain* (*CREATECLASSIFYDOMAININSTANCE)(void);$/;"	t
+CREATECLASSIFYDOMAININSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	/^typedef ClassifyDomain* (*CREATECLASSIFYDOMAININSTANCE)(void);$/;"	t
+CREATECLASSIFYINSTANCE	TextKeyTool/inc_seg/classify.h	/^typedef Classify* (*CREATECLASSIFYINSTANCE)(void);$/;"	t
+CREATECLASSIFYINSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	/^typedef Classify* (*CREATECLASSIFYINSTANCE)(void);$/;"	t
+CREATECLASSIFYKNNINSTANCE	TextKeyTool/inc_seg/classifyknn.h	/^typedef Classify_KNN* (*CREATECLASSIFYKNNINSTANCE)(void);$/;"	t
+CREATECLASSIFYKNNINSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifyknn.h	/^typedef Classify_KNN* (*CREATECLASSIFYKNNINSTANCE)(void);$/;"	t
+CREATECLASSIFYMAXENTINSTANCE	TextKeyTool/inc_seg/classifymaxent.h	/^typedef Classify_Maxent* (*CREATECLASSIFYMAXENTINSTANCE)(void);$/;"	t
+CREATECLASSIFYMAXENTINSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifymaxent.h	/^typedef Classify_Maxent* (*CREATECLASSIFYMAXENTINSTANCE)(void);$/;"	t
+CREATEIASKEXKEYWORDSINSTANCE	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^typedef IKeywords* (* CREATEIASKEXKEYWORDSINSTANCE)(void);$/;"	t
+CREATEIASKEXKEYWORDSINSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^typedef IKeywords* (* CREATEIASKEXKEYWORDSINSTANCE)(void);$/;"	t
+CREATEPHRASETERMINSTANCE	TextKeyTool/inc_seg/phraseterm.h	/^typedef IPhraseTerm* (* CREATEPHRASETERMINSTANCE)(void);$/;"	t
+CREATEPHRASETERMINSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^typedef IPhraseTerm* (* CREATEPHRASETERMINSTANCE)(void);$/;"	t
+CREATEPOSTAGGERINSTANCE	TextKeyTool/inc_seg/POSTagger_new.h	/^typedef IPOSTagger* (* CREATEPOSTAGGERINSTANCE)(void);$/;"	t
+CREATEPOSTAGGERINSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^typedef IPOSTagger* (* CREATEPOSTAGGERINSTANCE)(void);$/;"	t
+CREATEWORDLIBINSTANCE	TextKeyTool/inc_seg/WordSegment.h	/^typedef IWordLib* (* CREATEWORDLIBINSTANCE)(int);$/;"	t
+CREATEWORDLIBINSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^typedef IWordLib* (* CREATEWORDLIBINSTANCE)(int);$/;"	t
+CREATEWORDSEGMENTINSTANCE	TextKeyTool/inc_seg/WordSegment.h	/^typedef IWordSegment* (* CREATEWORDSEGMENTINSTANCE)(void);$/;"	t
+CREATEWORDSEGMENTINSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^typedef IWordSegment* (* CREATEWORDSEGMENTINSTANCE)(void);$/;"	t
+CSORTMAPVALUE_H	test/New_Hot_MicroBlog/src/CSortMapValue.h	2;"	d
+CSUBMISSION_H	test/New_Hot_MicroBlog/src/CSubmission.h	5;"	d
+CSortMapValue	test/New_Hot_MicroBlog/src/CSortMapValue.h	/^class CSortMapValue$/;"	c
+CStreetEvaluater	test/New_Hot_MicroBlog/src/CStreetEvaluater.cpp	/^CStreetEvaluater::CStreetEvaluater()$/;"	f	class:CStreetEvaluater
+CStreetEvaluater	test/New_Hot_MicroBlog/src/CStreetEvaluater.h	/^class CStreetEvaluater:public CKeywordEvaluater$/;"	c
+CStringTool	CStringTool.h	/^	class CStringTool$/;"	c
+CStringTool	test/New_Hot_MicroBlog/GetZFData/src/CStringTool.h	/^	class CStringTool$/;"	c
+CStringTool	test/New_Hot_MicroBlog/src/CStringTool.h	/^	class CStringTool$/;"	c
+CSubmission	test/New_Hot_MicroBlog/src/CSubmission.cpp	/^CSubmission::CSubmission(const char* cConfigFile)$/;"	f	class:CSubmission
+CSubmission	test/New_Hot_MicroBlog/src/CSubmission.h	/^class CSubmission$/;"	c
+CTEXTKEYTOOL_H	CTextKeyTool.h	13;"	d
+CTEXTKEYTOOL_H	TextKeyTool/inc_key/CTextKeyTool.h	13;"	d
+CTEXTKEYTOOL_H	test/New_Hot_MicroBlog/src/CTextKeyTool.h	13;"	d
+CTEXTKEYTOOL_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTextKeyTool.h	13;"	d
+CTOKENIZER_H_	TextKeyTool/inc_key/CTokenizer.h	11;"	d
+CTOKENIZER_H_	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTokenizer.h	11;"	d
+CTYPETOOL_H	CTypeTool.h	2;"	d
+CTYPETOOL_H	test/New_Hot_MicroBlog/GetZFData/src/CTypeTool.h	2;"	d
+CTYPETOOL_H	test/New_Hot_MicroBlog/src/CTypeTool.h	2;"	d
+CTextKeyTool	CTextKeyTool.cpp	/^CTextKeyTool::CTextKeyTool()$/;"	f	class:CTextKeyTool
+CTextKeyTool	CTextKeyTool.h	/^class CTextKeyTool$/;"	c
+CTextKeyTool	TextKeyTool/inc_key/CTextKeyTool.h	/^class CTextKeyTool$/;"	c
+CTextKeyTool	test/New_Hot_MicroBlog/src/CTextKeyTool.cpp	/^CTextKeyTool::CTextKeyTool()$/;"	f	class:CTextKeyTool
+CTextKeyTool	test/New_Hot_MicroBlog/src/CTextKeyTool.h	/^class CTextKeyTool$/;"	c
+CTextKeyTool	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTextKeyTool.h	/^class CTextKeyTool$/;"	c
+CTokenizer	TextKeyTool/inc_key/CTokenizer.h	/^class CTokenizer$/;"	c
+CTokenizer	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTokenizer.h	/^class CTokenizer$/;"	c
+CTypeTool	CTypeTool.h	/^class CTypeTool$/;"	c
+CTypeTool	test/New_Hot_MicroBlog/GetZFData/src/CTypeTool.h	/^class CTypeTool$/;"	c
+CTypeTool	test/New_Hot_MicroBlog/src/CTypeTool.h	/^class CTypeTool$/;"	c
+CWEIBOPREPROCESSOR_H	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.h	11;"	d
+CWEIBOPROCESSOR_H	WeiboProcessor.h	10;"	d
+CWeiboPreProcessor	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^CWeiboPreProcessor::CWeiboPreProcessor()$/;"	f	class:CWeiboPreProcessor
+CWeiboPreProcessor	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.h	/^class CWeiboPreProcessor$/;"	c
+CXX	Makefile	/^CXX = g++$/;"	m
+CXX	test/New_Hot_MicroBlog/src/Makefile	/^CXX = g++$/;"	m
+CaculateMeanScore	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^float CEvaluater::CaculateMeanScore(float meanscore)$/;"	f	class:CEvaluater
+Classifier	TextKeyTool/inc_seg/classifier.h	/^class Classifier$/;"	c
+Classifier	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifier.h	/^class Classifier$/;"	c
+Classify	TextKeyTool/inc_seg/classify.h	/^class Classify$/;"	c
+Classify	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	/^class Classify$/;"	c
+ClassifyDomain	TextKeyTool/inc_seg/classifydomain.h	/^class ClassifyDomain$/;"	c
+ClassifyDomain	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	/^class ClassifyDomain$/;"	c
+Classify_KNN	TextKeyTool/inc_seg/classifyknn.h	/^class Classify_KNN:public Classifier$/;"	c
+Classify_KNN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifyknn.h	/^class Classify_KNN:public Classifier$/;"	c
+Classify_Maxent	TextKeyTool/inc_seg/classifymaxent.h	/^class Classify_Maxent:public Classifier$/;"	c
+Classify_Maxent	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifymaxent.h	/^class Classify_Maxent:public Classifier$/;"	c
+Clear	WeiboProcessor.cpp	/^void WeiboProcessor::Clear()$/;"	f	class:WeiboProcessor
+Clear	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^void CEvaluater::Clear()$/;"	f	class:CEvaluater
+Clear	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^void CWeiboPreProcessor::Clear()$/;"	f	class:CWeiboPreProcessor
+Cmp	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^bool Cmp(pair<unsigned long long, int> weibo1, pair<unsigned long long, int> weibo2)$/;"	f
+Cmp1	test/New_Hot_MicroBlog/src/CSortMapValue.h	/^		static bool Cmp1(pair<Key, Value> p1, pair<Key, Value> p2) {return p1.second > p2.second;}$/;"	f	class:CSortMapValue
+Cmp2	test/New_Hot_MicroBlog/src/CSortMapValue.h	/^		static bool Cmp2(pair<Key, Value> p1, pair<Key, Value> p2) {return p1.second < p2.second;}$/;"	f	class:CSortMapValue
+CoInitWordSegment_d	TextKeyTool/inc_seg/lexicon.h	/^	COINITWORDSEGMENT CoInitWordSegment_d;$/;"	m	struct:__anon12
+CoInitWordSegment_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	COINITWORDSEGMENT CoInitWordSegment_d;$/;"	m	struct:__anon28
+ComputeSynScore	test/New_Hot_MicroBlog/src/CAmuseEvaluater.cpp	/^void CAmuseEvaluater::ComputeSynScore(WeiboInfo* pWeiboInfo)$/;"	f	class:CAmuseEvaluater
+ComputeSynScore	test/New_Hot_MicroBlog/src/CBeautyEvaluater.cpp	/^void CBeautyEvaluater::ComputeSynScore(WeiboInfo* pWeiboInfo)$/;"	f	class:CBeautyEvaluater
+ComputeSynScore	test/New_Hot_MicroBlog/src/CMengEvaluater.cpp	/^void CMengEvaluater::ComputeSynScore(WeiboInfo* pWeiboInfo)$/;"	f	class:CMengEvaluater
+ComputeSynScore	test/New_Hot_MicroBlog/src/CStreetEvaluater.cpp	/^void CStreetEvaluater::ComputeSynScore(WeiboInfo* pWeiboInfo)$/;"	f	class:CStreetEvaluater
+CreateClassifierInstance_d	TextKeyTool/inc_seg/lexicon.h	/^	CREATECLASSIFYINSTANCE  CreateClassifierInstance_d;$/;"	m	struct:__anon12
+CreateClassifierInstance_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	CREATECLASSIFYINSTANCE  CreateClassifierInstance_d;$/;"	m	struct:__anon28
+CreateClassifyKnnInstance_d	TextKeyTool/inc_seg/lexicon.h	/^	CREATECLASSIFYKNNINSTANCE CreateClassifyKnnInstance_d;$/;"	m	struct:__anon12
+CreateClassifyKnnInstance_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	CREATECLASSIFYKNNINSTANCE CreateClassifyKnnInstance_d;$/;"	m	struct:__anon28
+CreateKeywordsInstance_d	TextKeyTool/inc_seg/lexicon.h	/^	CREATEIASKEXKEYWORDSINSTANCE  CreateKeywordsInstance_d;$/;"	m	struct:__anon12
+CreateKeywordsInstance_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	CREATEIASKEXKEYWORDSINSTANCE  CreateKeywordsInstance_d;$/;"	m	struct:__anon28
+CreatePOSTaggerInstance_d	TextKeyTool/inc_seg/lexicon.h	/^	CREATEPOSTAGGERINSTANCE   CreatePOSTaggerInstance_d;$/;"	m	struct:__anon12
+CreatePOSTaggerInstance_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	CREATEPOSTAGGERINSTANCE   CreatePOSTaggerInstance_d;$/;"	m	struct:__anon28
+CreatePhraseTermInstance_d	TextKeyTool/inc_seg/lexicon.h	/^	CREATEPHRASETERMINSTANCE  CreatePhraseTermInstance_d;$/;"	m	struct:__anon12
+CreatePhraseTermInstance_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	CREATEPHRASETERMINSTANCE  CreatePhraseTermInstance_d;$/;"	m	struct:__anon28
+CreateWordLibInstance_d	TextKeyTool/inc_seg/lexicon.h	/^	CREATEWORDLIBINSTANCE CreateWordLibInstance_d;$/;"	m	struct:__anon12
+CreateWordLibInstance_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	CREATEWORDLIBINSTANCE CreateWordLibInstance_d;$/;"	m	struct:__anon28
+CreateWordSegmentInstance_d	TextKeyTool/inc_seg/lexicon.h	/^	CREATEWORDSEGMENTINSTANCE CreateWordSegmentInstance_d;$/;"	m	struct:__anon12
+CreateWordSegmentInstance_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	CREATEWORDSEGMENTINSTANCE CreateWordSegmentInstance_d;$/;"	m	struct:__anon28
+DEBUG	Makefile	/^DEBUG = 1$/;"	m
+DEBUG	test/New_Hot_MicroBlog/src/Makefile	/^DEBUG = 0$/;"	m
+DEFAULT_IDF	TextKeyTool/inc_seg/classify.h	8;"	d
+DEFAULT_IDF	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	8;"	d
+DEFAULT_KEYWORDS_NUM	TextKeyTool/inc_seg/ExKeywordsInterface.h	20;"	d
+DEFAULT_KEYWORDS_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	20;"	d
+DLL_CALL_H	TextKeyTool/inc_seg/dllcall.h	31;"	d
+DLL_CALL_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/dllcall.h	31;"	d
+DOCID_T	TextKeyTool/inc_seg/searchdef.h	23;"	d
+DOCID_T	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	23;"	d
+DOC_DEFAULT_DOMAIN_NUM	TextKeyTool/inc_seg/docprop.h	12;"	d
+DOC_DEFAULT_DOMAIN_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	12;"	d
+DOC_MAX_DOMAIN_NUM	TextKeyTool/inc_seg/docprop.h	11;"	d
+DOC_MAX_DOMAIN_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	11;"	d
+DOMAIN_SEMANTIC	TextKeyTool/inc_seg/lexicon.h	52;"	d
+DOMAIN_SEMANTIC	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	52;"	d
+DWORD	TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned long      DWORD;$/;"	t
+DWORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned long      DWORD;$/;"	t
+DoClassify	test/New_Hot_MicroBlog/src/CBayesClassifier.cpp	/^float CBayesClassifier::DoClassify(const char* cText)$/;"	f	class:CBayesClassifier
+DoMining	test/New_Hot_MicroBlog/src/CSubmission.cpp	/^void CSubmission::DoMining(const char* cInputFile, const char * cOutputDir)$/;"	f	class:CSubmission
+DoSort	test/New_Hot_MicroBlog/src/CSortMapValue.h	/^		static void DoSort(map <Key, Value>& theMap, vector <pair<Key, Value> >& theVector, bool bAscend)$/;"	f	class:CSortMapValue
+DocFeat	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	struct DocFeatVec DocFeat;$/;"	m	struct:__anon5	typeref:struct:__anon5::DocFeatVec
+DocFeat	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	struct DocFeatVec DocFeat;$/;"	m	struct:__anon21	typeref:struct:__anon21::DocFeatVec
+DocFeatVec	TextKeyTool/inc_seg/classifyknn.h	/^typedef struct DocFeatVec DocFeatVec;$/;"	t	typeref:struct:DocFeatVec
+DocFeatVec	TextKeyTool/inc_seg/docprop.h	/^struct DocFeatVec$/;"	s
+DocFeatVec	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifyknn.h	/^typedef struct DocFeatVec DocFeatVec;$/;"	t	typeref:struct:DocFeatVec
+DocFeatVec	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^struct DocFeatVec$/;"	s
+DocInfo	TextKeyTool/inc_seg/docprop.h	/^} DocInfo;$/;"	t	typeref:struct:__anon15
+DocInfo	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^} DocInfo;$/;"	t	typeref:struct:__anon31
+DomainInfo	TextKeyTool/inc_seg/docprop.h	/^} DomainInfo;$/;"	t	typeref:struct:__anon14
+DomainInfo	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^} DomainInfo;$/;"	t	typeref:struct:__anon30
+ENDWORDSEGMENT	TextKeyTool/inc_seg/WordSegment.h	/^typedef int (*ENDWORDSEGMENT)(void);$/;"	t
+ENDWORDSEGMENT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^typedef int (*ENDWORDSEGMENT)(void);$/;"	t
+ERR	TextKeyTool/inc_seg/classify.h	9;"	d
+ERR	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	9;"	d
+ERR_BAD_INPUT	TextKeyTool/inc_seg/BaseDef.h	31;"	d
+ERR_BAD_INPUT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	31;"	d
+ERR_BAD_OUTPUT	TextKeyTool/inc_seg/BaseDef.h	32;"	d
+ERR_BAD_OUTPUT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	32;"	d
+ERR_BAD_PARAM	TextKeyTool/inc_seg/BaseDef.h	35;"	d
+ERR_BAD_PARAM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	35;"	d
+ERR_LIB_NOT_READY	TextKeyTool/inc_seg/BaseDef.h	33;"	d
+ERR_LIB_NOT_READY	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	33;"	d
+ERR_NO_FILE	TextKeyTool/inc_seg/BaseDef.h	30;"	d
+ERR_NO_FILE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	30;"	d
+ERR_NO_FIND	TextKeyTool/inc_seg/BaseDef.h	34;"	d
+ERR_NO_FIND	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	34;"	d
+ERR_NO_MEMORY	TextKeyTool/inc_seg/BaseDef.h	29;"	d
+ERR_NO_MEMORY	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	29;"	d
+ERR_SUCCESS	TextKeyTool/inc_seg/BaseDef.h	28;"	d
+ERR_SUCCESS	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	28;"	d
+ERR_UNKNOWN	TextKeyTool/inc_seg/BaseDef.h	36;"	d
+ERR_UNKNOWN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	36;"	d
+EXES	Makefile	/^EXES= HotBlog$/;"	m
+EXES	test/New_Hot_MicroBlog/src/Makefile	/^EXES=WeiboProcessor $/;"	m
+EndWordSegment_d	TextKeyTool/inc_seg/lexicon.h	/^	ENDWORDSEGMENT EndWordSegment_d;$/;"	m	struct:__anon12
+EndWordSegment_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	ENDWORDSEGMENT EndWordSegment_d;$/;"	m	struct:__anon28
+Evaluate	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^int CEvaluater::Evaluate(const char* cResultFile1, const char* cResultFile2)$/;"	f	class:CEvaluater
+EventList	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem EventList[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon5
+EventList	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem EventList[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon21
+ExtractNickName	test/New_Hot_MicroBlog/src/CMBTextTool.cpp	/^int CMBTextTool::ExtractNickName(const char* text, map<string, int>& mapAt)$/;"	f	class:CMBTextTool
+ExtractNickName	test/New_Hot_MicroBlog/src/CMBTextTool.cpp	/^int CMBTextTool::ExtractNickName(string& text, map<string, int>& mapAt, bool bRemoveAt)$/;"	f	class:CMBTextTool
+FALSE	TextKeyTool/inc_seg/searchdef.h	41;"	d
+FALSE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	41;"	d
+FEAT_WORD_LEN	TextKeyTool/inc_seg/docprop.h	8;"	d
+FEAT_WORD_LEN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	8;"	d
+FIND_MATCHCASE	strmatch.h	17;"	d
+FIND_MATCHCASE	test/New_Hot_MicroBlog/src/strmatch.h	17;"	d
+F_TERMINATE	strmatch.h	16;"	d
+F_TERMINATE	test/New_Hot_MicroBlog/src/strmatch.h	16;"	d
+FeatItem	TextKeyTool/inc_seg/docprop.h	/^} FeatItem;$/;"	t	typeref:struct:__anon16
+FeatItem	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^} FeatItem;$/;"	t	typeref:struct:__anon32
+FindKeyWord	CKeyWordsManager.cpp	/^int CKeyWordsManager::FindKeyWord(const char *text,int &watchNum,MATCHENTRY *machine_ww,vector<pair<string,int> >& watchWord)$/;"	f	class:CKeyWordsManager
+FindKeyWord	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::FindKeyWord(const char *text,int &watchNum,MATCHENTRY *machine_ww,vector<pair<string,int> >& watchWord)$/;"	f	class:CKeyWordsManager
+GetAttachInfo	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^CWeiboPreProcessor::AttachInfo::iterator CWeiboPreProcessor::GetAttachInfo(unsigned long long ullMid, bool bRemoved)$/;"	f	class:CWeiboPreProcessor
+GetContent	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		inline string GetContent() const{return m_strContent;}$/;"	f	class:CProcessedWeibo
+GetCount	test/New_Hot_MicroBlog/src/CProcessedCmt.h	/^		inline int& GetCount(){return m_nCount;}$/;"	f	class:CProcessedCmt
+GetFilter	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		inline int& GetFilter() {return m_nFilter;}$/;"	f	class:CProcessedWeibo
+GetFlag	CTextKeyTool.h	/^		unsigned long& GetFlag(){return m_unFlag;}$/;"	f	class:CTextKeyTool
+GetFlag	TextKeyTool/inc_key/CTextKeyTool.h	/^		unsigned long& GetFlag(){return m_unFlag;}$/;"	f	class:CTextKeyTool
+GetFlag	test/New_Hot_MicroBlog/src/CTextKeyTool.h	/^		unsigned long& GetFlag(){return m_unFlag;}$/;"	f	class:CTextKeyTool
+GetFlag	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTextKeyTool.h	/^		unsigned long& GetFlag(){return m_unFlag;}$/;"	f	class:CTextKeyTool
+GetIDScore	CKeyWordsManager.cpp	/^int CKeyWordsManager::GetIDScore(unsigned long long id, string strName)$/;"	f	class:CKeyWordsManager
+GetIDScore	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::GetIDScore(unsigned long long id, string strName)$/;"	f	class:CKeyWordsManager
+GetInstance	CKeyWordsManager.cpp	/^CKeyWordsManager* CKeyWordsManager::GetInstance()$/;"	f	class:CKeyWordsManager
+GetInstance	CTextKeyTool.cpp	/^CTextKeyTool* CTextKeyTool::GetInstance()$/;"	f	class:CTextKeyTool
+GetInstance	test/New_Hot_MicroBlog/src/CCmtPreProcessor.cpp	/^CCmtPreProcessor* CCmtPreProcessor::GetInstance()$/;"	f	class:CCmtPreProcessor
+GetInstance	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^CKeyWordsManager* CKeyWordsManager::GetInstance()$/;"	f	class:CKeyWordsManager
+GetInstance	test/New_Hot_MicroBlog/src/CTextKeyTool.cpp	/^CTextKeyTool* CTextKeyTool::GetInstance()$/;"	f	class:CTextKeyTool
+GetInstance	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^CWeiboPreProcessor* CWeiboPreProcessor::GetInstance()$/;"	f	class:CWeiboPreProcessor
+GetKey	CTextKeyTool.cpp	/^bool CTextKeyTool::GetKey(const char* cText, unsigned long long& ullKey, int nMinTermCount)$/;"	f	class:CTextKeyTool
+GetKey	CTextKeyTool.cpp	/^bool CTextKeyTool::GetKey(const char* cText, vector<unsigned long long>& vecKeys, int nMinTermCount)$/;"	f	class:CTextKeyTool
+GetKey	test/New_Hot_MicroBlog/src/CTextKeyTool.cpp	/^bool CTextKeyTool::GetKey(const char* cText, unsigned long long& ullKey, int nMinTermCount)$/;"	f	class:CTextKeyTool
+GetKey	test/New_Hot_MicroBlog/src/CTextKeyTool.cpp	/^bool CTextKeyTool::GetKey(const char* cText, vector<unsigned long long>& vecKeys, int nMinTermCount)$/;"	f	class:CTextKeyTool
+GetKeyCount	CConfigInfo.h	/^		inline int GetKeyCount() const {return m_mapConfig.size();}$/;"	f	class:CConfigInfo
+GetKeyCount	test/New_Hot_MicroBlog/src/CConfigInfo.h	/^		inline int GetKeyCount() const {return m_mapConfig.size();}$/;"	f	class:CConfigInfo
+GetKeyWord	CKeyWordsManager.cpp	/^string CKeyWordsManager::GetKeyWord(string strName, int index)$/;"	f	class:CKeyWordsManager
+GetKeyWord	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^string CKeyWordsManager::GetKeyWord(string strName, int index)$/;"	f	class:CKeyWordsManager
+GetKeyWordsCount	CKeyWordsManager.cpp	/^int CKeyWordsManager::GetKeyWordsCount(string strName)$/;"	f	class:CKeyWordsManager
+GetKeyWordsCount	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::GetKeyWordsCount(string strName)$/;"	f	class:CKeyWordsManager
+GetMid	test/New_Hot_MicroBlog/src/CProcessedCmt.h	/^		inline unsigned long long& GetMid(){return m_ullMid;}$/;"	f	class:CProcessedCmt
+GetMid	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		inline unsigned long long& GetMid(){return m_ullMid;}$/;"	f	class:CProcessedWeibo
+GetPureCount	test/New_Hot_MicroBlog/src/CProcessedCmt.h	/^		inline int& GetPureCount(){return m_nPureCount;}$/;"	f	class:CProcessedCmt
+GetResult	TextKeyTool/inc_key/CTokenizer.h	/^		inline WORD_SEGMENT* GetResult() const {return m_pResult;}$/;"	f	class:CTokenizer
+GetResult	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTokenizer.h	/^		inline WORD_SEGMENT* GetResult() const {return m_pResult;}$/;"	f	class:CTokenizer
+GetSrcScore	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		inline int& GetSrcScore(){return m_nSrcScore;}$/;"	f	class:CProcessedWeibo
+GetTextScore	CKeyWordsManager.cpp	/^int CKeyWordsManager::GetTextScore(string& strText, string strName, bool bSum)$/;"	f	class:CKeyWordsManager
+GetTextScore	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::GetTextScore(string& strText, string strName, bool bSum)$/;"	f	class:CKeyWordsManager
+GetUid	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		inline unsigned long long& GetUid(){return m_ullUid;}$/;"	f	class:CProcessedWeibo
+GetValue	CConfigInfo.cpp	/^string CConfigInfo::GetValue(string strValue)$/;"	f	class:CConfigInfo
+GetValue	test/New_Hot_MicroBlog/src/CConfigInfo.cpp	/^string CConfigInfo::GetValue(string strValue)$/;"	f	class:CConfigInfo
+GetWeiboScore	test/New_Hot_MicroBlog/src/CAmuseEvaluater.cpp	/^bool CAmuseEvaluater::GetWeiboScore(BaseInfo& base_info)$/;"	f	class:CAmuseEvaluater
+GetWeiboScore	test/New_Hot_MicroBlog/src/CBeautyEvaluater.cpp	/^bool CBeautyEvaluater::GetWeiboScore(BaseInfo& base_info)$/;"	f	class:CBeautyEvaluater
+GetWeiboScore	test/New_Hot_MicroBlog/src/CMengEvaluater.cpp	/^bool CMengEvaluater::GetWeiboScore(BaseInfo& base_info)$/;"	f	class:CMengEvaluater
+GetWeiboScore	test/New_Hot_MicroBlog/src/CStreetEvaluater.cpp	/^bool CStreetEvaluater::GetWeiboScore(BaseInfo& base_info)$/;"	f	class:CStreetEvaluater
+GetWordCount	test/New_Hot_MicroBlog/src/CBayesClassifier.h	/^		virtual int GetWordCount() const {return CTokenizer::GetInstance()->GetWordCount();}$/;"	f	class:CBayesClassifier
+HINSTANCE	TextKeyTool/inc_seg/dllcall.h	/^typedef void* HINSTANCE;$/;"	t
+HINSTANCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/dllcall.h	/^typedef void* HINSTANCE;$/;"	t
+HMODULE	TextKeyTool/inc_seg/dllcall.h	/^typedef void* HMODULE;$/;"	t
+HMODULE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/dllcall.h	/^typedef void* HMODULE;$/;"	t
+HandleMid	test/New_Hot_MicroBlog/src/CSubmission.cpp	/^void CSubmission::HandleMid(unsigned long long id, int filter, string& content)$/;"	f	class:CSubmission
+HaveDuplicates	WeiboProcessor.cpp	/^bool WeiboProcessor::HaveDuplicates(string& strContent)$/;"	f	class:WeiboProcessor
+HaveDuplicates	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^bool CWeiboPreProcessor::HaveDuplicates(string& strContent)$/;"	f	class:CWeiboPreProcessor
+HaveKeyIDs	CKeyWordsManager.cpp	/^int CKeyWordsManager::HaveKeyIDs(unsigned long long id, string strName)$/;"	f	class:CKeyWordsManager
+HaveKeyIDs	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::HaveKeyIDs(unsigned long long id, string strName)$/;"	f	class:CKeyWordsManager
+HaveKeyWords	CKeyWordsManager.cpp	/^int CKeyWordsManager::HaveKeyWords(string& strText, string strName)$/;"	f	class:CKeyWordsManager
+HaveKeyWords	CKeyWordsManager.cpp	/^int CKeyWordsManager::HaveKeyWords(string& strText, string strName, map<string, int>& mapKeyWords)$/;"	f	class:CKeyWordsManager
+HaveKeyWords	CKeyWordsManager.cpp	/^int CKeyWordsManager::HaveKeyWords(string& strText, string strName, vector< pair<string, int> >& vecKeyWords)$/;"	f	class:CKeyWordsManager
+HaveKeyWords	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::HaveKeyWords(string& strText, string strName)$/;"	f	class:CKeyWordsManager
+HaveKeyWords	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::HaveKeyWords(string& strText, string strName, map<string, int>& mapKeyWords)$/;"	f	class:CKeyWordsManager
+HaveKeyWords	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::HaveKeyWords(string& strText, string strName, vector< pair<string, int> >& vecKeyWords)$/;"	f	class:CKeyWordsManager
+IDF	TextKeyTool/inc_seg/lexicon.h	/^	WORD IDF;					  \/\/相关属性 缺省为0$/;"	m	struct:__anon6
+IDF	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	WORD IDF;					  \/\/相关属性 缺省为0$/;"	m	struct:__anon22
+ID_NOID	strmatch.h	19;"	d
+ID_NOID	test/New_Hot_MicroBlog/src/strmatch.h	19;"	d
+ID_SPECIAL1	strmatch.h	20;"	d
+ID_SPECIAL1	test/New_Hot_MicroBlog/src/strmatch.h	20;"	d
+ID_SPECIAL2	strmatch.h	21;"	d
+ID_SPECIAL2	test/New_Hot_MicroBlog/src/strmatch.h	21;"	d
+IKeywords	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^class IKeywords {$/;"	c
+IKeywords	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^class IKeywords {$/;"	c
+IN	TextKeyTool/inc_seg/classifydomain.h	19;"	d
+IN	TextKeyTool/inc_seg/phraseterm.h	19;"	d
+IN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	19;"	d
+IN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	19;"	d
+INCLUDES	test/New_Hot_MicroBlog/GetZFData/src/Makefile	/^INCLUDES=.\/$/;"	m
+INT	TextKeyTool/inc_seg/searchdef.h	/^typedef int            INT;$/;"	t
+INT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	/^typedef int            INT;$/;"	t
+INVALID_WORDID	TextKeyTool/inc_seg/BaseDef.h	20;"	d
+INVALID_WORDID	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	20;"	d
+IPOSTagger	TextKeyTool/inc_seg/POSTagger_new.h	/^class  IPOSTagger {$/;"	c
+IPOSTagger	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^class  IPOSTagger {$/;"	c
+IPhraseTerm	TextKeyTool/inc_seg/phraseterm.h	/^class IPhraseTerm {$/;"	c
+IPhraseTerm	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^class IPhraseTerm {$/;"	c
+IS_COMMONWORD	TextKeyTool/inc_seg/wordprop.h	38;"	d
+IS_COMMONWORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	38;"	d
+IS_ENDSENTENCE	TextKeyTool/inc_seg/wordprop.h	32;"	d
+IS_ENDSENTENCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	32;"	d
+IS_ENG_WORD	TextKeyTool/inc_seg/wordprop.h	45;"	d
+IS_ENG_WORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	45;"	d
+IS_HAS_STUCTWORD	TextKeyTool/inc_seg/wordprop.h	42;"	d
+IS_HAS_STUCTWORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	42;"	d
+IS_LINKWORD_CHINESE	TextKeyTool/inc_seg/wordprop.h	34;"	d
+IS_LINKWORD_CHINESE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	34;"	d
+IS_LINKWORD_ENGLISH	TextKeyTool/inc_seg/wordprop.h	33;"	d
+IS_LINKWORD_ENGLISH	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	33;"	d
+IS_NOPARSE	TextKeyTool/inc_seg/wordprop.h	36;"	d
+IS_NOPARSE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	36;"	d
+IS_SENTENCEMARK	TextKeyTool/inc_seg/wordprop.h	31;"	d
+IS_SENTENCEMARK	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	31;"	d
+IS_SPACE	TextKeyTool/inc_seg/wordprop.h	44;"	d
+IS_SPACE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	44;"	d
+IS_STUCTWORD	TextKeyTool/inc_seg/wordprop.h	41;"	d
+IS_STUCTWORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	41;"	d
+IS_URLWORD	TextKeyTool/inc_seg/wordprop.h	39;"	d
+IS_URLWORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	39;"	d
+IS_shuaping	test/New_Hot_MicroBlog/src/rubLabel.cpp	/^int IS_shuaping(const char *src,char *outstr,int outlen,int &spNum,int &continueNum,double &averageLen)$/;"	f
+IWordLib	TextKeyTool/inc_seg/WordSegment.h	/^class  IWordLib {$/;"	c
+IWordLib	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^class  IWordLib {$/;"	c
+IWordSegment	TextKeyTool/inc_seg/WordSegment.h	/^class  IWordSegment {$/;"	c
+IWordSegment	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^class  IWordSegment {$/;"	c
+Id	TextKeyTool/inc_seg/BaseDef.h	/^	WORDID      Id;				\/\/ Id of word item$/;"	m	struct:tagWordItemU
+Id	TextKeyTool/inc_seg/BaseDef.h	/^   WORDID         Id;		        \/\/WORDID of cut-out word item$/;"	m	struct:tagWordNodeU
+Id	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^	WORDID      Id;				\/\/ Id of word item$/;"	m	struct:tagWordItemU
+Id	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   WORDID         Id;		        \/\/WORDID of cut-out word item$/;"	m	struct:tagWordNodeU
+Init	WeiboProcessor.cpp	/^int WeiboProcessor::Init(const char* cResource)$/;"	f	class:WeiboProcessor
+InitClassifier	test/New_Hot_MicroBlog/src/CBayesClassifier.cpp	/^bool CBayesClassifier::InitClassifier(const char* cResource)$/;"	f	class:CBayesClassifier
+InitEvaluater	test/New_Hot_MicroBlog/src/CBeautyEvaluater.cpp	/^void CBeautyEvaluater::InitEvaluater(const char* cConfigFile, bool bStartSegment)$/;"	f	class:CBeautyEvaluater
+InitEvaluater	test/New_Hot_MicroBlog/src/CClassifyEvaluater.cpp	/^void CClassifyEvaluater::InitEvaluater(const char* cConfigFile, bool bStartSegment)$/;"	f	class:CClassifyEvaluater
+InitEvaluater	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^void CEvaluater::InitEvaluater(const char* cConfigFile, bool bStartSegment)$/;"	f	class:CEvaluater
+InitEvaluater	test/New_Hot_MicroBlog/src/CKeywordEvaluater.cpp	/^void CKeywordEvaluater::InitEvaluater(const char* cConfigFile, bool bStartSegment)$/;"	f	class:CKeywordEvaluater
+InitEvaluater	test/New_Hot_MicroBlog/src/CMengEvaluater.cpp	/^void CMengEvaluater::InitEvaluater(const char* cConfigFile, bool bStartSegment)$/;"	f	class:CMengEvaluater
+InitInstance	CTextKeyTool.cpp	/^bool CTextKeyTool::InitInstance(const char* cSegData, unsigned long unFlag)$/;"	f	class:CTextKeyTool
+InitInstance	test/New_Hot_MicroBlog/src/CCmtPreProcessor.cpp	/^void CCmtPreProcessor::InitInstance(const char* cResource)$/;"	f	class:CCmtPreProcessor
+InitInstance	test/New_Hot_MicroBlog/src/CTextKeyTool.cpp	/^bool CTextKeyTool::InitInstance(const char* cSegData, unsigned long unFlag)$/;"	f	class:CTextKeyTool
+InitInstance	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^bool CWeiboPreProcessor::InitInstance(const char* cResource)$/;"	f	class:CWeiboPreProcessor
+InitParser	CJParser.cpp	/^void CJParser::InitParser(vector<string>& fields)$/;"	f	class:CJParser
+InitParser	test/New_Hot_MicroBlog/src/CJParser.cpp	/^void CJParser::InitParser(vector<string>& fields)$/;"	f	class:CJParser
+InitParser	test/New_Hot_MicroBlog/src/HeadSniffer.cpp	/^void InitParser()$/;"	f
+InitTool	test/New_Hot_MicroBlog/src/CMBTextTool.cpp	/^void CMBTextTool::InitTool()$/;"	f	class:CMBTextTool
+Initialize	test/New_Hot_MicroBlog/src/CSubmission.cpp	/^bool CSubmission::Initialize(const char* cConfigFile)$/;"	f	class:CSubmission
+IsPunction	test/New_Hot_MicroBlog/src/CMBTextTool.cpp	/^bool CMBTextTool::IsPunction(const char* ch)$/;"	f	class:CMBTextTool
+JENKINS_H_	TextKeyTool/inc_key/jenkins.h	3;"	d
+JENKINS_H_	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/jenkins.h	3;"	d
+JIANLI	TextKeyTool/inc_seg/classify.h	15;"	d
+JIANLI	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	15;"	d
+KAIJIANG_STRINGTOOL_H	CStringTool.h	14;"	d
+KAIJIANG_STRINGTOOL_H	test/New_Hot_MicroBlog/GetZFData/src/CStringTool.h	2;"	d
+KAIJIANG_STRINGTOOL_H	test/New_Hot_MicroBlog/src/CStringTool.h	14;"	d
+KEYWORD	strmatch.h	/^}KEYWORD; $/;"	t	typeref:struct:__anon1
+KEYWORD	test/New_Hot_MicroBlog/src/strmatch.h	/^}KEYWORD; $/;"	t	typeref:struct:__anon17
+KEYWORDS	CKeyWordsManager.h	/^		typedef struct KEYWORDS$/;"	s	class:CKeyWordsManager
+KEYWORDS	test/New_Hot_MicroBlog/src/CKeyWordsManager.h	/^		typedef struct KEYWORDS$/;"	s	class:CKeyWordsManager
+KN	strmatch.h	13;"	d
+KN	test/New_Hot_MicroBlog/src/strmatch.h	13;"	d
+KeyWordStore	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^}KeyWordStore;$/;"	t	typeref:struct:__anon5
+KeyWordStore	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^}KeyWordStore;$/;"	t	typeref:struct:__anon21
+KeyWords	CKeyWordsManager.h	/^		}KeyWords;$/;"	t	class:CKeyWordsManager	typeref:struct:CKeyWordsManager::KEYWORDS
+KeyWords	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem KeyWords[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon5
+KeyWords	test/New_Hot_MicroBlog/src/CKeyWordsManager.h	/^		}KeyWords;$/;"	t	class:CKeyWordsManager	typeref:struct:CKeyWordsManager::KEYWORDS
+KeyWords	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem KeyWords[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon21
+KeywordItem	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^} KeywordItem;$/;"	t	typeref:struct:__anon4
+KeywordItem	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^} KeywordItem;$/;"	t	typeref:struct:__anon20
+KillElements	test/New_Hot_MicroBlog/src/CMBTextTool.cpp	/^int CMBTextTool::KillElements(string& strText, string strBegin, string strEnd, vector<string>& vecElements)$/;"	f	class:CMBTextTool
+KillEmotion	test/New_Hot_MicroBlog/src/CMBTextTool.cpp	/^int CMBTextTool::KillEmotion(string& text)$/;"	f	class:CMBTextTool
+KillIntrInfo	test/New_Hot_MicroBlog/src/CMBTextTool.cpp	/^void CMBTextTool::KillIntrInfo(string& text)$/;"	f	class:CMBTextTool
+KillTopic	test/New_Hot_MicroBlog/src/CMBTextTool.cpp	/^int CMBTextTool::KillTopic(string& text, vector<string>& vecTopics)$/;"	f	class:CMBTextTool
+KillURL	test/New_Hot_MicroBlog/src/CMBTextTool.cpp	/^int CMBTextTool::KillURL(string& text, map<string, int>& mapURL)$/;"	f	class:CMBTextTool
+LEXICON	TextKeyTool/inc_seg/lexicon.h	/^}LEXICON;$/;"	t	typeref:struct:__anon7
+LEXICON	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^}LEXICON;$/;"	t	typeref:struct:__anon23
+LEXICON_DATA	TextKeyTool/inc_seg/lexicon.h	/^}LEXICON_DATA;$/;"	t	typeref:struct:__anon13
+LEXICON_DATA	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^}LEXICON_DATA;$/;"	t	typeref:struct:__anon29
+LEXICON_H	TextKeyTool/inc_seg/lexicon.h	15;"	d
+LEXICON_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	15;"	d
+LIST_ITEM	TextKeyTool/inc_seg/lexicon.h	/^}LIST_ITEM;$/;"	t	typeref:struct:__anon10
+LIST_ITEM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^}LIST_ITEM;$/;"	t	typeref:struct:__anon26
+LIST_MAX_CHILD_NUM	TextKeyTool/inc_seg/lexicon.h	115;"	d
+LIST_MAX_CHILD_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	115;"	d
+LPWORDID	TextKeyTool/inc_seg/BaseDef.h	/^typedef unsigned int*				LPWORDID;       \/\/ Pointer to Word Id$/;"	t
+LPWORDID	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^typedef unsigned int*				LPWORDID;       \/\/ Pointer to Word Id$/;"	t
+LeftTrim	CStringTool.cpp	/^void CStringTool::LeftTrim(string& ss)$/;"	f	class:CStringTool
+LeftTrim	test/New_Hot_MicroBlog/src/CStringTool.cpp	/^void CStringTool::LeftTrim(string& ss)$/;"	f	class:CStringTool
+LoadAttachInfo	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^void CWeiboPreProcessor::LoadAttachInfo(string& strAttachFile, int nAttachInfoNum)$/;"	f	class:CWeiboPreProcessor
+LoadCmtScore	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^void CEvaluater::LoadCmtScore(const char* cCmtScore, int field)$/;"	f	class:CEvaluater
+LoadConfig	CConfigInfo.cpp	/^void CConfigInfo::LoadConfig(const char* cConfigFile,char cSplitChar)$/;"	f	class:CConfigInfo
+LoadConfig	test/New_Hot_MicroBlog/src/CConfigInfo.cpp	/^void CConfigInfo::LoadConfig(const char* cConfigFile)$/;"	f	class:CConfigInfo
+LoadConfig	test/New_Hot_MicroBlog/src/HeadSniffer.cpp	/^void LoadConfig(const char* cConfig)$/;"	f
+LoadData	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^void CEvaluater::LoadData(const char* cWeiboFile, const char* cCmtFile)$/;"	f	class:CEvaluater
+LoadKeyIDs	CKeyWordsManager.cpp	/^void CKeyWordsManager::LoadKeyIDs(const char* cFile, map<unsigned long long, int>& mapScore)$/;"	f	class:CKeyWordsManager
+LoadKeyIDs	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^void CKeyWordsManager::LoadKeyIDs(const char* cFile, map<unsigned long long, int>& mapScore)$/;"	f	class:CKeyWordsManager
+LoadKeyWords	CKeyWordsManager.cpp	/^MATCHENTRY* CKeyWordsManager::LoadKeyWords(const char* cFile, map<string, int>& mapScore)$/;"	f	class:CKeyWordsManager
+LoadKeyWords	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^MATCHENTRY* CKeyWordsManager::LoadKeyWords(const char* cFile, map<string, int>& mapScore)$/;"	f	class:CKeyWordsManager
+LoadPreMid	test/New_Hot_MicroBlog/src/SortFace.cpp	/^int LoadPreMid(const char* cPreMidList)$/;"	f
+LoadResource	WeiboProcessor.cpp	/^void WeiboProcessor::LoadResource(const char* cResource)$/;"	f	class:WeiboProcessor
+LoadResource	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^void CWeiboPreProcessor::LoadResource(const char* cResource)$/;"	f	class:CWeiboPreProcessor
+LoadWeibo	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^void CEvaluater::LoadWeibo(const char* cWeibo)$/;"	f	class:CEvaluater
+LocateList	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem LocateList[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon5
+LocateList	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem LocateList[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon21
+MASK_XINGTAI	TextKeyTool/inc_seg/BaseDef.h	72;"	d
+MASK_XINGTAI	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	72;"	d
+MASK_YUYI	TextKeyTool/inc_seg/BaseDef.h	73;"	d
+MASK_YUYI	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	73;"	d
+MATCHENTRY	strmatch.h	/^}MATCHENTRY;$/;"	t	typeref:struct:__anon2
+MATCHENTRY	test/New_Hot_MicroBlog/src/strmatch.h	/^}MATCHENTRY;$/;"	t	typeref:struct:__anon18
+MATCH_DEBUG	strmatch.h	4;"	d
+MATCH_DEBUG	test/New_Hot_MicroBlog/src/strmatch.h	4;"	d
+MAX_CLASS	TextKeyTool/inc_seg/classify.h	17;"	d
+MAX_CLASS	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	17;"	d
+MAX_FEATWORDS_NUM	TextKeyTool/inc_seg/docprop.h	7;"	d
+MAX_FEATWORDS_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	7;"	d
+MAX_INPUT_TEXT_LEN	TextKeyTool/inc_seg/BaseDef.h	22;"	d
+MAX_INPUT_TEXT_LEN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	22;"	d
+MAX_IWORDSEGMENT	TextKeyTool/inc_seg/lexicon.h	432;"	d
+MAX_IWORDSEGMENT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	432;"	d
+MAX_KEYWORDS_NUM	TextKeyTool/inc_seg/ExKeywordsInterface.h	24;"	d
+MAX_KEYWORDS_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	24;"	d
+MAX_LEXICON_NUM	TextKeyTool/inc_seg/lexicon.h	421;"	d
+MAX_LEXICON_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	421;"	d
+MAX_VOTE_NUM	TextKeyTool/inc_seg/classifydomain.h	24;"	d
+MAX_VOTE_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	24;"	d
+MAX_WORDLIB_NUM	TextKeyTool/inc_seg/lexicon.h	428;"	d
+MAX_WORDLIB_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	428;"	d
+MAX_WORDNUM	TextKeyTool/inc_seg/lexicon.h	436;"	d
+MAX_WORDNUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	436;"	d
+MAX_WORDSEGMENT_NUM	TextKeyTool/inc_seg/lexicon.h	424;"	d
+MAX_WORDSEGMENT_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	424;"	d
+MAX_WORD_ID	TextKeyTool/inc_seg/lexicon.h	440;"	d
+MAX_WORD_ID	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	440;"	d
+MBLOG	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^define ( 'MBLOG', 'gaohua2_' );$/;"	d
+MBLOG_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('MBLOG_URL', 'http:\/\/i.t.sina.com.cn\/mblog\/getmblogcontent.php');$/;"	d
+MTRACE	strmatch.h	7;"	d
+MTRACE	strmatch.h	9;"	d
+MTRACE	test/New_Hot_MicroBlog/src/strmatch.h	7;"	d
+MTRACE	test/New_Hot_MicroBlog/src/strmatch.h	9;"	d
+NICK_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('NICK_URL', 'http:\/\/i.t.sina.com.cn\/api\/getuidbynickname.php');$/;"	d
+N_ZList	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem N_ZList[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon5
+N_ZList	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem N_ZList[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon21
+NameList	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem NameList[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon5
+NameList	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	KeywordItem NameList[MAX_KEYWORDS_NUM];$/;"	m	struct:__anon21
+OBJECTS	Makefile	/^OBJECTS=WeiboProcessor.o $/;"	m
+OBJECTS	test/New_Hot_MicroBlog/src/Makefile	/^OBJECTS=CWeiboPreProcessor.o $/;"	m
+OLD_VOTE_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('OLD_VOTE_URL','http:\/\/recom.i.t.sina.com.cn\/1\/voting\/old_votingAllLike.php?');$/;"	d
+OTHERS	TextKeyTool/inc_seg/classify.h	12;"	d
+OTHERS	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	12;"	d
+OUT	TextKeyTool/inc_seg/classifydomain.h	20;"	d
+OUT	TextKeyTool/inc_seg/phraseterm.h	20;"	d
+OUT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	20;"	d
+OUT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	20;"	d
+PAGE_CLASS_NUM	TextKeyTool/inc_seg/lexicon.h	285;"	d
+PAGE_CLASS_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	285;"	d
+PAGE_CLASS_RESULT	TextKeyTool/inc_seg/classify.h	/^} PAGE_CLASS_RESULT;$/;"	t	typeref:struct:classify_result
+PAGE_CLASS_RESULT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	/^} PAGE_CLASS_RESULT;$/;"	t	typeref:struct:classify_result
+PAICHONG_H	TextKeyTool/inc_key/paichong.h	2;"	d
+PAICHONG_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/paichong.h	2;"	d
+POPULAR_USERS_RECOMMEND_NEW_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('POPULAR_USERS_RECOMMEND_NEW_URL', 'http:\/\/10.75.0.252\/pop_recom_new\/pop_recom.py');$/;"	d
+POPULAR_USERS_RECOMMEND_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('POPULAR_USERS_RECOMMEND_URL', 'http:\/\/10.75.0.252\/pop_recom\/pop_recom.py');$/;"	d
+POSTAGGER_OPT_ALL	TextKeyTool/inc_seg/POSTagger_new.h	162;"	d
+POSTAGGER_OPT_ALL	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	162;"	d
+POSTAGGER_OPT_USESEGINFO	TextKeyTool/inc_seg/POSTagger_new.h	163;"	d
+POSTAGGER_OPT_USESEGINFO	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	163;"	d
+POSTAG_ID_A	TextKeyTool/inc_seg/POSTagger_new.h	20;"	d
+POSTAG_ID_A	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	20;"	d
+POSTAG_ID_AD	TextKeyTool/inc_seg/POSTagger_new.h	130;"	d
+POSTAG_ID_AD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	130;"	d
+POSTAG_ID_AN	TextKeyTool/inc_seg/POSTagger_new.h	131;"	d
+POSTAG_ID_AN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	131;"	d
+POSTAG_ID_B	TextKeyTool/inc_seg/POSTagger_new.h	22;"	d
+POSTAG_ID_B	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	22;"	d
+POSTAG_ID_C	TextKeyTool/inc_seg/POSTagger_new.h	24;"	d
+POSTAG_ID_C	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	24;"	d
+POSTAG_ID_C_N	TextKeyTool/inc_seg/POSTagger_new.h	25;"	d
+POSTAG_ID_C_N	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	25;"	d
+POSTAG_ID_C_Z	TextKeyTool/inc_seg/POSTagger_new.h	26;"	d
+POSTAG_ID_C_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	26;"	d
+POSTAG_ID_D	TextKeyTool/inc_seg/POSTagger_new.h	28;"	d
+POSTAG_ID_D	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	28;"	d
+POSTAG_ID_D_B	TextKeyTool/inc_seg/POSTagger_new.h	29;"	d
+POSTAG_ID_D_B	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	29;"	d
+POSTAG_ID_D_M	TextKeyTool/inc_seg/POSTagger_new.h	30;"	d
+POSTAG_ID_D_M	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	30;"	d
+POSTAG_ID_E	TextKeyTool/inc_seg/POSTagger_new.h	32;"	d
+POSTAG_ID_E	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	32;"	d
+POSTAG_ID_F	TextKeyTool/inc_seg/POSTagger_new.h	34;"	d
+POSTAG_ID_F	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	34;"	d
+POSTAG_ID_F_N	TextKeyTool/inc_seg/POSTagger_new.h	36;"	d
+POSTAG_ID_F_N	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	36;"	d
+POSTAG_ID_F_S	TextKeyTool/inc_seg/POSTagger_new.h	35;"	d
+POSTAG_ID_F_S	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	35;"	d
+POSTAG_ID_F_V	TextKeyTool/inc_seg/POSTagger_new.h	37;"	d
+POSTAG_ID_F_V	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	37;"	d
+POSTAG_ID_F_Z	TextKeyTool/inc_seg/POSTagger_new.h	38;"	d
+POSTAG_ID_F_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	38;"	d
+POSTAG_ID_H	TextKeyTool/inc_seg/POSTagger_new.h	40;"	d
+POSTAG_ID_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	40;"	d
+POSTAG_ID_H_M	TextKeyTool/inc_seg/POSTagger_new.h	41;"	d
+POSTAG_ID_H_M	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	41;"	d
+POSTAG_ID_H_N	TextKeyTool/inc_seg/POSTagger_new.h	44;"	d
+POSTAG_ID_H_N	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	44;"	d
+POSTAG_ID_H_NR	TextKeyTool/inc_seg/POSTagger_new.h	43;"	d
+POSTAG_ID_H_NR	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	43;"	d
+POSTAG_ID_H_T	TextKeyTool/inc_seg/POSTagger_new.h	42;"	d
+POSTAG_ID_H_T	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	42;"	d
+POSTAG_ID_K	TextKeyTool/inc_seg/POSTagger_new.h	46;"	d
+POSTAG_ID_K	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	46;"	d
+POSTAG_ID_K_M	TextKeyTool/inc_seg/POSTagger_new.h	47;"	d
+POSTAG_ID_K_M	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	47;"	d
+POSTAG_ID_K_N	TextKeyTool/inc_seg/POSTagger_new.h	49;"	d
+POSTAG_ID_K_N	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	49;"	d
+POSTAG_ID_K_NS	TextKeyTool/inc_seg/POSTagger_new.h	53;"	d
+POSTAG_ID_K_NS	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	53;"	d
+POSTAG_ID_K_NT	TextKeyTool/inc_seg/POSTagger_new.h	52;"	d
+POSTAG_ID_K_NT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	52;"	d
+POSTAG_ID_K_S	TextKeyTool/inc_seg/POSTagger_new.h	50;"	d
+POSTAG_ID_K_S	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	50;"	d
+POSTAG_ID_K_T	TextKeyTool/inc_seg/POSTagger_new.h	48;"	d
+POSTAG_ID_K_T	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	48;"	d
+POSTAG_ID_K_Z	TextKeyTool/inc_seg/POSTagger_new.h	51;"	d
+POSTAG_ID_K_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	51;"	d
+POSTAG_ID_M	TextKeyTool/inc_seg/POSTagger_new.h	55;"	d
+POSTAG_ID_M	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	55;"	d
+POSTAG_ID_MQ	TextKeyTool/inc_seg/POSTagger_new.h	127;"	d
+POSTAG_ID_MQ	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	127;"	d
+POSTAG_ID_N	TextKeyTool/inc_seg/POSTagger_new.h	57;"	d
+POSTAG_ID_N	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	57;"	d
+POSTAG_ID_NS	TextKeyTool/inc_seg/POSTagger_new.h	63;"	d
+POSTAG_ID_NS	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	63;"	d
+POSTAG_ID_NS_Z	TextKeyTool/inc_seg/POSTagger_new.h	64;"	d
+POSTAG_ID_NS_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	64;"	d
+POSTAG_ID_N_M	TextKeyTool/inc_seg/POSTagger_new.h	65;"	d
+POSTAG_ID_N_M	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	65;"	d
+POSTAG_ID_N_RB	TextKeyTool/inc_seg/POSTagger_new.h	66;"	d
+POSTAG_ID_N_RB	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	66;"	d
+POSTAG_ID_N_RZ	TextKeyTool/inc_seg/POSTagger_new.h	58;"	d
+POSTAG_ID_N_RZ	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	58;"	d
+POSTAG_ID_N_T	TextKeyTool/inc_seg/POSTagger_new.h	59;"	d
+POSTAG_ID_N_T	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	59;"	d
+POSTAG_ID_N_TA	TextKeyTool/inc_seg/POSTagger_new.h	60;"	d
+POSTAG_ID_N_TA	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	60;"	d
+POSTAG_ID_N_TZ	TextKeyTool/inc_seg/POSTagger_new.h	61;"	d
+POSTAG_ID_N_TZ	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	61;"	d
+POSTAG_ID_N_Z	TextKeyTool/inc_seg/POSTagger_new.h	62;"	d
+POSTAG_ID_N_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	62;"	d
+POSTAG_ID_O	TextKeyTool/inc_seg/POSTagger_new.h	68;"	d
+POSTAG_ID_O	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	68;"	d
+POSTAG_ID_P	TextKeyTool/inc_seg/POSTagger_new.h	69;"	d
+POSTAG_ID_P	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	69;"	d
+POSTAG_ID_Q	TextKeyTool/inc_seg/POSTagger_new.h	71;"	d
+POSTAG_ID_Q	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	71;"	d
+POSTAG_ID_Q_H	TextKeyTool/inc_seg/POSTagger_new.h	74;"	d
+POSTAG_ID_Q_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	74;"	d
+POSTAG_ID_Q_T	TextKeyTool/inc_seg/POSTagger_new.h	73;"	d
+POSTAG_ID_Q_T	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	73;"	d
+POSTAG_ID_Q_V	TextKeyTool/inc_seg/POSTagger_new.h	72;"	d
+POSTAG_ID_Q_V	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	72;"	d
+POSTAG_ID_R	TextKeyTool/inc_seg/POSTagger_new.h	76;"	d
+POSTAG_ID_R	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	76;"	d
+POSTAG_ID_RQ	TextKeyTool/inc_seg/POSTagger_new.h	128;"	d
+POSTAG_ID_RQ	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	128;"	d
+POSTAG_ID_R_B	TextKeyTool/inc_seg/POSTagger_new.h	83;"	d
+POSTAG_ID_R_B	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	83;"	d
+POSTAG_ID_R_D	TextKeyTool/inc_seg/POSTagger_new.h	77;"	d
+POSTAG_ID_R_D	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	77;"	d
+POSTAG_ID_R_M	TextKeyTool/inc_seg/POSTagger_new.h	78;"	d
+POSTAG_ID_R_M	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	78;"	d
+POSTAG_ID_R_N	TextKeyTool/inc_seg/POSTagger_new.h	79;"	d
+POSTAG_ID_R_N	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	79;"	d
+POSTAG_ID_R_S	TextKeyTool/inc_seg/POSTagger_new.h	80;"	d
+POSTAG_ID_R_S	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	80;"	d
+POSTAG_ID_R_T	TextKeyTool/inc_seg/POSTagger_new.h	81;"	d
+POSTAG_ID_R_T	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	81;"	d
+POSTAG_ID_R_Z	TextKeyTool/inc_seg/POSTagger_new.h	82;"	d
+POSTAG_ID_R_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	82;"	d
+POSTAG_ID_S	TextKeyTool/inc_seg/POSTagger_new.h	85;"	d
+POSTAG_ID_S	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	85;"	d
+POSTAG_ID_SP	TextKeyTool/inc_seg/POSTagger_new.h	126;"	d
+POSTAG_ID_SP	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	126;"	d
+POSTAG_ID_SPACE	TextKeyTool/inc_seg/POSTagger_new.h	135;"	d
+POSTAG_ID_SPACE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	135;"	d
+POSTAG_ID_S_Z	TextKeyTool/inc_seg/POSTagger_new.h	86;"	d
+POSTAG_ID_S_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	86;"	d
+POSTAG_ID_T	TextKeyTool/inc_seg/POSTagger_new.h	87;"	d
+POSTAG_ID_T	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	87;"	d
+POSTAG_ID_T_Z	TextKeyTool/inc_seg/POSTagger_new.h	88;"	d
+POSTAG_ID_T_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	88;"	d
+POSTAG_ID_U	TextKeyTool/inc_seg/POSTagger_new.h	90;"	d
+POSTAG_ID_U	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	90;"	d
+POSTAG_ID_UNKNOW	TextKeyTool/inc_seg/POSTagger_new.h	18;"	d
+POSTAG_ID_UNKNOW	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	18;"	d
+POSTAG_ID_U_C	TextKeyTool/inc_seg/POSTagger_new.h	93;"	d
+POSTAG_ID_U_C	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	93;"	d
+POSTAG_ID_U_D	TextKeyTool/inc_seg/POSTagger_new.h	92;"	d
+POSTAG_ID_U_D	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	92;"	d
+POSTAG_ID_U_N	TextKeyTool/inc_seg/POSTagger_new.h	91;"	d
+POSTAG_ID_U_N	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	91;"	d
+POSTAG_ID_U_S	TextKeyTool/inc_seg/POSTagger_new.h	95;"	d
+POSTAG_ID_U_S	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	95;"	d
+POSTAG_ID_U_SO	TextKeyTool/inc_seg/POSTagger_new.h	96;"	d
+POSTAG_ID_U_SO	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	96;"	d
+POSTAG_ID_U_Z	TextKeyTool/inc_seg/POSTagger_new.h	94;"	d
+POSTAG_ID_U_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	94;"	d
+POSTAG_ID_V	TextKeyTool/inc_seg/POSTagger_new.h	108;"	d
+POSTAG_ID_V	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	108;"	d
+POSTAG_ID_VD	TextKeyTool/inc_seg/POSTagger_new.h	132;"	d
+POSTAG_ID_VD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	132;"	d
+POSTAG_ID_VN	TextKeyTool/inc_seg/POSTagger_new.h	133;"	d
+POSTAG_ID_VN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	133;"	d
+POSTAG_ID_V_A	TextKeyTool/inc_seg/POSTagger_new.h	114;"	d
+POSTAG_ID_V_A	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	114;"	d
+POSTAG_ID_V_E	TextKeyTool/inc_seg/POSTagger_new.h	110;"	d
+POSTAG_ID_V_E	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	110;"	d
+POSTAG_ID_V_O	TextKeyTool/inc_seg/POSTagger_new.h	109;"	d
+POSTAG_ID_V_O	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	109;"	d
+POSTAG_ID_V_Q	TextKeyTool/inc_seg/POSTagger_new.h	113;"	d
+POSTAG_ID_V_Q	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	113;"	d
+POSTAG_ID_V_SH	TextKeyTool/inc_seg/POSTagger_new.h	111;"	d
+POSTAG_ID_V_SH	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	111;"	d
+POSTAG_ID_V_YO	TextKeyTool/inc_seg/POSTagger_new.h	112;"	d
+POSTAG_ID_V_YO	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	112;"	d
+POSTAG_ID_W	TextKeyTool/inc_seg/POSTagger_new.h	98;"	d
+POSTAG_ID_W	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	98;"	d
+POSTAG_ID_W_D	TextKeyTool/inc_seg/POSTagger_new.h	99;"	d
+POSTAG_ID_W_D	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	99;"	d
+POSTAG_ID_W_H	TextKeyTool/inc_seg/POSTagger_new.h	104;"	d
+POSTAG_ID_W_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	104;"	d
+POSTAG_ID_W_L	TextKeyTool/inc_seg/POSTagger_new.h	102;"	d
+POSTAG_ID_W_L	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	102;"	d
+POSTAG_ID_W_R	TextKeyTool/inc_seg/POSTagger_new.h	103;"	d
+POSTAG_ID_W_R	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	103;"	d
+POSTAG_ID_W_S	TextKeyTool/inc_seg/POSTagger_new.h	101;"	d
+POSTAG_ID_W_S	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	101;"	d
+POSTAG_ID_W_SP	TextKeyTool/inc_seg/POSTagger_new.h	100;"	d
+POSTAG_ID_W_SP	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	100;"	d
+POSTAG_ID_X	TextKeyTool/inc_seg/POSTagger_new.h	118;"	d
+POSTAG_ID_X	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	118;"	d
+POSTAG_ID_X_B	TextKeyTool/inc_seg/POSTagger_new.h	124;"	d
+POSTAG_ID_X_B	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	124;"	d
+POSTAG_ID_X_N	TextKeyTool/inc_seg/POSTagger_new.h	119;"	d
+POSTAG_ID_X_N	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	119;"	d
+POSTAG_ID_X_S	TextKeyTool/inc_seg/POSTagger_new.h	121;"	d
+POSTAG_ID_X_S	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	121;"	d
+POSTAG_ID_X_T	TextKeyTool/inc_seg/POSTagger_new.h	122;"	d
+POSTAG_ID_X_T	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	122;"	d
+POSTAG_ID_X_V	TextKeyTool/inc_seg/POSTagger_new.h	120;"	d
+POSTAG_ID_X_V	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	120;"	d
+POSTAG_ID_X_Z	TextKeyTool/inc_seg/POSTagger_new.h	123;"	d
+POSTAG_ID_X_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	123;"	d
+POSTAG_ID_Y	TextKeyTool/inc_seg/POSTagger_new.h	106;"	d
+POSTAG_ID_Y	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	106;"	d
+POSTAG_ID_Z	TextKeyTool/inc_seg/POSTagger_new.h	116;"	d
+POSTAG_ID_Z	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	116;"	d
+Page	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^class Page$/;"	c
+ParseCmt	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^void CEvaluater::ParseCmt(string& strCmt, int field)$/;"	f	class:CEvaluater
+ParseJson	CJParser.cpp	/^int CJParser::ParseJson(string& strJson, map<string, string>& mapJson)$/;"	f	class:CJParser
+ParseJson	test/New_Hot_MicroBlog/src/CJParser.cpp	/^int CJParser::ParseJson(string& strJson, map<string, string>& mapJson)$/;"	f	class:CJParser
+ParseLineClassified	WeiboProcessor.cpp	/^int WeiboProcessor::ParseLineClassified(string szLine)$/;"	f	class:WeiboProcessor
+ParseLineOriginal	WeiboProcessor.cpp	/^int WeiboProcessor::ParseLineOriginal(string strLine)$/;"	f	class:WeiboProcessor
+ParseWeibo	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^void CEvaluater::ParseWeibo(string strWeibo)$/;"	f	class:CEvaluater
+PrintWeibo	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^void CEvaluater::PrintWeibo(WeiboInfo* pWeibo)$/;"	f	class:CEvaluater
+Process	test/New_Hot_MicroBlog/src/CCmtPreProcessor.cpp	/^void CCmtPreProcessor::Process(const char* cCmtFile, const char* cProcessedFile)$/;"	f	class:CCmtPreProcessor
+Process	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^void CWeiboPreProcessor::Process(const char* cWeiboFile, const char* cProcessedWeiboFile)$/;"	f	class:CWeiboPreProcessor
+ProcessClassifiedData	WeiboProcessor.cpp	/^int WeiboProcessor::ProcessClassifiedData()$/;"	f	class:WeiboProcessor
+ProcessInput	test/New_Hot_MicroBlog/src/CSubmission.cpp	/^void CSubmission::ProcessInput(const char * cInputFile)$/;"	f	class:CSubmission
+ProcessJson	test/New_Hot_MicroBlog/src/CCmtPreProcessor.cpp	/^CProcessedCmt* CCmtPreProcessor::ProcessJson(string& strJson)$/;"	f	class:CCmtPreProcessor
+ProcessOne	test/New_Hot_MicroBlog/src/CSubmission.cpp	/^bool CSubmission::ProcessOne(string& strJson)$/;"	f	class:CSubmission
+ProcessOriginalData	WeiboProcessor.cpp	/^int WeiboProcessor::ProcessOriginalData()$/;"	f	class:WeiboProcessor
+ProcessWeibo	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^CProcessedWeibo* CWeiboPreProcessor::ProcessWeibo(string& strLine)$/;"	f	class:CWeiboPreProcessor
+QIYEJIESHAO	TextKeyTool/inc_seg/classify.h	14;"	d
+QIYEJIESHAO	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	14;"	d
+RELEASECLASSIFY	TextKeyTool/inc_seg/classify.h	/^typedef int(*RELEASECLASSIFY)(Classify *);$/;"	t
+RELEASECLASSIFY	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	/^typedef int(*RELEASECLASSIFY)(Classify *);$/;"	t
+RELEASECLASSIFYDOMAIN	TextKeyTool/inc_seg/classifydomain.h	/^typedef int(*RELEASECLASSIFYDOMAIN)(ClassifyDomain *);$/;"	t
+RELEASECLASSIFYDOMAIN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	/^typedef int(*RELEASECLASSIFYDOMAIN)(ClassifyDomain *);$/;"	t
+RELEASECLASSIFYKNN	TextKeyTool/inc_seg/classifyknn.h	/^typedef int(*RELEASECLASSIFYKNN)(Classify_KNN *);$/;"	t
+RELEASECLASSIFYKNN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifyknn.h	/^typedef int(*RELEASECLASSIFYKNN)(Classify_KNN *);$/;"	t
+RELEASECLASSIFYMAXENT	TextKeyTool/inc_seg/classifymaxent.h	/^typedef int(*RELEASECLASSIFYMAXENT)(Classify_Maxent *);$/;"	t
+RELEASECLASSIFYMAXENT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifymaxent.h	/^typedef int(*RELEASECLASSIFYMAXENT)(Classify_Maxent *);$/;"	t
+RELEASEIASKEXKEYWORDS	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^typedef int (*RELEASEIASKEXKEYWORDS)(IKeywords*);$/;"	t
+RELEASEIASKEXKEYWORDS	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^typedef int (*RELEASEIASKEXKEYWORDS)(IKeywords*);$/;"	t
+RELEASEPHRASETERM	TextKeyTool/inc_seg/phraseterm.h	/^typedef int (*RELEASEPHRASETERM)(IPhraseTerm*);$/;"	t
+RELEASEPHRASETERM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^typedef int (*RELEASEPHRASETERM)(IPhraseTerm*);$/;"	t
+RELEASEPOSTAGGER	TextKeyTool/inc_seg/POSTagger_new.h	/^typedef int (*RELEASEPOSTAGGER)(IPOSTagger*);$/;"	t
+RELEASEPOSTAGGER	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^typedef int (*RELEASEPOSTAGGER)(IPOSTagger*);$/;"	t
+RELEASESEGMENT	TextKeyTool/inc_seg/WordSegment.h	/^typedef int (*RELEASESEGMENT)(IWordSegment*);$/;"	t
+RELEASESEGMENT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^typedef int (*RELEASESEGMENT)(IWordSegment*);$/;"	t
+RELEASEWORDLIB	TextKeyTool/inc_seg/WordSegment.h	/^typedef int (*RELEASEWORDLIB)(IWordLib*);$/;"	t
+RELEASEWORDLIB	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^typedef int (*RELEASEWORDLIB)(IWordLib*);$/;"	t
+RUBLABEL_H	test/New_Hot_MicroBlog/src/rubLabel.h	2;"	d
+ReleaseBayesModel	test/New_Hot_MicroBlog/src/bayesHM.cpp	/^void ReleaseBayesModel(BAYES_HM_MODEL *b_model)$/;"	f
+ReleaseClassifier_d	TextKeyTool/inc_seg/lexicon.h	/^	RELEASECLASSIFY ReleaseClassifier_d;$/;"	m	struct:__anon12
+ReleaseClassifier_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	RELEASECLASSIFY ReleaseClassifier_d;$/;"	m	struct:__anon28
+ReleaseClassifyKnn_d	TextKeyTool/inc_seg/lexicon.h	/^	RELEASECLASSIFYKNN ReleaseClassifyKnn_d;$/;"	m	struct:__anon12
+ReleaseClassifyKnn_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	RELEASECLASSIFYKNN ReleaseClassifyKnn_d;$/;"	m	struct:__anon28
+ReleaseInstance	CKeyWordsManager.cpp	/^void CKeyWordsManager::ReleaseInstance()$/;"	f	class:CKeyWordsManager
+ReleaseInstance	CTextKeyTool.cpp	/^void CTextKeyTool::ReleaseInstance()$/;"	f	class:CTextKeyTool
+ReleaseInstance	test/New_Hot_MicroBlog/src/CCmtPreProcessor.cpp	/^void CCmtPreProcessor::ReleaseInstance()$/;"	f	class:CCmtPreProcessor
+ReleaseInstance	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^void CKeyWordsManager::ReleaseInstance()$/;"	f	class:CKeyWordsManager
+ReleaseInstance	test/New_Hot_MicroBlog/src/CTextKeyTool.cpp	/^void CTextKeyTool::ReleaseInstance()$/;"	f	class:CTextKeyTool
+ReleaseInstance	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^void CWeiboPreProcessor::ReleaseInstance()$/;"	f	class:CWeiboPreProcessor
+ReleaseKeywords_d	TextKeyTool/inc_seg/lexicon.h	/^	RELEASEIASKEXKEYWORDS ReleaseKeywords_d;$/;"	m	struct:__anon12
+ReleaseKeywords_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	RELEASEIASKEXKEYWORDS ReleaseKeywords_d;$/;"	m	struct:__anon28
+ReleasePOSTagger_d	TextKeyTool/inc_seg/lexicon.h	/^	RELEASEPOSTAGGER ReleasePOSTagger_d;$/;"	m	struct:__anon12
+ReleasePOSTagger_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	RELEASEPOSTAGGER ReleasePOSTagger_d;$/;"	m	struct:__anon28
+ReleasePhraseTerm_d	TextKeyTool/inc_seg/lexicon.h	/^	RELEASEPHRASETERM ReleasePhraseTerm_d;$/;"	m	struct:__anon12
+ReleasePhraseTerm_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	RELEASEPHRASETERM ReleasePhraseTerm_d;$/;"	m	struct:__anon28
+ReleaseSegment_d	TextKeyTool/inc_seg/lexicon.h	/^	RELEASESEGMENT ReleaseSegment_d;$/;"	m	struct:__anon12
+ReleaseSegment_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	RELEASESEGMENT ReleaseSegment_d;$/;"	m	struct:__anon28
+ReleaseStream	test/New_Hot_MicroBlog/src/HeadSniffer.cpp	/^void ReleaseStream()$/;"	f
+ReleaseWordLib_d	TextKeyTool/inc_seg/lexicon.h	/^	RELEASEWORDLIB ReleaseWordLib_d;$/;"	m	struct:__anon12
+ReleaseWordLib_d	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	RELEASEWORDLIB ReleaseWordLib_d;$/;"	m	struct:__anon28
+Request	test/New_Hot_MicroBlog/shell/grab_img/include/Request.php	/^class Request$/;"	c
+ResData	TextKeyTool/inc_key/paichong.h	/^struct ResData$/;"	s
+ResData	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/paichong.h	/^struct ResData$/;"	s
+RightTrim	CStringTool.cpp	/^void CStringTool::RightTrim(string& ss)$/;"	f	class:CStringTool
+RightTrim	test/New_Hot_MicroBlog/src/CStringTool.cpp	/^void CStringTool::RightTrim(string& ss)$/;"	f	class:CStringTool
+SEARCH_DEF_H	TextKeyTool/inc_seg/searchdef.h	13;"	d
+SEARCH_DEF_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	13;"	d
+SEARCH_SID	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('SEARCH_SID', 't_recom');$/;"	d
+SEG_ALL	TextKeyTool/inc_seg/classify.h	21;"	d
+SEG_ALL	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	21;"	d
+SEG_MAX	TextKeyTool/inc_seg/classify.h	20;"	d
+SEG_MAX	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	20;"	d
+SEG_OPT_ALL	TextKeyTool/inc_seg/BaseDef.h	62;"	d
+SEG_OPT_ALL	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	62;"	d
+SEG_OPT_AMB	TextKeyTool/inc_seg/BaseDef.h	43;"	d
+SEG_OPT_AMB	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	43;"	d
+SEG_OPT_DICT	TextKeyTool/inc_seg/BaseDef.h	57;"	d
+SEG_OPT_DICT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	57;"	d
+SEG_OPT_LIHE	TextKeyTool/inc_seg/BaseDef.h	50;"	d
+SEG_OPT_LIHE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	50;"	d
+SEG_OPT_LOC	TextKeyTool/inc_seg/BaseDef.h	53;"	d
+SEG_OPT_LOC	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	53;"	d
+SEG_OPT_MM	TextKeyTool/inc_seg/BaseDef.h	60;"	d
+SEG_OPT_MM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	60;"	d
+SEG_OPT_ORG	TextKeyTool/inc_seg/BaseDef.h	54;"	d
+SEG_OPT_ORG	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	54;"	d
+SEG_OPT_OVERLAP	TextKeyTool/inc_seg/BaseDef.h	49;"	d
+SEG_OPT_OVERLAP	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	49;"	d
+SEG_OPT_PER	TextKeyTool/inc_seg/BaseDef.h	52;"	d
+SEG_OPT_PER	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	52;"	d
+SEG_OPT_PREFIX	TextKeyTool/inc_seg/BaseDef.h	45;"	d
+SEG_OPT_PREFIX	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	45;"	d
+SEG_OPT_QUANTIFIER	TextKeyTool/inc_seg/BaseDef.h	47;"	d
+SEG_OPT_QUANTIFIER	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	47;"	d
+SEG_OPT_QUERY	TextKeyTool/inc_seg/BaseDef.h	55;"	d
+SEG_OPT_QUERY	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	55;"	d
+SEG_OPT_SUFFIX	TextKeyTool/inc_seg/BaseDef.h	44;"	d
+SEG_OPT_SUFFIX	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	44;"	d
+SEG_OPT_ZUHEQIYI	TextKeyTool/inc_seg/BaseDef.h	48;"	d
+SEG_OPT_ZUHEQIYI	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	48;"	d
+SERVICES_JSON_IN_ARR	test/New_Hot_MicroBlog/shell/json.class.php	/^define('SERVICES_JSON_IN_ARR',  3);$/;"	d
+SERVICES_JSON_IN_CMT	test/New_Hot_MicroBlog/shell/json.class.php	/^define('SERVICES_JSON_IN_CMT', 5);$/;"	d
+SERVICES_JSON_IN_OBJ	test/New_Hot_MicroBlog/shell/json.class.php	/^define('SERVICES_JSON_IN_OBJ',  4);$/;"	d
+SERVICES_JSON_IN_STR	test/New_Hot_MicroBlog/shell/json.class.php	/^define('SERVICES_JSON_IN_STR',  2);$/;"	d
+SERVICES_JSON_LOOSE_TYPE	test/New_Hot_MicroBlog/shell/json.class.php	/^define('SERVICES_JSON_LOOSE_TYPE', 16);$/;"	d
+SERVICES_JSON_SLICE	test/New_Hot_MicroBlog/shell/json.class.php	/^define('SERVICES_JSON_SLICE',   1);$/;"	d
+SERVICES_JSON_SUPPRESS_ERRORS	test/New_Hot_MicroBlog/shell/json.class.php	/^define('SERVICES_JSON_SUPPRESS_ERRORS', 32);$/;"	d
+STATE	strmatch.h	14;"	d
+STATE	test/New_Hot_MicroBlog/src/strmatch.h	14;"	d
+STATESLIST	strmatch.h	/^typedef STATE (*STATESLIST)[KN+1]; $/;"	t
+STATESLIST	test/New_Hot_MicroBlog/src/strmatch.h	/^typedef STATE (*STATESLIST)[KN+1]; $/;"	t
+STATIC_DIC_MAX_WORD_ID	TextKeyTool/inc_seg/lexicon.h	444;"	d
+STATIC_DIC_MAX_WORD_ID	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	444;"	d
+SUCCESS	TextKeyTool/inc_seg/BaseDef.h	27;"	d
+SUCCESS	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	27;"	d
+SWATCH	test/New_Hot_MicroBlog/src/CBayesClassifier.h	/^		struct SWATCH$/;"	s	class:CBayesClassifier
+SaveConfig	CConfigInfo.cpp	/^void CConfigInfo::SaveConfig()$/;"	f	class:CConfigInfo
+SaveConfig	test/New_Hot_MicroBlog/src/CConfigInfo.cpp	/^void CConfigInfo::SaveConfig()$/;"	f	class:CConfigInfo
+SaveSubmission	test/New_Hot_MicroBlog/src/CSubmission.cpp	/^void CSubmission::SaveSubmission(const char* cOutputDir)$/;"	f	class:CSubmission
+ScoreContent	test/New_Hot_MicroBlog/src/CBeautyEvaluater.cpp	/^bool CBeautyEvaluater::ScoreContent(string& strContent, BaseInfo& base_info)$/;"	f	class:CBeautyEvaluater
+ScoreContent	test/New_Hot_MicroBlog/src/CClassifyEvaluater.cpp	/^bool CClassifyEvaluater::ScoreContent(string& strContent, BaseInfo& base_info)$/;"	f	class:CClassifyEvaluater
+ScoreContent	test/New_Hot_MicroBlog/src/CKeywordEvaluater.cpp	/^bool CKeywordEvaluater::ScoreContent(string& strContent, BaseInfo& base_info)$/;"	f	class:CKeywordEvaluater
+ScoreContent	test/New_Hot_MicroBlog/src/CMengEvaluater.cpp	/^bool CMengEvaluater::ScoreContent(string& strContent, BaseInfo& base_info)$/;"	f	class:CMengEvaluater
+ScoreContent	test/New_Hot_MicroBlog/src/CStreetEvaluater.cpp	/^bool CStreetEvaluater::ScoreContent(string& strContent, BaseInfo& base_info)$/;"	f	class:CStreetEvaluater
+ScoreFilter	test/New_Hot_MicroBlog/src/CAmuseEvaluater.cpp	/^bool CAmuseEvaluater::ScoreFilter(int filter, BaseInfo& base_info)$/;"	f	class:CAmuseEvaluater
+ScoreFilter	test/New_Hot_MicroBlog/src/CBeautyEvaluater.cpp	/^bool CBeautyEvaluater::ScoreFilter(int filter, BaseInfo& base_info)$/;"	f	class:CBeautyEvaluater
+ScoreFilter	test/New_Hot_MicroBlog/src/CMengEvaluater.cpp	/^bool CMengEvaluater::ScoreFilter(int filter, BaseInfo& base_info)$/;"	f	class:CMengEvaluater
+ScoreFilter	test/New_Hot_MicroBlog/src/CStreetEvaluater.cpp	/^bool CStreetEvaluater::ScoreFilter(int filter, BaseInfo& base_info)$/;"	f	class:CStreetEvaluater
+ScoreText	CKeyWordsManager.cpp	/^int CKeyWordsManager::ScoreText(MATCHENTRY* pKeyWords, map<string, int>& mapScore, string& strText, bool bSum)$/;"	f	class:CKeyWordsManager
+ScoreText	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^int CKeyWordsManager::ScoreText(MATCHENTRY* pKeyWords, map<string, int>& mapScore, string& strText, bool bSum)$/;"	f	class:CKeyWordsManager
+ScoreUid	test/New_Hot_MicroBlog/src/CBeautyEvaluater.cpp	/^bool CBeautyEvaluater::ScoreUid(unsigned long long uid, BaseInfo& base_info)$/;"	f	class:CBeautyEvaluater
+ScoreUid	test/New_Hot_MicroBlog/src/CClassifyEvaluater.cpp	/^bool CClassifyEvaluater::ScoreUid(unsigned long long uid, BaseInfo& base_info)$/;"	f	class:CClassifyEvaluater
+ScoreUid	test/New_Hot_MicroBlog/src/CKeywordEvaluater.cpp	/^bool CKeywordEvaluater::ScoreUid(unsigned long long uid, BaseInfo& base_info)$/;"	f	class:CKeywordEvaluater
+ScoreUid	test/New_Hot_MicroBlog/src/CMengEvaluater.cpp	/^bool CMengEvaluater::ScoreUid(unsigned long long uid, BaseInfo& base_info)$/;"	f	class:CMengEvaluater
+ScoreUid	test/New_Hot_MicroBlog/src/CStreetEvaluater.cpp	/^bool CStreetEvaluater::ScoreUid(unsigned long long uid, BaseInfo& base_info)$/;"	f	class:CStreetEvaluater
+Services_JSON	test/New_Hot_MicroBlog/shell/json.class.php	/^    function Services_JSON($use = 0)$/;"	f
+Services_JSON	test/New_Hot_MicroBlog/shell/json.class.php	/^class Services_JSON$/;"	c
+Services_JSON_Error	test/New_Hot_MicroBlog/shell/json.class.php	/^        function Services_JSON_Error($message = 'unknown error', $code = null,$/;"	f
+Services_JSON_Error	test/New_Hot_MicroBlog/shell/json.class.php	/^    class Services_JSON_Error extends PEAR_Error$/;"	c
+Services_JSON_Error	test/New_Hot_MicroBlog/shell/json.class.php	/^    class Services_JSON_Error$/;"	c
+SetValue	CConfigInfo.cpp	/^void CConfigInfo::SetValue(string strKey, string strValue)$/;"	f	class:CConfigInfo
+SetValue	test/New_Hot_MicroBlog/src/CConfigInfo.cpp	/^void CConfigInfo::SetValue(string strKey, string strValue)$/;"	f	class:CConfigInfo
+SortAndSave	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^void CEvaluater::SortAndSave(const char* cResultFile1, const char* cResultFile2)$/;"	f	class:CEvaluater
+SpliteByChar	CStringTool.cpp	/^vector<string> CStringTool::SpliteByChar(string& input, char ch)$/;"	f	class:CStringTool
+SpliteByChar	test/New_Hot_MicroBlog/GetZFData/src/CStringTool.cpp	/^vector<string> CStringTool::SpliteByChar(string& input, char ch)$/;"	f	class:CStringTool
+SpliteByChar	test/New_Hot_MicroBlog/src/CStringTool.cpp	/^vector<string> CStringTool::SpliteByChar(string& input, char ch)$/;"	f	class:CStringTool
+SpliteByStr	CStringTool.cpp	/^vector<string> CStringTool::SpliteByStr(string& input, string str)$/;"	f	class:CStringTool
+SpliteByStr	test/New_Hot_MicroBlog/src/CStringTool.cpp	/^vector<string> CStringTool::SpliteByStr(string& input, string str)$/;"	f	class:CStringTool
+StrTo	CTypeTool.h	/^		static Type StrTo(string str)$/;"	f	class:CTypeTool
+StrTo	test/New_Hot_MicroBlog/GetZFData/src/CTypeTool.h	/^		static Type StrTo(string str)$/;"	f	class:CTypeTool
+StrTo	test/New_Hot_MicroBlog/src/CTypeTool.h	/^		static Type StrTo(string str)$/;"	f	class:CTypeTool
+TAG_KNN_ADSENSE	TextKeyTool/inc_seg/classifydomain.h	32;"	d
+TAG_KNN_ADSENSE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	32;"	d
+TAG_KNN_BLOG	TextKeyTool/inc_seg/classifydomain.h	34;"	d
+TAG_KNN_BLOG	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	34;"	d
+TAG_KNN_NEWS	TextKeyTool/inc_seg/classifydomain.h	33;"	d
+TAG_KNN_NEWS	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	33;"	d
+TERM_MAX_DOMAIN_NUM	TextKeyTool/inc_seg/BaseDef.h	151;"	d
+TERM_MAX_DOMAIN_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	151;"	d
+TERM_MAX_SEMANTIC_NUM	TextKeyTool/inc_seg/BaseDef.h	152;"	d
+TERM_MAX_SEMANTIC_NUM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	152;"	d
+TRUE	TextKeyTool/inc_seg/searchdef.h	45;"	d
+TRUE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	45;"	d
+TermInfo_touser	TextKeyTool/inc_seg/phraseterm.h	/^}TermInfo_touser;$/;"	t	typeref:struct:__anon3
+TermInfo_touser	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^}TermInfo_touser;$/;"	t	typeref:struct:__anon19
+TextNormalization	test/New_Hot_MicroBlog/src/rubLabel.cpp	/^int TextNormalization(const char *src,int srcLen,char *out,int outLen,double & labelRate,double &spiteRate,coreData *data,map<string,int> &urlMap,int flags)$/;"	f
+ToStr	CTypeTool.h	/^		static string ToStr(Type t, int length = -1)$/;"	f	class:CTypeTool
+ToStr	test/New_Hot_MicroBlog/GetZFData/src/CTypeTool.h	/^		static string ToStr(Type t)$/;"	f	class:CTypeTool
+ToStr	test/New_Hot_MicroBlog/src/CTypeTool.h	/^		static string ToStr(Type t, int length = -1)$/;"	f	class:CTypeTool
+Trim	CStringTool.cpp	/^void CStringTool::Trim(string& str)$/;"	f	class:CStringTool
+Trim	test/New_Hot_MicroBlog/src/CStringTool.cpp	/^void CStringTool::Trim(string& str)$/;"	f	class:CStringTool
+UCHAR	TextKeyTool/inc_seg/ustring.h	/^typedef unsigned short UCHAR;$/;"	t
+UCHAR	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ustring.h	/^typedef unsigned short UCHAR;$/;"	t
+UINT	TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned int   UINT;$/;"	t
+UINT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned int   UINT;$/;"	t
+ULONG	TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned long  ULONG;$/;"	t
+ULONG	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned long  ULONG;$/;"	t
+ULONGLONG	TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned long long ULONGLONG;$/;"	t
+ULONGLONG	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned long long ULONGLONG;$/;"	t
+USER	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^define ( 'USER', 'gaohua1_' );$/;"	d
+USERS_FROM_ADMIN_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('USERS_FROM_ADMIN_URL', 'http:\/\/i.admin.weibo.com\/pub\/search\/recommend_keyword.json');$/;"	d
+USERS_FROM_SEARCH_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('USERS_FROM_SEARCH_URL', 'http:\/\/weibo.match.sina.com.cn\/openService\/rpcUser.php');$/;"	d
+USER_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('USER_URL', 'http:\/\/i.t.sina.com.cn\/person\/getuserinfo.php');$/;"	d
+USER_URL_NEW	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('USER_URL_NEW', 'http:\/\/i.api.weibo.com\/2\/users\/show_batch.json');$/;"	d
+USHORT	TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned short USHORT;$/;"	t
+USHORT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned short USHORT;$/;"	t
+UpdateScore	test/New_Hot_MicroBlog/src/CProcessedCmt.cpp	/^void CProcessedCmt::UpdateScore(int index, int nScore)$/;"	f	class:CProcessedCmt
+VALUE_T	TextKeyTool/inc_seg/searchdef.h	28;"	d
+VALUE_T	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	28;"	d
+VOTE_INFO_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('VOTE_INFO_URL', 'http:\/\/vote.i.t.sina.com.cn\/weibo')$/;"	d
+VOTE_URL	test/New_Hot_MicroBlog/shell/grab_img/include/define.php	/^define('VOTE_URL','http:\/\/recom.i.t.sina.com.cn\/1\/voting\/debug_votingAllLike.php?');$/;"	d
+WEIBOINFO	WeiboProcessor.h	/^		typedef struct WEIBOINFO$/;"	s	class:WeiboProcessor
+WEIBOINFO	test/New_Hot_MicroBlog/src/CEvaluater.h	/^		typedef struct WEIBOINFO$/;"	s	class:CEvaluater
+WEIBOTEXTTOOL_H	TextKeyTool/inc_key/CMBTextTool.h	19;"	d
+WEIBOTEXTTOOL_H	test/New_Hot_MicroBlog/src/CMBTextTool.h	19;"	d
+WEIBOTEXTTOOL_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CMBTextTool.h	19;"	d
+WORD	TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned short     WORD;$/;"	t
+WORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/searchdef.h	/^typedef unsigned short     WORD;$/;"	t
+WORDID	TextKeyTool/inc_seg/BaseDef.h	/^typedef unsigned int				WORDID;			\/\/ ID of Word item$/;"	t
+WORDID	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^typedef unsigned int				WORDID;			\/\/ ID of Word item$/;"	t
+WORDSEGMENT_CALLBACK	TextKeyTool/inc_seg/WordSegment.h	/^typedef void (* WORDSEGMENT_CALLBACK)(IWordSegment *pWordSegment, unsigned short* szSrc);$/;"	t
+WORDSEGMENT_CALLBACK	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^typedef void (* WORDSEGMENT_CALLBACK)(IWordSegment *pWordSegment, unsigned short* szSrc);$/;"	t
+WORDSEGSIMPLE_H	TextKeyTool/inc_key/wordsegSimple.h	2;"	d
+WORDSEGSIMPLE_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	2;"	d
+WORDSEGSIMPLE_H	test/New_Hot_MicroBlog/src/wordsegSimple.h	2;"	d
+WORDSTAT_COMMONWORD	TextKeyTool/inc_seg/wordprop.h	25;"	d
+WORDSTAT_COMMONWORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	25;"	d
+WORDSTAT_HASSTRU	TextKeyTool/inc_seg/wordprop.h	28;"	d
+WORDSTAT_HASSTRU	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	28;"	d
+WORDSTAT_NOPARSE	TextKeyTool/inc_seg/wordprop.h	22;"	d
+WORDSTAT_NOPARSE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	22;"	d
+WORDSTAT_NOSEARCH	TextKeyTool/inc_seg/wordprop.h	23;"	d
+WORDSTAT_NOSEARCH	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	23;"	d
+WORDSTAT_STRU	TextKeyTool/inc_seg/wordprop.h	29;"	d
+WORDSTAT_STRU	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	29;"	d
+WORDSTAT_URLWORD	TextKeyTool/inc_seg/wordprop.h	26;"	d
+WORDSTAT_URLWORD	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	26;"	d
+WORDTYPE_ENDSENTENCE	TextKeyTool/inc_seg/wordprop.h	15;"	d
+WORDTYPE_ENDSENTENCE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	15;"	d
+WORDTYPE_INTERPUNCTION	TextKeyTool/inc_seg/wordprop.h	14;"	d
+WORDTYPE_INTERPUNCTION	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	14;"	d
+WORDTYPE_LINKWORD_CHINESE	TextKeyTool/inc_seg/wordprop.h	17;"	d
+WORDTYPE_LINKWORD_CHINESE	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	17;"	d
+WORDTYPE_LINKWORD_ENGLISH	TextKeyTool/inc_seg/wordprop.h	16;"	d
+WORDTYPE_LINKWORD_ENGLISH	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	16;"	d
+WORDTYPE_PHRASE_MARK	TextKeyTool/inc_seg/wordprop.h	19;"	d
+WORDTYPE_PHRASE_MARK	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	19;"	d
+WORDTYPE_WORD_DROP	TextKeyTool/inc_seg/wordprop.h	20;"	d
+WORDTYPE_WORD_DROP	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	20;"	d
+WORD_ITEM	TextKeyTool/inc_seg/lexicon.h	/^}WORD_ITEM;$/;"	t	typeref:struct:__anon8
+WORD_ITEM	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^}WORD_ITEM;$/;"	t	typeref:struct:__anon24
+WORD_MAX_LEN_SHORT	TextKeyTool/inc_seg/BaseDef.h	23;"	d
+WORD_MAX_LEN_SHORT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	23;"	d
+WORD_PROPERTY	TextKeyTool/inc_seg/lexicon.h	/^}WORD_PROPERTY;$/;"	t	typeref:struct:__anon6
+WORD_PROPERTY	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^}WORD_PROPERTY;$/;"	t	typeref:struct:__anon22
+WORD_SEGMENT	TextKeyTool/inc_seg/lexicon.h	/^}WORD_SEGMENT;$/;"	t	typeref:struct:__anon11
+WORD_SEGMENT	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^}WORD_SEGMENT;$/;"	t	typeref:struct:__anon27
+WORD_SEGMENT_LIB	TextKeyTool/inc_seg/lexicon.h	/^} WORD_SEGMENT_LIB;$/;"	t	typeref:struct:__anon12
+WORD_SEGMENT_LIB	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^} WORD_SEGMENT_LIB;$/;"	t	typeref:struct:__anon28
+WeiboInfo	WeiboProcessor.h	/^		}WeiboInfo;$/;"	t	class:WeiboProcessor	typeref:struct:WeiboProcessor::WEIBOINFO
+WeiboInfo	test/New_Hot_MicroBlog/src/CEvaluater.h	/^		}WeiboInfo;$/;"	t	class:CEvaluater	typeref:struct:CEvaluater::WEIBOINFO
+WeiboProcessor	WeiboProcessor.cpp	/^WeiboProcessor::WeiboProcessor()$/;"	f	class:WeiboProcessor
+WeiboProcessor	WeiboProcessor.h	/^class WeiboProcessor$/;"	c
+WordPOSNode	TextKeyTool/inc_seg/POSTagger_new.h	/^struct WordPOSNode$/;"	s
+WordPOSNode	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^struct WordPOSNode$/;"	s
+ZHAOPIN	TextKeyTool/inc_seg/classify.h	13;"	d
+ZHAOPIN	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	13;"	d
+_FP_ZxListWordItem	TextKeyTool/inc_seg/WordSegment.h	/^typedef int ( *_FP_ZxListWordItem)(_PWordItemU);$/;"	t
+_FP_ZxListWordItem	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^typedef int ( *_FP_ZxListWordItem)(_PWordItemU);$/;"	t
+_FROM_UNI_H	TextKeyTool/inc_seg/fromuni.h	6;"	d
+_FROM_UNI_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/fromuni.h	6;"	d
+_IASK_CLS_KNN_H	TextKeyTool/inc_seg/classifyknn.h	2;"	d
+_IASK_CLS_KNN_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifyknn.h	2;"	d
+_IASK_CLS_MAXENT_H	TextKeyTool/inc_seg/classifymaxent.h	2;"	d
+_IASK_CLS_MAXENT_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifymaxent.h	2;"	d
+_IASK_NLP_CLASSIFIER_H	TextKeyTool/inc_seg/classifier.h	2;"	d
+_IASK_NLP_CLASSIFIER_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifier.h	2;"	d
+_IASK_NLP_DOCPROP_H	TextKeyTool/inc_seg/docprop.h	2;"	d
+_IASK_NLP_DOCPROP_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	2;"	d
+_IASK_NLP_Domain_H	TextKeyTool/inc_seg/classifydomain.h	13;"	d
+_IASK_NLP_Domain_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classifydomain.h	13;"	d
+_IASK_NLP_KeyInterface_H	TextKeyTool/inc_seg/ExKeywordsInterface.h	12;"	d
+_IASK_NLP_KeyInterface_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	12;"	d
+_IASK_NLP_POSTagger_H	TextKeyTool/inc_seg/POSTagger_new.h	13;"	d
+_IASK_NLP_POSTagger_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	13;"	d
+_IASK_NLP_PhraseTerm_H	TextKeyTool/inc_seg/phraseterm.h	13;"	d
+_IASK_NLP_PhraseTerm_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	13;"	d
+_NORMALIZE_STR_H_	test/New_Hot_MicroBlog/src/normalize_str.h	2;"	d
+_PWordItemU	TextKeyTool/inc_seg/BaseDef.h	/^typedef struct tagWordItemU         _WordItemU, *_PWordItemU;$/;"	t	typeref:struct:
+_PWordItemU	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^typedef struct tagWordItemU         _WordItemU, *_PWordItemU;$/;"	t	typeref:struct:
+_PWordNodeU	TextKeyTool/inc_seg/BaseDef.h	/^typedef struct tagWordNodeU   _WordNodeU, *_PWordNodeU;$/;"	t	typeref:struct:
+_PWordNodeU	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^typedef struct tagWordNodeU   _WordNodeU, *_PWordNodeU;$/;"	t	typeref:struct:
+_PWordPOSNode	TextKeyTool/inc_seg/POSTagger_new.h	/^typedef struct WordPOSNode _WordPOSNode, *_PWordPOSNode;$/;"	t	typeref:struct:
+_PWordPOSNode	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^typedef struct WordPOSNode _WordPOSNode, *_PWordPOSNode;$/;"	t	typeref:struct:
+_TO_UNI_H	TextKeyTool/inc_seg/touni.h	6;"	d
+_TO_UNI_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/touni.h	6;"	d
+_USTRING_H	TextKeyTool/inc_seg/ustring.h	6;"	d
+_USTRING_H	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ustring.h	6;"	d
+_WORD_PROP_H_	TextKeyTool/inc_seg/wordprop.h	11;"	d
+_WORD_PROP_H_	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/wordprop.h	11;"	d
+_WordItemU	TextKeyTool/inc_seg/BaseDef.h	/^typedef struct tagWordItemU         _WordItemU, *_PWordItemU;$/;"	t	typeref:struct:tagWordItemU
+_WordItemU	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^typedef struct tagWordItemU         _WordItemU, *_PWordItemU;$/;"	t	typeref:struct:tagWordItemU
+_WordNodeU	TextKeyTool/inc_seg/BaseDef.h	/^typedef struct tagWordNodeU   _WordNodeU, *_PWordNodeU;$/;"	t	typeref:struct:tagWordNodeU
+_WordNodeU	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^typedef struct tagWordNodeU   _WordNodeU, *_PWordNodeU;$/;"	t	typeref:struct:tagWordNodeU
+_WordPOSNode	TextKeyTool/inc_seg/POSTagger_new.h	/^typedef struct WordPOSNode _WordPOSNode, *_PWordPOSNode;$/;"	t	typeref:struct:WordPOSNode
+_WordPOSNode	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^typedef struct WordPOSNode _WordPOSNode, *_PWordPOSNode;$/;"	t	typeref:struct:WordPOSNode
+__BASEDEFU_H__	TextKeyTool/inc_seg/BaseDef.h	14;"	d
+__BASEDEFU_H__	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	14;"	d
+__GPWS_QUANTIFIER__	TextKeyTool/inc_seg/BaseDef.h	120;"	d
+__GPWS_QUANTIFIER__	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	120;"	d
+__GPWS_VERB_ADJ_VARIATION__	TextKeyTool/inc_seg/BaseDef.h	131;"	d
+__GPWS_VERB_ADJ_VARIATION__	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	131;"	d
+__IWORDSEGMENT_H__	TextKeyTool/inc_seg/WordSegment.h	13;"	d
+__IWORDSEGMENT_H__	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	13;"	d
+__STRING_MATCH__PURE_C_VERSION____	strmatch.h	2;"	d
+__STRING_MATCH__PURE_C_VERSION____	test/New_Hot_MicroBlog/src/strmatch.h	2;"	d
+__STRU_INFO__	TextKeyTool/inc_seg/BaseDef.h	16;"	d
+__STRU_INFO__	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	16;"	d
+__construct	test/New_Hot_MicroBlog/shell/grab_img/include/memcache.php	/^	function __construct(){$/;"	f
+__destruct	test/New_Hot_MicroBlog/shell/grab_img/include/memcache.php	/^	function __destruct(){$/;"	f
+_instance	CKeyWordsManager.h	/^		static CKeyWordsManager* _instance;$/;"	m	class:CKeyWordsManager
+_instance	CTextKeyTool.h	/^		static CTextKeyTool* _instance;$/;"	m	class:CTextKeyTool
+_instance	TextKeyTool/inc_key/CTextKeyTool.h	/^		static CTextKeyTool* _instance;$/;"	m	class:CTextKeyTool
+_instance	TextKeyTool/inc_key/CTokenizer.h	/^		static CTokenizer* _instance;$/;"	m	class:CTokenizer
+_instance	test/New_Hot_MicroBlog/src/CCmtPreProcessor.h	/^		static CCmtPreProcessor* _instance;$/;"	m	class:CCmtPreProcessor
+_instance	test/New_Hot_MicroBlog/src/CKeyWordsManager.h	/^		static CKeyWordsManager* _instance;$/;"	m	class:CKeyWordsManager
+_instance	test/New_Hot_MicroBlog/src/CTextKeyTool.h	/^		static CTextKeyTool* _instance;$/;"	m	class:CTextKeyTool
+_instance	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.h	/^		static CWeiboPreProcessor* _instance;$/;"	m	class:CWeiboPreProcessor
+_instance	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTextKeyTool.h	/^		static CTextKeyTool* _instance;$/;"	m	class:CTextKeyTool
+_instance	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTokenizer.h	/^		static CTokenizer* _instance;$/;"	m	class:CTokenizer
+a	test/New_Hot_MicroBlog/GetZFData/url2mid.php	/^$a=file($argv[1]);$/;"	v
+a	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^		$a = intval(($this->pagenum - 1) \/ $listnum);$/;"	v
+acceptdata	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$acceptdata=GetResult($sock);$/;"	v
+appwordPos	TextKeyTool/inc_seg/lexicon.h	/^	unsigned int appwordPos;		  \/\/起始与wordlist数组的第几个词，而不是第几个字符$/;"	m	struct:__anon9
+appwordPos	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned int appwordPos;		  \/\/起始与wordlist数组的第几个词，而不是第几个字符$/;"	m	struct:__anon25
+appword_num	TextKeyTool/inc_seg/lexicon.h	/^	int appword_num;				\/\/得到的应用层 term个数$/;"	m	struct:__anon11
+appword_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int appword_num;				\/\/得到的应用层 term个数$/;"	m	struct:__anon27
+appwordlist	TextKeyTool/inc_seg/lexicon.h	/^	APP_WORD_ITEM *appwordlist;		\/\/应用层 term列表$/;"	m	struct:__anon11
+appwordlist	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	APP_WORD_ITEM *appwordlist;		\/\/应用层 term列表$/;"	m	struct:__anon27
+apriority	test/New_Hot_MicroBlog/src/bayesHM.h	/^	double apriority;\/\/好的先验概率$/;"	m	struct:BAYES_HM_MODEL
+arr	test/New_Hot_MicroBlog/GetZFData/url2mid.php	/^	$arr=explode('	',$aa);$/;"	v
+arr	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$arr=explode("\\t",$showresult);$/;"	v
+arr	test/New_Hot_MicroBlog/shell/json.class.php	/^                        $arr = array();$/;"	v
+ascii	test/New_Hot_MicroBlog/shell/json.class.php	/^                $ascii = '';$/;"	v
+b62	test/New_Hot_MicroBlog/GetZFData/url2mid.php	/^	$b62=new base62Parse();$/;"	v
+base	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$base = 1;$/;"	v
+base62Parse	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^class base62Parse {$/;"	c
+base_info	WeiboProcessor.h	/^			BaseInfo base_info;$/;"	m	struct:WeiboProcessor::WEIBOINFO
+base_info	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			BaseInfo base_info;$/;"	m	struct:CEvaluater::WEIBOINFO
+bayes_evaluate	test/New_Hot_MicroBlog/src/bayesHM.cpp	/^int bayes_evaluate(vector<pair<string,double> >&text_vec,BAYES_HM_MODEL *b_model,pair<double, double> &probability)$/;"	f
+begin	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^		$begin = $last = array();$/;"	v
+buff	test/New_Hot_MicroBlog/shell/putPost.php	/^	$buff=chop($buff);$/;"	v
+buflen	TextKeyTool/inc_seg/lexicon.h	/^	int buflen;					\/\/对象分配空间大小$/;"	m	struct:__anon11
+buflen	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int buflen;					\/\/对象分配空间大小$/;"	m	struct:__anon27
+bytes	test/New_Hot_MicroBlog/shell/json.class.php	/^        $bytes = (ord($utf16{0}) << 8) | ord($utf16{1});$/;"	v
+ch	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^		$ch = curl_init();$/;"	v
+ch	test/New_Hot_MicroBlog/shell/putPost.php	/^$ch = curl_init();$/;"	v
+chTodigit	test/New_Hot_MicroBlog/src/rubLabel.h	/^	map<string,string> chTodigit;\/\/字符到阿拉伯数字表$/;"	m	struct:coreData
+chType	TextKeyTool/inc_seg/POSTagger_new.h	/^	unsigned char chType; \/\/这个词的词性信息是否在词典中$/;"	m	struct:WordPOSNode
+chType	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^	unsigned char chType; \/\/这个词的词性信息是否在词典中$/;"	m	struct:WordPOSNode
+char	test/New_Hot_MicroBlog/shell/json.class.php	/^                            $char = pack('C*', $ord_var_c, ord($var{$c + 1}));$/;"	v
+char	test/New_Hot_MicroBlog/shell/json.class.php	/^                            $char = pack('C*', $ord_var_c,$/;"	v
+childnodes	TextKeyTool/inc_seg/lexicon.h	/^	unsigned short childnodes; \/\/2007.7.13 sunjian$/;"	m	struct:__anon8
+childnodes	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned short childnodes; \/\/2007.7.13 sunjian$/;"	m	struct:__anon24
+childnum	TextKeyTool/inc_seg/lexicon.h	/^	unsigned int childnum;$/;"	m	struct:__anon10
+childnum	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned int childnum;$/;"	m	struct:__anon26
+children	TextKeyTool/inc_seg/lexicon.h	/^	unsigned int children[LIST_MAX_CHILD_NUM];\/\/子结点的词序$/;"	m	struct:__anon10
+children	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned int children[LIST_MAX_CHILD_NUM];\/\/子结点的词序$/;"	m	struct:__anon26
+chrs	test/New_Hot_MicroBlog/shell/json.class.php	/^                                $chrs = substr_replace($chrs, ' ', $i, 1);$/;"	v
+chrs	test/New_Hot_MicroBlog/shell/json.class.php	/^                    $chrs = $this->reduce_string($chrs);$/;"	v
+chrs	test/New_Hot_MicroBlog/shell/json.class.php	/^                    $chrs = substr($str, 1, -1);$/;"	v
+chunker	TextKeyTool/inc_seg/lexicon.h	/^	IPhraseTerm* chunker[MAX_IWORDSEGMENT];	\/\/短语合并接口$/;"	m	struct:__anon12
+chunker	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	IPhraseTerm* chunker[MAX_IWORDSEGMENT];	\/\/短语合并接口$/;"	m	struct:__anon28
+classid	TextKeyTool/inc_seg/classify.h	/^		int		classid;$/;"	m	struct:classify_result
+classid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	/^		int		classid;$/;"	m	struct:classify_result
+classifier	TextKeyTool/inc_seg/lexicon.h	/^	Classify* classifier[MAX_IWORDSEGMENT];	\/\/网页分类的接口$/;"	m	struct:__anon12
+classifier	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	Classify* classifier[MAX_IWORDSEGMENT];	\/\/网页分类的接口$/;"	m	struct:__anon28
+classify_result	TextKeyTool/inc_seg/classify.h	/^typedef struct classify_result$/;"	s
+classify_result	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	/^typedef struct classify_result$/;"	s
+cmd	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$cmd = "cd {$root} && tar -cf {$dest} .";$/;"	v
+cmd	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$cmd = "del {$root} \/Q";$/;"	v
+cmd	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$cmd = "rm -rf {$root}";$/;"	v
+cmtscale	WeiboProcessor.h	/^			float cmtscale;\/\/有效评论比例$/;"	m	struct:WeiboProcessor::WEIBOINFO
+cmtscale	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			float cmtscale;\/\/有效评论比例$/;"	m	struct:CEvaluater::WEIBOINFO
+coreData	test/New_Hot_MicroBlog/src/rubLabel.h	/^struct coreData$/;"	s
+credibility	TextKeyTool/inc_seg/classify.h	/^		float 	credibility; \/\/可信度，值域在[0-1]之间$/;"	m	struct:classify_result
+credibility	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/classify.h	/^		float 	credibility; \/\/可信度，值域在[0-1]之间$/;"	m	struct:classify_result
+curl_error	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^					$curl_error = curl_error($ch);$/;"	v
+curl_error	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^			$curl_error = curl_error($ch);$/;"	v
+curl_error	test/New_Hot_MicroBlog/shell/putPost.php	/^	$curl_error = curl_error($ch);$/;"	v
+data	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$data = array ('uids' => join ( ',', $left_uids ), 'detail' => 1, 'size' => 50 );$/;"	v
+data	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$data = array($/;"	v
+data	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$data = array ('uid' => $cuid, 'nickname' => $user, 'appid' => 3378621396, 'cip' => '10.69.1.87' );$/;"	v
+data	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$data = array ('uid' => $uid, 'atten_num' => 20, 'region_num' => $num, 'v1_num' => $num, 'searched_24' => $num, 'original_7' => $num, 'my_searched' => $num );$/;"	v
+data	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$data = array($/;"	v
+decode	test/New_Hot_MicroBlog/shell/json.class.php	/^    function decode($str)$/;"	f
+delim	test/New_Hot_MicroBlog/shell/json.class.php	/^                    $delim = substr($str, 0, 1);$/;"	v
+dest	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$dest = 'D:\\wamp\\www\\data\/'. date('YmdH'). 'img.zip';$/;"	v
+dest	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$dest = '\/data2\/kaijiang\/projects\/New_Hot_MicroBlog\/result\/'. date('YmdH'). 'img.tar';$/;"	v
+dir_segdata	TextKeyTool/inc_seg/lexicon.h	/^	char dir_segdata[100];	\/\/词库位置$/;"	m	struct:__anon12
+dir_segdata	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	char dir_segdata[100];	\/\/词库位置$/;"	m	struct:__anon28
+docprop	TextKeyTool/inc_seg/lexicon.h	/^	DocInfo  docprop;    \/\/应用层分析后　得到的对这篇文档的领域描述信息$/;"	m	struct:__anon11
+docprop	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	DocInfo  docprop;    \/\/应用层分析后　得到的对这篇文档的领域描述信息$/;"	m	struct:__anon27
+domain	TextKeyTool/inc_seg/docprop.h	/^	  char domain[128];$/;"	m	struct:__anon14
+domain	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	  char domain[128];$/;"	m	struct:__anon30
+domain_level1	TextKeyTool/inc_seg/docprop.h	/^	DomainInfo domain_level1;\/\/第一层是属于哪个领域$/;"	m	struct:__anon15
+domain_level1	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	DomainInfo domain_level1;\/\/第一层是属于哪个领域$/;"	m	struct:__anon31
+domainid	TextKeyTool/inc_seg/BaseDef.h	/^   unsigned short domainid[TERM_MAX_DOMAIN_NUM]; \/\/领域属性$/;"	m	struct:tagWordNodeU
+domainid	TextKeyTool/inc_seg/docprop.h	/^	  unsigned short domainid;$/;"	m	struct:__anon14
+domainid	TextKeyTool/inc_seg/lexicon.h	/^   unsigned short domainid[TERM_MAX_DOMAIN_NUM]; \/\/领域属性$/;"	m	struct:__anon8
+domainid	TextKeyTool/inc_seg/phraseterm.h	/^	unsigned short domainid[TERM_MAX_DOMAIN_NUM]; \/\/领域属性$/;"	m	struct:__anon3
+domainid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   unsigned short domainid[TERM_MAX_DOMAIN_NUM]; \/\/领域属性$/;"	m	struct:tagWordNodeU
+domainid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	  unsigned short domainid;$/;"	m	struct:__anon30
+domainid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^   unsigned short domainid[TERM_MAX_DOMAIN_NUM]; \/\/领域属性$/;"	m	struct:__anon24
+domainid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^	unsigned short domainid[TERM_MAX_DOMAIN_NUM]; \/\/领域属性$/;"	m	struct:__anon19
+domainnum	TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char domainnum; \/\/该term有几个领域$/;"	m	struct:tagWordNodeU
+domainnum	TextKeyTool/inc_seg/docprop.h	/^	unsigned char domainnum; \/\/该文档属于几个领域(第二层)$/;"	m	struct:__anon15
+domainnum	TextKeyTool/inc_seg/lexicon.h	/^   unsigned char domainnum; \/\/该term有几个领域$/;"	m	struct:__anon8
+domainnum	TextKeyTool/inc_seg/phraseterm.h	/^	unsigned char domainnum; \/\/该term有几个领域$/;"	m	struct:__anon3
+domainnum	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char domainnum; \/\/该term有几个领域$/;"	m	struct:tagWordNodeU
+domainnum	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	unsigned char domainnum; \/\/该文档属于几个领域(第二层)$/;"	m	struct:__anon31
+domainnum	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^   unsigned char domainnum; \/\/该term有几个领域$/;"	m	struct:__anon24
+domainnum	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^	unsigned char domainnum; \/\/该term有几个领域$/;"	m	struct:__anon19
+domains	TextKeyTool/inc_seg/docprop.h	/^	DomainInfo domains[DOC_MAX_DOMAIN_NUM]; \/\/该文档的领域(第二层)	$/;"	m	struct:__anon15
+domains	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	DomainInfo domains[DOC_MAX_DOMAIN_NUM]; \/\/该文档的领域(第二层)	$/;"	m	struct:__anon31
+elements	test/New_Hot_MicroBlog/shell/json.class.php	/^                $elements = array_map(array($this, 'encode'), $var);$/;"	v
+encode	test/New_Hot_MicroBlog/shell/json.class.php	/^    function encode($var)$/;"	f
+encoded_value	test/New_Hot_MicroBlog/shell/json.class.php	/^        $encoded_value = $this->encode($value);$/;"	v
+end	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^			$end = $this->pageDate['totalpage'];$/;"	v
+end	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^			$end = ($a+1) * $listnum;$/;"	v
+end	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$end = get_time ();$/;"	v
+endpage	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^			$endpage = $listnum-1;$/;"	v
+endpage	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^			$endpage = $this->pageDate['totalpage'];$/;"	v
+endpage	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^			$endpage = $this->pagenum + $rim_num -2;$/;"	v
+eraseHtmlEmoticons	test/New_Hot_MicroBlog/src/rubLabel.cpp	/^int eraseHtmlEmoticons(const char *src,char *text,int &htmlLen,map<string,int> &urlMap,int flags)$/;"	f
+event_num	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short event_num;$/;"	m	struct:__anon5
+event_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short event_num;$/;"	m	struct:__anon21
+exist	TextKeyTool/inc_seg/lexicon.h	/^	int exist;					\/\/是否存在，0--不存在，1--存在$/;"	m	struct:__anon12
+exist	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int exist;					\/\/是否存在，0--不存在，1--存在$/;"	m	struct:__anon28
+fWeight	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	float fWeight;$/;"	m	struct:__anon4
+fWeight	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	float fWeight;$/;"	m	struct:__anon20
+feat_num	TextKeyTool/inc_seg/docprop.h	/^	unsigned short feat_num;$/;"	m	struct:DocFeatVec
+feat_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	unsigned short feat_num;$/;"	m	struct:DocFeatVec
+featitem	TextKeyTool/inc_seg/docprop.h	/^	FeatItem featitem[MAX_FEATWORDS_NUM];$/;"	m	struct:DocFeatVec
+featitem	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	FeatItem featitem[MAX_FEATWORDS_NUM];$/;"	m	struct:DocFeatVec
+featword	TextKeyTool/inc_seg/docprop.h	/^	char featword[FEAT_WORD_LEN];$/;"	m	struct:__anon16
+featword	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	char featword[FEAT_WORD_LEN];$/;"	m	struct:__anon32
+file	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$file = 'D:\\wamp\\www\\data\\amuse.txt';$/;"	v
+file	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$file = '\/data2\/kaijiang\/projects\/New_Hot_MicroBlog\/result\/beauty.txt';$/;"	v
+filename	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^			$filename = $root. $one['mid'];$/;"	v
+findnum	strmatch.h	/^	int   	findnum;$/;"	m	struct:__anon1
+findnum	test/New_Hot_MicroBlog/src/strmatch.h	/^	int   	findnum;$/;"	m	struct:__anon17
+firstpage	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^			$firstpage = $this->pageDate['totalpage']-$listnum+2;$/;"	v
+firstpage	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^			$firstpage = $this->pagenum - $rim_num + 2;$/;"	v
+firstpage	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^			$firstpage = 1;$/;"	v
+flagsUni	test/New_Hot_MicroBlog/src/wordsegSimple.cpp	/^unsigned long long flagsUni;$/;"	v
+fn_config	TextKeyTool/inc_seg/lexicon.h	/^	char fn_config[100];		\/\/词典配置文件$/;"	m	struct:__anon7
+fn_config	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	char fn_config[100];		\/\/词典配置文件$/;"	m	struct:__anon23
+fn_libgpws	TextKeyTool/inc_seg/lexicon.h	/^	char fn_libgpws[100];		\/\/分词接口函数库$/;"	m	struct:__anon12
+fn_libgpws	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	char fn_libgpws[100];		\/\/分词接口函数库$/;"	m	struct:__anon28
+fp	test/New_Hot_MicroBlog/shell/putPost.php	/^$fp=fopen($argv[1],"r");$/;"	v
+getPageData	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^	function getPageData()$/;"	f
+getReturn	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function getReturn($ip,$port,$sentStr,$timeout=1){$/;"	f
+getUidByNickName	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function getUidByNickName($user, $cuid = 1741084317) {$/;"	f
+get_data	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^			$get_data = array ('source' => 3378621396, 'uids' => join(',', $tmp_uids) );$/;"	v
+get_data	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$get_data = array ($/;"	v
+get_data	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$get_data = array ('uid' => $cuid, 'appid' => 3378621396, 'cip' => '10.69.1.87' );$/;"	v
+get_data_from_redis	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_data_from_redis($ip, $port, $key, $num=0){$/;"	f
+get_ids_by_mids	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_ids_by_mids($mids){$/;"	f
+get_page_data	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^	function get_page_data()$/;"	f
+get_popular_user_recommend	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_popular_user_recommend($uid, $num = 5, $old=true) {$/;"	f
+get_runtime	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_runtime($start_time, $end_time) {$/;"	f
+get_time	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_time() {$/;"	f
+get_topic_by_word	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_topic_by_word($word){$/;"	f
+get_user_by_word	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_user_by_word($word){$/;"	f
+get_users_info	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_users_info($user_ids, $cuid = 1741084317) {$/;"	f
+get_users_info_new	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_users_info_new($user_ids, $cuid = 1741084317) {$/;"	f
+get_vote	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_vote($vids){$/;"	f
+get_winfo	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_winfo($wids, $cuid = 1741084317) {$/;"	f
+get_winfo_new	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^function get_winfo_new($ids) {$/;"	f
+get_wordtf	test/New_Hot_MicroBlog/src/wordsegSimple.cpp	/^int get_wordtf(vector<wordItem> &wSimple,map<string,wordItem>&wordtf)$/;"	f
+getpagelist	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^	function getpagelist($listnum, &$pagelist)$/;"	f
+getpagelist_v3	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^	function getpagelist_v3(&$pagelist, $listnum=7, $omimark="...")$/;"	f
+gram	strmatch.h	/^	int gram;$/;"	m	struct:__anon1
+gram	test/New_Hot_MicroBlog/src/strmatch.h	/^	int gram;$/;"	m	struct:__anon17
+great_second	test/New_Hot_MicroBlog/src/wordsegSimple.cpp	/^bool great_second(const pair<string,double> &m1,const pair<string,double> &m2)$/;"	f
+hWS	TextKeyTool/inc_seg/lexicon.h	/^	HINSTANCE hWS;				\/\/DLL句柄$/;"	m	struct:__anon12
+hWS	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	HINSTANCE hWS;				\/\/DLL句柄$/;"	m	struct:__anon28
+hanzi	test/New_Hot_MicroBlog/src/rubLabel.h	/^	map<string,int> hanzi;\/\/简体汉字表$/;"	m	struct:coreData
+i	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^$i = 0;$/;"	v
+i	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$i=0;$/;"	v
+id	strmatch.h	/^	int	id;$/;"	m	struct:__anon1
+id	test/New_Hot_MicroBlog/src/strmatch.h	/^	int	id;$/;"	m	struct:__anon17
+idf	TextKeyTool/inc_key/wordsegSimple.h	/^	int idf;\/\/重要性$/;"	m	struct:wordItem
+idf	TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char idf;      \/\/0-255. 2007.12.10$/;"	m	struct:tagWordNodeU
+idf	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	float idf;$/;"	m	struct:__anon4
+idf	TextKeyTool/inc_seg/lexicon.h	/^   unsigned char idf;          \/\/idf * 10, 取值范围在0-255，用的时候需要再除以10 $/;"	m	struct:__anon8
+idf	TextKeyTool/inc_seg/phraseterm.h	/^	unsigned char idf;$/;"	m	struct:__anon3
+idf	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	/^	int idf;\/\/重要性$/;"	m	struct:wordItem
+idf	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char idf;      \/\/0-255. 2007.12.10$/;"	m	struct:tagWordNodeU
+idf	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	float idf;$/;"	m	struct:__anon20
+idf	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^   unsigned char idf;          \/\/idf * 10, 取值范围在0-255，用的时候需要再除以10 $/;"	m	struct:__anon24
+idf	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^	unsigned char idf;$/;"	m	struct:__anon19
+idf	test/New_Hot_MicroBlog/src/wordsegSimple.h	/^	int idf;\/\/重要性$/;"	m	struct:wordItem
+ids	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$ids = get_ids_by_mids($wids);$/;"	v
+idx	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$idx = $str % 62;$/;"	v
+initMemcache	test/New_Hot_MicroBlog/shell/grab_img/include/memcache.php	/^	function initMemcache(){$/;"	f
+interpunction	test/New_Hot_MicroBlog/src/rubLabel.h	/^	map<string,int> interpunction;\/\/标点符号表$/;"	m	struct:coreData
+isEngOrDigit	TextKeyTool/inc_key/wordsegSimple.h	/^	bool isEngOrDigit;\/\/是否是英文和数字 $/;"	m	struct:wordItem
+isEngOrDigit	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	/^	bool isEngOrDigit;\/\/是否是英文和数字 $/;"	m	struct:wordItem
+isEngOrDigit	test/New_Hot_MicroBlog/src/wordsegSimple.h	/^	bool isEngOrDigit;\/\/是否是英文和数字 $/;"	m	struct:wordItem
+isErase	TextKeyTool/inc_key/wordsegSimple.h	/^	bool isErase;\/\/该词是否需要抹掉$/;"	m	struct:wordItem
+isErase	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	/^	bool isErase;\/\/该词是否需要抹掉$/;"	m	struct:wordItem
+isErase	test/New_Hot_MicroBlog/src/wordsegSimple.h	/^	bool isErase;\/\/该词是否需要抹掉$/;"	m	struct:wordItem
+isError	test/New_Hot_MicroBlog/shell/json.class.php	/^    function isError($data, $code = null)$/;"	f
+is_windows	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$is_windows = false;$/;"	v
+is_windows	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$is_windows = true;$/;"	v
+json	test/New_Hot_MicroBlog/shell/putPost.php	/^$json=new Services_JSON();$/;"	v
+key	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short key[WORD_MAX_LEN_SHORT+1];$/;"	m	struct:__anon4
+key	test/New_Hot_MicroBlog/shell/json.class.php	/^                                    $key = $parts[1];$/;"	v
+key	test/New_Hot_MicroBlog/shell/json.class.php	/^                                    $key = $this->decode($parts[1]);$/;"	v
+key	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short key[WORD_MAX_LEN_SHORT+1];$/;"	m	struct:__anon20
+key_num	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short key_num;$/;"	m	struct:__anon5
+key_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short key_num;$/;"	m	struct:__anon21
+keys_for_user	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$keys_for_user = array ();$/;"	v
+keyword	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$keyword = explode("\\t", str_replace('@keyword:', '', $tmp[2]));$/;"	v
+keyworder	TextKeyTool/inc_seg/lexicon.h	/^	IKeywords* keyworder[MAX_IWORDSEGMENT];	\/\/关键词提取接口$/;"	m	struct:__anon12
+keyworder	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	IKeywords* keyworder[MAX_IWORDSEGMENT];	\/\/关键词提取接口$/;"	m	struct:__anon28
+keywords	TextKeyTool/inc_seg/lexicon.h	/^	KeyWordStore keywords; \/\/应用层分析后　得到的对这篇文档的关键词，人名 地名 事件 专指$/;"	m	struct:__anon11
+keywords	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	KeyWordStore keywords; \/\/应用层分析后　得到的对这篇文档的关键词，人名 地名 事件 专指$/;"	m	struct:__anon27
+last	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$last=array();$/;"	v
+left_uids	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$left_uids = array ();$/;"	v
+left_wids	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$left_wids = array ();$/;"	v
+len	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short len;$/;"	m	struct:__anon4
+len	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short len;$/;"	m	struct:__anon20
+len_uni	TextKeyTool/inc_seg/lexicon.h	/^	int len_uni;				\/\/Unicode格式的文字长度$/;"	m	struct:__anon11
+len_uni	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int len_uni;				\/\/Unicode格式的文字长度$/;"	m	struct:__anon27
+length	strmatch.h	/^	int	length;$/;"	m	struct:__anon1
+length	test/New_Hot_MicroBlog/src/strmatch.h	/^	int	length;$/;"	m	struct:__anon17
+lexdata	TextKeyTool/inc_seg/lexicon.h	/^	int lexdata;				\/\/对应的词典数据编号$/;"	m	struct:__anon7
+lexdata	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int lexdata;				\/\/对应的词典数据编号$/;"	m	struct:__anon23
+lexicon_level_wordLib	TextKeyTool/inc_seg/lexicon.h	/^	IWordLib* lexicon_level_wordLib;$/;"	m	struct:__anon12
+lexicon_level_wordLib	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	IWordLib* lexicon_level_wordLib;$/;"	m	struct:__anon28
+list	TextKeyTool/inc_seg/lexicon.h	/^	LIST_ITEM *list;$/;"	m	struct:__anon11
+list	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	LIST_ITEM *list;$/;"	m	struct:__anon27
+listitem_num	TextKeyTool/inc_seg/lexicon.h	/^	int listitem_num;$/;"	m	struct:__anon11
+listitem_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int listitem_num;$/;"	m	struct:__anon27
+loadBayesModel	test/New_Hot_MicroBlog/src/bayesHM.cpp	/^BAYES_HM_MODEL *loadBayesModel(const char *file)$/;"	f
+loadCoreData	test/New_Hot_MicroBlog/src/rubLabel.cpp	/^int loadCoreData(const char *path,coreData *data)$/;"	f
+loadMapResource	test/New_Hot_MicroBlog/src/rubLabel.cpp	/^int loadMapResource(const char *file,map<string,int> &rMap,int type)$/;"	f
+loadResource	test/New_Hot_MicroBlog/src/wordsegSimple.cpp	/^int loadResource(LEXICON *lexicon,WORD_SEGMENT *wordseg,unsigned long long flags,char *path)$/;"	f
+loadSegData	test/New_Hot_MicroBlog/src/wordsegSimple.cpp	/^int loadSegData(LEXICON *lexicon,long long flags)$/;"	f
+loadSpellWord	test/New_Hot_MicroBlog/src/wordsegSimple.cpp	/^int loadSpellWord(char *file,WORD_SEGMENT *wordseg)$/;"	f
+loadStrStrMap	test/New_Hot_MicroBlog/src/rubLabel.cpp	/^int loadStrStrMap(const char *file,map<string,string> &rMap)$/;"	f
+locate_num	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short locate_num;$/;"	m	struct:__anon5
+locate_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short locate_num;$/;"	m	struct:__anon21
+log	test/New_Hot_MicroBlog/shell/putPost.php	/^$log=array();$/;"	v
+logs	test/New_Hot_MicroBlog/shell/putPost.php	/^$logs=$json->encode($log);$/;"	v
+logtmp	test/New_Hot_MicroBlog/shell/putPost.php	/^	$logtmp=array('mid'=>"$mid",'class_id'=>(int)$argv[2],'post_num'=>$post_num);$/;"	v
+m	test/New_Hot_MicroBlog/shell/json.class.php	/^                $m = array();$/;"	v
+m_fCmtMeanScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^		float m_fCmtMeanScore;\/\/评论平均分的门限值$/;"	m	class:CEvaluater
+m_iWordLibId	TextKeyTool/inc_seg/WordSegment.h	/^	int m_iWordLibId;$/;"	m	class:IWordLib
+m_iWordLibId	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/WordSegment.h	/^	int m_iWordLibId;$/;"	m	class:IWordLib
+m_mapClasses	test/New_Hot_MicroBlog/src/CSubmission.h	/^		map<string, int> m_mapClasses;\/\/类别名称及其编号$/;"	m	class:CSubmission
+m_mapCmt	test/New_Hot_MicroBlog/src/CCmtPreProcessor.h	/^		map<unsigned long long,  CProcessedCmt*> m_mapCmt;$/;"	m	class:CCmtPreProcessor
+m_mapConfig	CConfigInfo.h	/^		map<string, string> m_mapConfig;$/;"	m	class:CConfigInfo
+m_mapConfig	test/New_Hot_MicroBlog/src/CConfigInfo.h	/^		map<string, string> m_mapConfig;$/;"	m	class:CConfigInfo
+m_mapKeyIDs	CKeyWordsManager.h	/^		map<string, map<unsigned long long, int> > m_mapKeyIDs;$/;"	m	class:CKeyWordsManager
+m_mapKeyIDs	test/New_Hot_MicroBlog/src/CKeyWordsManager.h	/^		map<string, map<unsigned long long, int> > m_mapKeyIDs;$/;"	m	class:CKeyWordsManager
+m_mapKeyWords	CKeyWordsManager.h	/^		map<string, KeyWords> m_mapKeyWords;$/;"	m	class:CKeyWordsManager
+m_mapKeyWords	test/New_Hot_MicroBlog/src/CKeyWordsManager.h	/^		map<string, KeyWords> m_mapKeyWords;$/;"	m	class:CKeyWordsManager
+m_mapSubmission	test/New_Hot_MicroBlog/src/CSubmission.h	/^		vector< map<unsigned long long, int> > m_mapSubmission;\/\/每个类别下的mid及其被投稿次数$/;"	m	class:CSubmission
+m_mapWeiboInfo	WeiboProcessor.h	/^		map<unsigned long long, WeiboInfo*> m_mapWeiboInfo;$/;"	m	class:WeiboProcessor
+m_mapWeiboInfo	test/New_Hot_MicroBlog/src/CEvaluater.h	/^		map<unsigned long long, WeiboInfo*> m_mapWeiboInfo;$/;"	m	class:CEvaluater
+m_mapWeiboInfo	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.h	/^		map<unsigned long long, vector<int> > m_mapWeiboInfo;$/;"	m	class:CWeiboPreProcessor
+m_nAttachInfoCount	WeiboProcessor.h	/^		int m_nAttachInfoCount;$/;"	m	class:WeiboProcessor
+m_nAttachInfoCount	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.h	/^		int m_nAttachInfoCount;$/;"	m	class:CWeiboPreProcessor
+m_nCount	test/New_Hot_MicroBlog/src/CProcessedCmt.h	/^		int m_nCount;$/;"	m	class:CProcessedCmt
+m_nFilter	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		int m_nFilter;$/;"	m	class:CProcessedWeibo
+m_nPureCount	test/New_Hot_MicroBlog/src/CProcessedCmt.h	/^		int m_nPureCount;$/;"	m	class:CProcessedCmt
+m_nRecurseCount	CConfigInfo.h	/^		int m_nRecurseCount;\/\/如果有包含的配置文件，则最大的递归层数不包含10层，依次防止死循环$/;"	m	class:CConfigInfo
+m_nRecurseCount	test/New_Hot_MicroBlog/src/CConfigInfo.h	/^		int m_nRecurseCount;\/\/如果有包含的配置文件，则最大的递归层数不包含10层，依次防止死循环$/;"	m	class:CConfigInfo
+m_nResultNum	test/New_Hot_MicroBlog/src/CEvaluater.h	/^		int m_nResultNum;$/;"	m	class:CEvaluater
+m_nSrcScore	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		int m_nSrcScore;$/;"	m	class:CProcessedWeibo
+m_pBayesModel	test/New_Hot_MicroBlog/src/CBayesClassifier.h	/^		BAYES_HM_MODEL * m_pBayesModel;$/;"	m	class:CBayesClassifier
+m_pClassifier	test/New_Hot_MicroBlog/src/CClassifyEvaluater.h	/^		CClassifier* m_pClassifier;$/;"	m	class:CClassifyEvaluater
+m_pConfig	test/New_Hot_MicroBlog/src/CEvaluater.h	/^		CConfigInfo* m_pConfig;$/;"	m	class:CEvaluater
+m_pConfigInfo	WeiboProcessor.h	/^		CConfigInfo* m_pConfigInfo;$/;"	m	class:WeiboProcessor
+m_pConfigInfo	test/New_Hot_MicroBlog/src/CCmtPreProcessor.h	/^		CConfigInfo* m_pConfigInfo;$/;"	m	class:CCmtPreProcessor
+m_pConfigInfo	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.h	/^		CConfigInfo* m_pConfigInfo;$/;"	m	class:CWeiboPreProcessor
+m_pCoreData	test/New_Hot_MicroBlog/src/CBayesClassifier.h	/^		coreData* m_pCoreData;$/;"	m	class:CBayesClassifier
+m_pLexicon	TextKeyTool/inc_key/CTokenizer.h	/^		LEXICON * m_pLexicon;					\/\/ 词典$/;"	m	class:CTokenizer
+m_pLexicon	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTokenizer.h	/^		LEXICON * m_pLexicon;					\/\/ 词典$/;"	m	class:CTokenizer
+m_pResult	TextKeyTool/inc_key/CTokenizer.h	/^		WORD_SEGMENT* m_pResult;				\/\/ 分词结果结构体指针$/;"	m	class:CTokenizer
+m_pResult	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTokenizer.h	/^		WORD_SEGMENT* m_pResult;				\/\/ 分词结果结构体指针$/;"	m	class:CTokenizer
+m_pYCConfigInfo	WeiboProcessor.h	/^		CConfigInfo* m_pYCConfigInfo;$/;"	m	class:WeiboProcessor
+m_setChPunct	TextKeyTool/inc_key/CMBTextTool.h	/^		static set<string> m_setChPunct;		\/\/汉语中的标点$/;"	m	class:CMBTextTool
+m_setChPunct	test/New_Hot_MicroBlog/src/CMBTextTool.h	/^		static set<string> m_setChPunct;		\/\/汉语中的标点$/;"	m	class:CMBTextTool
+m_setChPunct	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CMBTextTool.h	/^		static set<string> m_setChPunct;		\/\/汉语中的标点$/;"	m	class:CMBTextTool
+m_setContentKey	WeiboProcessor.h	/^		set<unsigned long long> m_setContentKey;$/;"	m	class:WeiboProcessor
+m_setContentKey	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.h	/^		set<unsigned long long> m_setContentKey;$/;"	m	class:CWeiboPreProcessor
+m_setStopWord	TextKeyTool/inc_key/CTokenizer.h	/^		set<unsigned char> m_setStopWord;		\/\/ 停用词表$/;"	m	class:CTokenizer
+m_setStopWord	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTokenizer.h	/^		set<unsigned char> m_setStopWord;		\/\/ 停用词表$/;"	m	class:CTokenizer
+m_spTokenizer	CTextKeyTool.h	/^		CTokenizer* m_spTokenizer;$/;"	m	class:CTextKeyTool
+m_spTokenizer	TextKeyTool/inc_key/CTextKeyTool.h	/^		CTokenizer* m_spTokenizer;$/;"	m	class:CTextKeyTool
+m_spTokenizer	test/New_Hot_MicroBlog/src/CTextKeyTool.h	/^		CTokenizer* m_spTokenizer;$/;"	m	class:CTextKeyTool
+m_spTokenizer	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTextKeyTool.h	/^		CTokenizer* m_spTokenizer;$/;"	m	class:CTextKeyTool
+m_strConfigFile	CConfigInfo.h	/^		string m_strConfigFile;$/;"	m	class:CConfigInfo
+m_strConfigFile	test/New_Hot_MicroBlog/src/CConfigInfo.h	/^		string m_strConfigFile;$/;"	m	class:CConfigInfo
+m_strContent	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		string m_strContent;$/;"	m	class:CProcessedWeibo
+m_strKeyWordName	test/New_Hot_MicroBlog/src/CKeywordEvaluater.h	/^		string m_strKeyWordName;$/;"	m	class:CKeywordEvaluater
+m_types	WeiboProcessor.h	/^		vector<int> m_types;$/;"	m	class:WeiboProcessor
+m_ullMid	test/New_Hot_MicroBlog/src/CProcessedCmt.h	/^		unsigned long long m_ullMid;$/;"	m	class:CProcessedCmt
+m_ullMid	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		unsigned long long m_ullMid;$/;"	m	class:CProcessedWeibo
+m_ullUid	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		unsigned long long m_ullUid;$/;"	m	class:CProcessedWeibo
+m_unAnalyserFlag	TextKeyTool/inc_key/CTokenizer.h	/^		unsigned long long  m_unAnalyserFlag;	\/\/ 分析分析器的设置$/;"	m	class:CTokenizer
+m_unAnalyserFlag	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTokenizer.h	/^		unsigned long long  m_unAnalyserFlag;	\/\/ 分析分析器的设置$/;"	m	class:CTokenizer
+m_unFlag	CTextKeyTool.h	/^		unsigned long m_unFlag;$/;"	m	class:CTextKeyTool
+m_unFlag	TextKeyTool/inc_key/CTextKeyTool.h	/^		unsigned long m_unFlag;$/;"	m	class:CTextKeyTool
+m_unFlag	test/New_Hot_MicroBlog/src/CTextKeyTool.h	/^		unsigned long m_unFlag;$/;"	m	class:CTextKeyTool
+m_unFlag	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/CTextKeyTool.h	/^		unsigned long m_unFlag;$/;"	m	class:CTextKeyTool
+m_vecAttachInfo	test/New_Hot_MicroBlog/src/CProcessedWeibo.h	/^		vector<int> m_vecAttachInfo;\/\/附加信息$/;"	m	class:CProcessedWeibo
+m_vecFields	CJParser.h	/^		static vector<string> m_vecFields;$/;"	m	class:CJParser
+m_vecFields	test/New_Hot_MicroBlog/src/CJParser.h	/^		static vector<string> m_vecFields;$/;"	m	class:CJParser
+m_vecKeyWords	WeiboProcessor.h	/^		vector<pair<string, bool> > m_vecKeyWords;$/;"	m	class:WeiboProcessor
+m_vecKeyWords	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.h	/^		vector<pair<string, bool> > m_vecKeyWords;$/;"	m	class:CWeiboPreProcessor
+m_vecKeyWordsName	test/New_Hot_MicroBlog/src/CCmtPreProcessor.h	/^		vector<string> m_vecKeyWordsName;$/;"	m	class:CCmtPreProcessor
+m_vecScore	test/New_Hot_MicroBlog/src/CProcessedCmt.h	/^		vector<pair<int, int> > m_vecScore;$/;"	m	class:CProcessedCmt
+machine	CKeyWordsManager.h	/^			MATCHENTRY* machine;$/;"	m	struct:CKeyWordsManager::KEYWORDS
+machine	test/New_Hot_MicroBlog/src/CKeyWordsManager.h	/^			MATCHENTRY* machine;$/;"	m	struct:CKeyWordsManager::KEYWORDS
+main	HotBlog.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	ProcessWeibo.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/New_Hot_MicroBlog/GetZFData/src/GetZf.cpp	/^int main(int argc, char** argv)$/;"	f
+main	test/New_Hot_MicroBlog/src/AmuseEvaluater.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/New_Hot_MicroBlog/src/BeautyEvaluater.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/New_Hot_MicroBlog/src/CmtProcessor.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/New_Hot_MicroBlog/src/GetSpecialZF.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/New_Hot_MicroBlog/src/HeadSniffer.cpp	/^int main(int argc, char** argv)$/;"	f
+main	test/New_Hot_MicroBlog/src/MengEvaluater.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/New_Hot_MicroBlog/src/SortFace.cpp	/^int main(int argc, char** argv)$/;"	f
+main	test/New_Hot_MicroBlog/src/StreetEvaluater.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/New_Hot_MicroBlog/src/SubmissionMinner.cpp	/^int main(int argc, char** argv)$/;"	f
+main	test/New_Hot_MicroBlog/src/WeiboProcessor.cpp	/^int main(int argc, char* argv[])$/;"	f
+mapScore	CKeyWordsManager.h	/^			map<string, int> mapScore;$/;"	m	struct:CKeyWordsManager::KEYWORDS
+mapScore	test/New_Hot_MicroBlog/src/CKeyWordsManager.h	/^			map<string, int> mapScore;$/;"	m	struct:CKeyWordsManager::KEYWORDS
+meanscore	WeiboProcessor.h	/^			float meanscore;\/\/平均分(总分\/有效评论数)$/;"	m	struct:WeiboProcessor::WEIBOINFO
+meanscore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			float meanscore;\/\/平均分(总分\/有效评论数)$/;"	m	struct:CEvaluater::WEIBOINFO
+mediaList	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$mediaList = explode("\\t", str_replace('@mediaList:', '', $tmp[1]));$/;"	v
+mem	test/New_Hot_MicroBlog/shell/grab_img/include/memcache.php	/^class mem{$/;"	c
+memcache	test/New_Hot_MicroBlog/shell/grab_img/include/memcache.php	/^		$memcache = new Memcached;$/;"	v
+memcached_key_prefix	test/New_Hot_MicroBlog/shell/grab_img/include/memcache.php	/^		$memcached_key_prefix = $_SERVER['SINASRV_MEMCACHED_KEY_PREFIX'];$/;"	v
+memcached_servers	test/New_Hot_MicroBlog/shell/grab_img/include/memcache.php	/^		$memcached_servers = split(' ', $memserver);$/;"	v
+memserver	test/New_Hot_MicroBlog/shell/grab_img/include/memcache.php	/^		$memserver=$_SERVER['SINASRV_MEMCACHED_SERVERS'];$/;"	v
+mid	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^				$mid = substr($mid, 0, 7).substr($mid, 8);$/;"	v
+mid	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$mid = $this->decodeSegment(substr($str, 0, 4)).$this->decodeSegment(substr($str, 4));$/;"	v
+mid	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$mid = str_pad($seg, $this->encodeBlockSize, '0', STR_PAD_LEFT) . $mid;$/;"	v
+mid	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$mid = "";$/;"	v
+mid	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$mid = $this->decodeSegment( substr($str, 0, $start)) . $mid;$/;"	v
+mid	test/New_Hot_MicroBlog/GetZFData/url2mid.php	/^	$mid=$b62->decode($vid);$/;"	v
+mid	test/New_Hot_MicroBlog/shell/putPost.php	/^	$mid = $result[0];$/;"	v
+midlen	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$midlen = strlen($mid);$/;"	v
+mids	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^$mids = explode("\\n", $mids);$/;"	v
+mids	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^$mids = file_get_contents($file);$/;"	v
+mode	test/New_Hot_MicroBlog/shell/json.class.php	/^                                     $mode = null, $options = null, $userinfo = null)$/;"	v
+nCat	TextKeyTool/inc_seg/BaseDef.h	/^   unsigned short nCat;		  \/\/Attribute of word item, such as personal name, corporation name, and so on$/;"	m	struct:tagWordNodeU
+nCat	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   unsigned short nCat;		  \/\/Attribute of word item, such as personal name, corporation name, and so on$/;"	m	struct:tagWordNodeU
+nClassifyScore	WeiboProcessor.h	/^			int nClassifyScore;\/\/分类得分$/;"	m	struct:WeiboProcessor::BASEINFO
+nClassifyScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nClassifyScore;\/\/分类得分$/;"	m	struct:CEvaluater::BASEINFO
+nCmtCount	WeiboProcessor.h	/^			int nCmtCount;\/\/评论总数$/;"	m	struct:WeiboProcessor::WEIBOINFO
+nCmtCount	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nCmtCount;\/\/评论总数$/;"	m	struct:CEvaluater::WEIBOINFO
+nCmtPureCount	WeiboProcessor.h	/^			int nCmtPureCount;\/\/评论纯净总数（过滤后）$/;"	m	struct:WeiboProcessor::WEIBOINFO
+nCmtPureCount	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nCmtPureCount;\/\/评论纯净总数（过滤后）$/;"	m	struct:CEvaluater::WEIBOINFO
+nCmtScore	WeiboProcessor.h	/^			int nCmtScore;\/\/评论分数$/;"	m	struct:WeiboProcessor::WEIBOINFO
+nCmtScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nCmtScore;\/\/评论分数$/;"	m	struct:CEvaluater::WEIBOINFO
+nFilterScore	WeiboProcessor.h	/^			int nFilterScore;\/\/类型得分$/;"	m	struct:WeiboProcessor::BASEINFO
+nFilterScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nFilterScore;\/\/类型得分$/;"	m	struct:CEvaluater::BASEINFO
+nKeyWordsScore	WeiboProcessor.h	/^			int nKeyWordsScore;\/\/关键词得分$/;"	m	struct:WeiboProcessor::BASEINFO
+nKeyWordsScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nKeyWordsScore;\/\/关键词得分$/;"	m	struct:CEvaluater::BASEINFO
+nLen	TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char nLen;	    \/\/Length of this word$/;"	m	struct:tagWordNodeU
+nLen	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char nLen;	    \/\/Length of this word$/;"	m	struct:tagWordNodeU
+nRubScore	WeiboProcessor.h	/^			int nRubScore;\/\/垃圾倾向评分$/;"	m	struct:WeiboProcessor::BASEINFO
+nRubScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nRubScore;\/\/垃圾倾向评分$/;"	m	struct:CEvaluater::BASEINFO
+nSrcScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nSrcScore;\/\/数据源的得分$/;"	m	struct:CEvaluater::BASEINFO
+nStart	TextKeyTool/inc_seg/BaseDef.h	/^   int            nStart;		\/\/Position in source string$/;"	m	struct:tagWordNodeU
+nStart	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   int            nStart;		\/\/Position in source string$/;"	m	struct:tagWordNodeU
+nSynScore	WeiboProcessor.h	/^			int nSynScore;\/\/综合得分$/;"	m	struct:WeiboProcessor::WEIBOINFO
+nSynScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nSynScore;\/\/综合得分$/;"	m	struct:CEvaluater::WEIBOINFO
+nType	WeiboProcessor.h	/^			int nType;$/;"	m	struct:WeiboProcessor::BASEINFO
+nUid	WeiboProcessor.h	/^			unsigned long long nUid;$/;"	m	struct:WeiboProcessor::BASEINFO
+nUidScore	WeiboProcessor.h	/^			int nUidScore;\/\/作者的分数$/;"	m	struct:WeiboProcessor::BASEINFO
+nUidScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nUidScore;\/\/作者的分数$/;"	m	struct:CEvaluater::BASEINFO
+nValidCmtCount	WeiboProcessor.h	/^			int nValidCmtCount;\/\/有效评论数$/;"	m	struct:WeiboProcessor::WEIBOINFO
+nValidCmtCount	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nValidCmtCount;\/\/有效评论数$/;"	m	struct:CEvaluater::WEIBOINFO
+nWeiboScore	WeiboProcessor.h	/^			int nWeiboScore;\/\/微博分数$/;"	m	struct:WeiboProcessor::BASEINFO
+nWeiboScore	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nWeiboScore;\/\/微博分数$/;"	m	struct:CEvaluater::BASEINFO
+nWords	WeiboProcessor.h	/^			int nWords;\/\/微博的词数$/;"	m	struct:WeiboProcessor::BASEINFO
+nWords	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nWords;\/\/微博的词数$/;"	m	struct:CEvaluater::BASEINFO
+nYCScore	WeiboProcessor.h	/^			int nYCScore;\/\/数据源的得分$/;"	m	struct:WeiboProcessor::BASEINFO
+nZfCount	WeiboProcessor.h	/^			int nZfCount;\/\/转发数$/;"	m	struct:WeiboProcessor::BASEINFO
+nZfCount	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nZfCount;\/\/转发数$/;"	m	struct:CEvaluater::BASEINFO
+nZfUserCount	WeiboProcessor.h	/^			int nZfUserCount;\/\/转发人数$/;"	m	struct:WeiboProcessor::BASEINFO
+nZfUserCount	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			int nZfUserCount;\/\/转发人数$/;"	m	struct:CEvaluater::BASEINFO
+n_z_num	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short n_z_num;$/;"	m	struct:__anon5
+n_z_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short n_z_num;$/;"	m	struct:__anon21
+name_num	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short name_num;$/;"	m	struct:__anon5
+name_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short name_num;$/;"	m	struct:__anon21
+name_value	test/New_Hot_MicroBlog/shell/json.class.php	/^    function name_value($name, $value)$/;"	f
+num	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$num = 20;$/;"	v
+obj	test/New_Hot_MicroBlog/shell/json.class.php	/^                            $obj = array();$/;"	v
+obj	test/New_Hot_MicroBlog/shell/json.class.php	/^                            $obj = new stdClass();$/;"	v
+one	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^			$one = explode("_", $v);$/;"	v
+operator <<	test/New_Hot_MicroBlog/src/CProcessedCmt.cpp	/^ostream& operator<<(ostream& os, CProcessedCmt& cmt)$/;"	f
+operator <<	test/New_Hot_MicroBlog/src/CProcessedWeibo.cpp	/^ostream& operator<<(ostream& os, CProcessedWeibo& weibo)$/;"	f
+ord_chrs_c	test/New_Hot_MicroBlog/shell/json.class.php	/^                        $ord_chrs_c = ord($chrs{$c});$/;"	v
+ord_var_c	test/New_Hot_MicroBlog/shell/json.class.php	/^                    $ord_var_c = ord($var{$c});$/;"	v
+out	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$out = $out + $base * strpos($this->string, substr($str, $t, 1));$/;"	v
+out	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$out = substr($this->string, $idx, 1) . $out;$/;"	v
+out	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$out = '';$/;"	v
+out	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$out = 0;$/;"	v
+outnode	TextKeyTool/inc_seg/POSTagger_new.h	/^	_WordNodeU outnode;   \/\/提供给用户层的词信息（由分词结果而来，在词性标注过程中不会修改其中的任何信息; 但是在短语合并过程中可能改变这里面的类别标记）$/;"	m	struct:WordPOSNode
+outnode	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^	_WordNodeU outnode;   \/\/提供给用户层的词信息（由分词结果而来，在词性标注过程中不会修改其中的任何信息; 但是在短语合并过程中可能改变这里面的类别标记）$/;"	m	struct:WordPOSNode
+pTerm	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	char *pTerm;				\/\/保存Term信息$/;"	m	struct:__anon4
+pTerm	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	char *pTerm;				\/\/保存Term信息$/;"	m	struct:__anon20
+page	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^$page = $requestobj->GetNum('page');$/;"	v
+page	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^		$page = $this->get_page_data();$/;"	v
+page	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^	function page($pageRecNum, $pagenum, $url, $totalnum, & $page)$/;"	f
+page_count	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^					$page_count = $this->totalnum \/ $this->pageRecNum;$/;"	v
+page_count	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^					$page_count = (int) ($this->totalnum \/ $this->pageRecNum) + 1;$/;"	v
+page_count	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^				$page_count = 1;$/;"	v
+page_count	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^		$page_count = 1;$/;"	v
+pagelist	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^		$pagelist = array ();$/;"	v
+pagelist	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^		$pagelist = array_merge($begin, $pagelist, $last);$/;"	v
+parts	test/New_Hot_MicroBlog/shell/json.class.php	/^                                $parts = array();$/;"	v
+pid	TextKeyTool/inc_key/wordsegSimple.h	/^	int pid;\/\/词性$/;"	m	struct:wordItem
+pid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	/^	int pid;\/\/词性$/;"	m	struct:wordItem
+pid	test/New_Hot_MicroBlog/src/wordsegSimple.h	/^	int pid;\/\/词性$/;"	m	struct:wordItem
+pknnclassifier	TextKeyTool/inc_seg/lexicon.h	/^	Classify_KNN *pknnclassifier[MAX_IWORDSEGMENT];$/;"	m	struct:__anon12
+pknnclassifier	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	Classify_KNN *pknnclassifier[MAX_IWORDSEGMENT];$/;"	m	struct:__anon28
+post_num	test/New_Hot_MicroBlog/shell/putPost.php	/^	$post_num = intval($result[1]);$/;"	v
+postag	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	char postag[6];$/;"	m	struct:__anon4
+postag	TextKeyTool/inc_seg/POSTagger_new.h	/^	char postag[6];      \/\/词性最长5个字节, 提供给用户层的词性信息 $/;"	m	struct:WordPOSNode
+postag	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	char postag[6];$/;"	m	struct:__anon20
+postag	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^	char postag[6];      \/\/词性最长5个字节, 提供给用户层的词性信息 $/;"	m	struct:WordPOSNode
+postagger	TextKeyTool/inc_seg/lexicon.h	/^	IPOSTagger* postagger[MAX_IWORDSEGMENT];	\/\/词性标注接口$/;"	m	struct:__anon12
+postagger	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	IPOSTagger* postagger[MAX_IWORDSEGMENT];	\/\/词性标注接口$/;"	m	struct:__anon28
+postagid	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned char postagid; \/\/ 该词的词性id，请见POSTagger_new.h$/;"	m	struct:__anon4
+postagid	TextKeyTool/inc_seg/POSTagger_new.h	/^	unsigned char postagid;\/\/提供给用户层的词性id$/;"	m	struct:WordPOSNode
+postagid	TextKeyTool/inc_seg/docprop.h	/^	unsigned char postagid;$/;"	m	struct:__anon16
+postagid	TextKeyTool/inc_seg/lexicon.h	/^	unsigned char postagid;     \/\/ 该词的词性id，请见POSTagger_new.h$/;"	m	struct:__anon8
+postagid	TextKeyTool/inc_seg/phraseterm.h	/^	unsigned char postagid; \/\/该应用层的词性id$/;"	m	struct:__anon3
+postagid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned char postagid; \/\/ 该词的词性id，请见POSTagger_new.h$/;"	m	struct:__anon20
+postagid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^	unsigned char postagid;\/\/提供给用户层的词性id$/;"	m	struct:WordPOSNode
+postagid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	unsigned char postagid;$/;"	m	struct:__anon32
+postagid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned char postagid;     \/\/ 该词的词性id，请见POSTagger_new.h$/;"	m	struct:__anon24
+postagid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^	unsigned char postagid; \/\/该应用层的词性id$/;"	m	struct:__anon19
+priscale	WeiboProcessor.h	/^			float priscale;\/\/微博私有程度$/;"	m	struct:WeiboProcessor::WEIBOINFO
+priscale	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			float priscale;\/\/微博私有程度$/;"	m	struct:CEvaluater::WEIBOINFO
+properties	test/New_Hot_MicroBlog/shell/json.class.php	/^                    $properties = array_map(array($this, 'name_value'),$/;"	v
+properties	test/New_Hot_MicroBlog/shell/json.class.php	/^                $properties = array_map(array($this, 'name_value'),$/;"	v
+pubscale	WeiboProcessor.h	/^			float pubscale;\/\/微博公共程度$/;"	m	struct:WeiboProcessor::WEIBOINFO
+pubscale	test/New_Hot_MicroBlog/src/CEvaluater.h	/^			float pubscale;\/\/微博公共程度$/;"	m	struct:CEvaluater::WEIBOINFO
+r	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^			$r = json_decode ( $result, true );$/;"	v
+r	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$r = json_decode ( $res, true );$/;"	v
+r	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$r = json_decode($re, true);$/;"	v
+r	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$r = array ();$/;"	v
+r	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$r = getReturn('180.149.134.22',21213,$sentStr,1);$/;"	v
+r	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$r = getReturn('58.63.238.26',23230,$sentStr,1);$/;"	v
+r	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$r = mb_convert_encoding($r, 'utf-8', 'gbk');$/;"	v
+rdir	TextKeyTool/inc_seg/lexicon.h	/^	char rdir[256];				\/\/根目录，缺省为0$/;"	m	struct:__anon7
+rdir	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	char rdir[256];				\/\/根目录，缺省为0$/;"	m	struct:__anon23
+re	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^			$re = curl_exec($ch);$/;"	v
+re	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^		$re = false;$/;"	v
+re	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^			$re = requestUrlByGet($url, $result);$/;"	v
+re	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$re = requestUrlByGet ( $url, $res, 3 );$/;"	v
+re	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$re = requestUrlByPost ( $url, $data, $result );$/;"	v
+redis	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$redis=new Redis();$/;"	v
+reduce_string	test/New_Hot_MicroBlog/shell/json.class.php	/^    function reduce_string($str)$/;"	f
+requestUrlByGet	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^	function requestUrlByGet($url, &$re, $timeout=1, &$curl_error=null) {$/;"	f
+requestUrlByPost	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^	function requestUrlByPost($url, $data, &$result, $timeout=3) {$/;"	f
+requestobj	test/New_Hot_MicroBlog/shell/grab_img/include/common.php	/^$requestobj = Request::getInstance();$/;"	v
+res	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^			$res = json_decode ( $res, true );$/;"	v
+res	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$res = $winfo;$/;"	v
+res	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$res = array();$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/Request.php	/^		$result = array();$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^		$result = curl_exec($ch);$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^				$result = json_decode ( $result, true );$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^			$result = json_decode ( $result, true );$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$result = array ();$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$result = array($/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$result = array();$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$result=GetResultDataForOne($acceptdata);$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$result=rtrim($result);$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$result = $user + $result;$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$result = array ();$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$result = array();$/;"	v
+result	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$result = false;$/;"	v
+result	test/New_Hot_MicroBlog/shell/putPost.php	/^	$result = explode("\\t",$buff); $/;"	v
+result	test/New_Hot_MicroBlog/shell/putPost.php	/^$result = curl_exec($ch);$/;"	v
+retry	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^		$retry = 1;$/;"	v
+return	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^				$return = 'info';$/;"	v
+return	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^			$return = 'error';$/;"	v
+return	test/New_Hot_MicroBlog/shell/grab_img/include/curl.php	/^			$return = 'info';$/;"	v
+return	test/New_Hot_MicroBlog/shell/putPost.php	/^	$return = 'error';$/;"	v
+return	test/New_Hot_MicroBlog/shell/putPost.php	/^	$return = 'info';$/;"	v
+right	TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char right;		\/\/ Point to right node$/;"	m	struct:tagWordNodeU
+right	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char right;		\/\/ Point to right node$/;"	m	struct:tagWordNodeU
+rim_num	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^		$rim_num = floor($listnum\/2)+1;	$/;"	v
+root	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$root = 'D:\\wamp\\www\\data\\img\/';$/;"	v
+root	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$root = '\/data2\/kaijiang\/projects\/New_Hot_MicroBlog\/result\/img\/';$/;"	v
+rubout	test/New_Hot_MicroBlog/src/rubLabel.cpp	/^int rubout(const char *src,char *out,coreData *data,int flags,double &labelLen,double &disturbRate)$/;"	f
+run_time	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$run_time = get_runtime ( $start, $end );$/;"	v
+sWord	TextKeyTool/inc_seg/BaseDef.h	/^	unsigned short sWord[WORD_MAX_LEN_SHORT+1];	\/\/ Word item$/;"	m	struct:tagWordItemU
+sWord	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^	unsigned short sWord[WORD_MAX_LEN_SHORT+1];	\/\/ Word item$/;"	m	struct:tagWordItemU
+seg	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$seg = $this->decodeSegment( $seg );$/;"	v
+seg	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$seg = $this->encodeSegment( $seg );$/;"	v
+seg	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$seg = substr($mid, $start, $this->encodeBlockSize);$/;"	v
+seg	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$seg = substr($str, $start, $this->decodeBlockSize);$/;"	v
+segments	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$segments = ceil($midlen \/ $this->encodeBlockSize);$/;"	v
+segments	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$segments = ceil($strlen \/ $this->decodeBlockSize);$/;"	v
+semantic	TextKeyTool/inc_key/wordsegSimple.h	/^	int semantic;\/\/语义属性$/;"	m	struct:wordItem
+semantic	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	/^	int semantic;\/\/语义属性$/;"	m	struct:wordItem
+semantic	test/New_Hot_MicroBlog/src/wordsegSimple.h	/^	int semantic;\/\/语义属性$/;"	m	struct:wordItem
+semanticid	TextKeyTool/inc_seg/BaseDef.h	/^   unsigned short semanticid[TERM_MAX_SEMANTIC_NUM]; \/\/语义属性$/;"	m	struct:tagWordNodeU
+semanticid	TextKeyTool/inc_seg/lexicon.h	/^   unsigned short semanticid[TERM_MAX_SEMANTIC_NUM]; \/\/语义属性$/;"	m	struct:__anon8
+semanticid	TextKeyTool/inc_seg/phraseterm.h	/^	unsigned short semanticid[TERM_MAX_SEMANTIC_NUM]; \/\/语义属性$/;"	m	struct:__anon3
+semanticid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   unsigned short semanticid[TERM_MAX_SEMANTIC_NUM]; \/\/语义属性$/;"	m	struct:tagWordNodeU
+semanticid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^   unsigned short semanticid[TERM_MAX_SEMANTIC_NUM]; \/\/语义属性$/;"	m	struct:__anon24
+semanticid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^	unsigned short semanticid[TERM_MAX_SEMANTIC_NUM]; \/\/语义属性$/;"	m	struct:__anon19
+semanticnum	TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char semanticnum; \/\/该term有几个语义属性$/;"	m	struct:tagWordNodeU
+semanticnum	TextKeyTool/inc_seg/lexicon.h	/^   unsigned char semanticnum; \/\/该term有几个语义属性$/;"	m	struct:__anon8
+semanticnum	TextKeyTool/inc_seg/phraseterm.h	/^	unsigned char semanticnum; \/\/该term有几个语义属性$/;"	m	struct:__anon3
+semanticnum	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^   unsigned char semanticnum; \/\/该term有几个语义属性$/;"	m	struct:tagWordNodeU
+semanticnum	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^   unsigned char semanticnum; \/\/该term有几个语义属性$/;"	m	struct:__anon24
+semanticnum	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^	unsigned char semanticnum; \/\/该term有几个语义属性$/;"	m	struct:__anon19
+sendstr	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$sendstr=GetSendDataForOne($sentStr);$/;"	v
+sentStr	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$sentStr=trim("111\\t". mb_convert_encoding($word, 'gbk', 'utf-8')); $/;"	v
+sentStr	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$sentStr=trim("@N:news\\t@C:\\t@T:{$word}\\t@B:"); $/;"	v
+set_totalnum	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^	function set_totalnum($totalnum)$/;"	f
+showresult	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$showresult=$redis->get($key);$/;"	v
+showresult	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$showresult = rtrim($showresult);$/;"	v
+simplified_complex	TextKeyTool/inc_key/paichong.h	/^	map<string,string> simplified_complex;\/\/繁体到简体对照表$/;"	m	struct:ResData
+simplified_complex	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/paichong.h	/^	map<string,string> simplified_complex;\/\/繁体到简体对照表$/;"	m	struct:ResData
+slice	test/New_Hot_MicroBlog/shell/json.class.php	/^                            $slice = substr($chrs, $top['where'], ($c - $top['where']));$/;"	v
+sock	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$sock = fsockopen($ip,$port,$errno, $errstr, $timeout);$/;"	v
+spellWord	test/New_Hot_MicroBlog/src/wordsegSimple.cpp	/^int spellWord(vector<wordItem>&segments,vector<wordItem> &wordvec)$/;"	f
+start	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$start = $midlen;$/;"	v
+start	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$start = $strlen;$/;"	v
+start	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$start = get_time ();$/;"	v
+stat	TextKeyTool/inc_seg/lexicon.h	/^	BYTE stat;					\/\/相关状态 缺省为0$/;"	m	struct:__anon6
+stat	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	BYTE stat;					\/\/相关状态 缺省为0$/;"	m	struct:__anon22
+states	strmatch.h	/^	STATESLIST states;$/;"	m	struct:__anon2
+states	test/New_Hot_MicroBlog/src/strmatch.h	/^	STATESLIST states;$/;"	m	struct:__anon18
+stk	test/New_Hot_MicroBlog/shell/json.class.php	/^                            $stk = array(SERVICES_JSON_IN_OBJ);$/;"	v
+stk	test/New_Hot_MicroBlog/shell/json.class.php	/^                        $stk = array(SERVICES_JSON_IN_ARR);$/;"	v
+str	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$str = floor($str \/ 62);$/;"	v
+str	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^			$str = str_pad($seg, $this->decodeBlockSize, '0', STR_PAD_LEFT) . $str;$/;"	v
+str	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$str = "";$/;"	v
+str	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$str = $this->encodeSegment( substr($mid, 0, $start) ) . $str;$/;"	v
+str	test/New_Hot_MicroBlog/shell/json.class.php	/^        $str = $this->reduce_string($str);$/;"	v
+str	test/New_Hot_MicroBlog/shell/json.class.php	/^        $str = preg_replace(array($/;"	v
+strKeywords	WeiboProcessor.h	/^			string strKeywords;$/;"	m	struct:WeiboProcessor::BASEINFO
+strlen	test/New_Hot_MicroBlog/GetZFData/base62Parse.php	/^		$strlen = strlen($str);$/;"	v
+strlen_chrs	test/New_Hot_MicroBlog/shell/json.class.php	/^                    $strlen_chrs = strlen($chrs);$/;"	v
+strlen_var	test/New_Hot_MicroBlog/shell/json.class.php	/^                $strlen_var = strlen($var);$/;"	v
+substr_chrs_c_2	test/New_Hot_MicroBlog/shell/json.class.php	/^                        $substr_chrs_c_2 = substr($chrs, $c, 2);$/;"	v
+sword	test/New_Hot_MicroBlog/src/wordsegSimple.cpp	/^map<string,pair<int,map<string,int> > >sword;$/;"	v
+synonymtype	TextKeyTool/inc_seg/POSTagger_new.h	/^	unsigned short synonymtype;$/;"	m	struct:WordPOSNode
+synonymtype	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/POSTagger_new.h	/^	unsigned short synonymtype;$/;"	m	struct:WordPOSNode
+tagWordItemU	TextKeyTool/inc_seg/BaseDef.h	/^struct tagWordItemU$/;"	s
+tagWordItemU	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^struct tagWordItemU$/;"	s
+tagWordNodeU	TextKeyTool/inc_seg/BaseDef.h	/^struct tagWordNodeU$/;"	s
+tagWordNodeU	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/BaseDef.h	/^struct tagWordNodeU$/;"	s
+termid	TextKeyTool/inc_seg/phraseterm.h	/^	unsigned int   termid;             \/\/该term的id 该id是这个层面的id与分词结果的id没有任何关系$/;"	m	struct:__anon3
+termid	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/phraseterm.h	/^	unsigned int   termid;             \/\/该term的id 该id是这个层面的id与分词结果的id没有任何关系$/;"	m	struct:__anon19
+testbit	test/New_Hot_MicroBlog/src/rubLabel.h	8;"	d
+textNum	test/New_Hot_MicroBlog/src/bayesHM.h	/^	pair<int,int> textNum;\/\/2类文章各自的文章数$/;"	m	struct:BAYES_HM_MODEL
+textfmt	TextKeyTool/inc_seg/lexicon.h	/^	char textfmt[10];		\/\/请求分词的文字格式，"GBK","UNICODE"$/;"	m	struct:__anon11
+textfmt	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	char textfmt[10];		\/\/请求分词的文字格式，"GBK","UNICODE"$/;"	m	struct:__anon27
+tf	TextKeyTool/inc_key/wordsegSimple.h	/^	int tf;\/\/词频$/;"	m	struct:wordItem
+tf	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short tf;$/;"	m	struct:__anon4
+tf	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	/^	int tf;\/\/词频$/;"	m	struct:wordItem
+tf	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short tf;$/;"	m	struct:__anon20
+tf	test/New_Hot_MicroBlog/src/wordsegSimple.h	/^	int tf;\/\/词频$/;"	m	struct:wordItem
+tf_context	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short tf_context;\/\/在正文中出现频度$/;"	m	struct:__anon4
+tf_context	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short tf_context;\/\/在正文中出现频度$/;"	m	struct:__anon20
+tf_title	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short tf_title;\/\/在标题中出现频度$/;"	m	struct:__anon4
+tf_title	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short tf_title;\/\/在标题中出现频度$/;"	m	struct:__anon20
+time	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$time = floor(count($user_ids)\/$num);$/;"	v
+timeout	test/New_Hot_MicroBlog/shell/putPost.php	/^$timeout=5;$/;"	v
+tmp	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$tmp = explode("\\t", $r);$/;"	v
+tmp	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$tmp = explode('#', $r);$/;"	v
+tmp_uids	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^			$tmp_uids = array_slice($user_ids, $i*$num , $num);$/;"	v
+top	test/New_Hot_MicroBlog/shell/json.class.php	/^                        $top = end($stk);$/;"	v
+topic	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$topic = str_replace('@topic:', '', $tmp[0]);$/;"	v
+totalfind	strmatch.h	/^	int	   totalfind;$/;"	m	struct:__anon2
+totalfind	test/New_Hot_MicroBlog/src/strmatch.h	/^	int	   totalfind;$/;"	m	struct:__anon18
+totalnum	test/New_Hot_MicroBlog/shell/grab_img/include/Page.php	/^			$totalnum = 0;$/;"	v
+transNum	test/New_Hot_MicroBlog/GetZFData/url2mid.php	/^	$transNum=$arr[1];$/;"	v
+trust	TextKeyTool/inc_seg/docprop.h	/^	  float trust;$/;"	m	struct:__anon14
+trust	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	  float trust;$/;"	m	struct:__anon30
+type	TextKeyTool/inc_seg/lexicon.h	/^	BYTE type;					\/\/词类别 缺省为0$/;"	m	struct:__anon6
+type	strmatch.h	/^	int   	type;$/;"	m	struct:__anon1
+type	test/New_Hot_MicroBlog/src/CBayesClassifier.h	/^			string type;$/;"	m	struct:CBayesClassifier::SWATCH
+type	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	BYTE type;					\/\/词类别 缺省为0$/;"	m	struct:__anon22
+type	test/New_Hot_MicroBlog/src/strmatch.h	/^	int   	type;$/;"	m	struct:__anon17
+uid	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^			$uid = $r ['result'] ['uid'];$/;"	v
+uid	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$uid = 0;$/;"	v
+uni	TextKeyTool/inc_seg/lexicon.h	/^	unsigned short* uni;\/\/Unicode格式的文字内容$/;"	m	struct:__anon11
+uni	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned short* uni;\/\/Unicode格式的文字内容$/;"	m	struct:__anon27
+url	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^			$url = USER_URL_NEW . '?' . http_build_query ( $get_data );$/;"	v
+url	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$url = MBLOG_URL . '?' . http_build_query ( $get_data );$/;"	v
+url	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$url = POPULAR_USERS_RECOMMEND_NEW_URL . '?' . http_build_query ( $data ); $/;"	v
+url	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$url = POPULAR_USERS_RECOMMEND_URL . '?' . http_build_query ( $data );$/;"	v
+url	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$url = USER_URL . '?' . http_build_query ( $get_data );$/;"	v
+url	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$url = 'http:\/\/i.api.weibo.com\/2\/statuses\/queryid.json';$/;"	v
+url	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$url = 'http:\/\/i.api.weibo.com\/2\/statuses\/show_batch.json';$/;"	v
+url	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$url = NICK_URL . '?' . http_build_query ( $data );$/;"	v
+url	test/New_Hot_MicroBlog/shell/putPost.php	/^$url="http:\/\/pub.admin.t.sina.com.cn\/api\/hot_mblog.php";$/;"	v
+usedstates	strmatch.h	/^	STATE      usedstates;	$/;"	m	struct:__anon2
+usedstates	test/New_Hot_MicroBlog/src/strmatch.h	/^	STATE      usedstates;	$/;"	m	struct:__anon18
+user	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^					$user = array_merge($user, $result ['users']);$/;"	v
+user	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^				$user = $result ['result'];$/;"	v
+user	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$user = array ();$/;"	v
+user_for_mc	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^		$user_for_mc = array ();$/;"	v
+utf16	test/New_Hot_MicroBlog/shell/json.class.php	/^                                $utf16 = chr(hexdec(substr($chrs, ($c + 2), 2)))$/;"	v
+utf16	test/New_Hot_MicroBlog/shell/json.class.php	/^                            $utf16 = $this->utf82utf16($char);$/;"	v
+utf162utf8	test/New_Hot_MicroBlog/shell/json.class.php	/^    function utf162utf8($utf16)$/;"	f
+utf8	test/New_Hot_MicroBlog/shell/json.class.php	/^                    $utf8 = '';$/;"	v
+utf82utf16	test/New_Hot_MicroBlog/shell/json.class.php	/^    function utf82utf16($utf8)$/;"	f
+val	test/New_Hot_MicroBlog/shell/json.class.php	/^                                    $val = $this->decode($parts[2]);$/;"	v
+vars	test/New_Hot_MicroBlog/shell/json.class.php	/^                $vars = get_object_vars($var);$/;"	v
+vid	test/New_Hot_MicroBlog/GetZFData/url2mid.php	/^	$vid=$arr[0];$/;"	v
+weight	TextKeyTool/inc_seg/docprop.h	/^	  float weight;  \/\/属于该domain的权重$/;"	m	struct:__anon14
+weight	TextKeyTool/inc_seg/docprop.h	/^	float weight;$/;"	m	struct:__anon16
+weight	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	  float weight;  \/\/属于该domain的权重$/;"	m	struct:__anon30
+weight	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/docprop.h	/^	float weight;$/;"	m	struct:__anon32
+white_nickname	TextKeyTool/inc_key/paichong.h	/^	map<string,int> white_nickname;\/\/如 精彩语录 类白名单昵称$/;"	m	struct:ResData
+white_nickname	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/paichong.h	/^	map<string,int> white_nickname;\/\/如 精彩语录 类白名单昵称$/;"	m	struct:ResData
+white_swatch	TextKeyTool/inc_key/paichong.h	/^	map<string,int> white_swatch;\/\/文本白名单$/;"	m	struct:ResData
+white_swatch	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/paichong.h	/^	map<string,int> white_swatch;\/\/文本白名单$/;"	m	struct:ResData
+wids	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$wids = array_slice($mids, $i * 20, 20);$/;"	v
+winfo	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$winfo = get_winfo_new($ids);$/;"	v
+winfo	test/New_Hot_MicroBlog/shell/grab_img/include/func_debug.php	/^	$winfo = array();$/;"	v
+wl	TextKeyTool/inc_seg/lexicon.h	/^	IWordLib* wl[MAX_WORDLIB_NUM];	\/\/词库列表$/;"	m	struct:__anon12
+wl	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	IWordLib* wl[MAX_WORDLIB_NUM];	\/\/词库列表$/;"	m	struct:__anon28
+word	TextKeyTool/inc_key/wordsegSimple.h	/^	char word[64];\/\/词$/;"	m	struct:wordItem
+word	TextKeyTool/inc_seg/lexicon.h	/^	WORD_ITEM *word;$/;"	m	struct:__anon10
+word	strmatch.h	/^	unsigned char  *word;$/;"	m	struct:__anon1
+word	test/New_Hot_MicroBlog/src/CBayesClassifier.h	/^			vector<pair<string,double> >word;$/;"	m	struct:CBayesClassifier::SWATCH
+word	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	/^	char word[64];\/\/词$/;"	m	struct:wordItem
+word	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	WORD_ITEM *word;$/;"	m	struct:__anon26
+word	test/New_Hot_MicroBlog/src/strmatch.h	/^	unsigned char  *word;$/;"	m	struct:__anon17
+word	test/New_Hot_MicroBlog/src/wordsegSimple.h	/^	char word[64];\/\/词$/;"	m	struct:wordItem
+wordCat	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short wordCat; \/\/ 从分词系统带过来的类别属性，Attribute of word item, such as personal name, corporation name, and so on$/;"	m	struct:__anon4
+wordCat	TextKeyTool/inc_seg/lexicon.h	/^	unsigned short wordCat;		  \/\/ 从分词系统带过来的类别属性，Attribute of word item, such as personal name, corporation name, and so on.$/;"	m	struct:__anon8
+wordCat	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned short wordCat; \/\/ 从分词系统带过来的类别属性，Attribute of word item, such as personal name, corporation name, and so on$/;"	m	struct:__anon20
+wordCat	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned short wordCat;		  \/\/ 从分词系统带过来的类别属性，Attribute of word item, such as personal name, corporation name, and so on.$/;"	m	struct:__anon24
+wordID	TextKeyTool/inc_seg/lexicon.h	/^	unsigned long long wordID;	\/\/ WORDID$/;"	m	struct:__anon8
+wordID	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned long long wordID;	\/\/ WORDID$/;"	m	struct:__anon24
+wordItem	TextKeyTool/inc_key/wordsegSimple.h	/^struct wordItem$/;"	s
+wordItem	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	/^struct wordItem$/;"	s
+wordItem	test/New_Hot_MicroBlog/src/wordsegSimple.h	/^struct wordItem$/;"	s
+wordLen	TextKeyTool/inc_key/wordsegSimple.h	/^	int wordLen;\/\/词的字符数量$/;"	m	struct:wordItem
+wordLen	TextKeyTool/inc_seg/lexicon.h	/^	unsigned char wordLen;	    \/\/ Length of this word，      unicode的长度$/;"	m	struct:__anon8
+wordLen	test/New_Hot_MicroBlog/src/TextKeyTool/inc_key/wordsegSimple.h	/^	int wordLen;\/\/词的字符数量$/;"	m	struct:wordItem
+wordLen	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned char wordLen;	    \/\/ Length of this word，      unicode的长度$/;"	m	struct:__anon24
+wordLen	test/New_Hot_MicroBlog/src/wordsegSimple.h	/^	int wordLen;\/\/词的字符数量$/;"	m	struct:wordItem
+wordLib	test/New_Hot_MicroBlog/src/bayesHM.h	/^	map<string,pair<double,double> >wordLib;$/;"	m	struct:BAYES_HM_MODEL
+wordNum	test/New_Hot_MicroBlog/src/bayesHM.h	/^	pair<int,int> wordNum;\/\/2类文章各自的词数量$/;"	m	struct:BAYES_HM_MODEL
+wordPos	TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned int wordPos; \/\/在文本第一次出现的位置 我们不假定每一个关键词都是文本中的词，因此可能为0xFFFFFFFF$/;"	m	struct:__anon4
+wordPos	TextKeyTool/inc_seg/lexicon.h	/^	unsigned int wordPos;		    \/\/ Position in source string, 在unicode串中的位置$/;"	m	struct:__anon8
+wordPos	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/ExKeywordsInterface.h	/^	unsigned int wordPos; \/\/在文本第一次出现的位置 我们不假定每一个关键词都是文本中的词，因此可能为0xFFFFFFFF$/;"	m	struct:__anon20
+wordPos	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	unsigned int wordPos;		    \/\/ Position in source string, 在unicode串中的位置$/;"	m	struct:__anon24
+word_item	TextKeyTool/inc_seg/lexicon.h	/^	WORD_ITEM word_item;$/;"	m	struct:__anon9
+word_item	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	WORD_ITEM word_item;$/;"	m	struct:__anon25
+word_num	TextKeyTool/inc_seg/lexicon.h	/^	int word_num;				\/\/得到的分词结果个数$/;"	m	struct:__anon11
+word_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int word_num;				\/\/得到的分词结果个数$/;"	m	struct:__anon27
+wordlibnum	TextKeyTool/inc_seg/lexicon.h	/^	int wordlibnum;				\/\/词库个数$/;"	m	struct:__anon12
+wordlibnum	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int wordlibnum;				\/\/词库个数$/;"	m	struct:__anon28
+wordlist	TextKeyTool/inc_seg/lexicon.h	/^	WORD_ITEM *wordlist;		\/\/分词结果列表$/;"	m	struct:__anon11
+wordlist	strmatch.h	/^	KEYWORD    *wordlist;$/;"	m	struct:__anon2
+wordlist	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	WORD_ITEM *wordlist;		\/\/分词结果列表$/;"	m	struct:__anon27
+wordlist	test/New_Hot_MicroBlog/src/strmatch.h	/^	KEYWORD    *wordlist;$/;"	m	struct:__anon18
+wordlistlength	strmatch.h	/^	int	   wordlistlength;$/;"	m	struct:__anon2
+wordlistlength	test/New_Hot_MicroBlog/src/strmatch.h	/^	int	   wordlistlength;$/;"	m	struct:__anon18
+wordprop	TextKeyTool/inc_seg/lexicon.h	/^	WORD_PROPERTY *wordprop;		\/\/词属性$/;"	m	struct:__anon12
+wordprop	TextKeyTool/inc_seg/lexicon.h	/^	WORD_PROPERTY wordprop;		  \/\/ word property$/;"	m	struct:__anon8
+wordprop	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	WORD_PROPERTY *wordprop;		\/\/词属性$/;"	m	struct:__anon28
+wordprop	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	WORD_PROPERTY wordprop;		  \/\/ word property$/;"	m	struct:__anon24
+wordsegSimple	test/New_Hot_MicroBlog/src/wordsegSimple.cpp	/^int wordsegSimple(const WORD_SEGMENT *wordseg,vector<wordItem> &wordvec,int rank,double &alphaRate)$/;"	f
+wordsegment	TextKeyTool/inc_seg/lexicon.h	/^	WORD_SEGMENT_LIB wordsegment[MAX_WORDSEGMENT_NUM];	\/\/简体（0）和繁体（1）分析系统数据$/;"	m	struct:__anon13
+wordsegment	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	WORD_SEGMENT_LIB wordsegment[MAX_WORDSEGMENT_NUM];	\/\/简体（0）和繁体（1）分析系统数据$/;"	m	struct:__anon29
+wordsegment_num	TextKeyTool/inc_seg/lexicon.h	/^	int wordsegment_num;			\/\/分词系统语种数目$/;"	m	struct:__anon13
+wordsegment_num	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int wordsegment_num;			\/\/分词系统语种数目$/;"	m	struct:__anon29
+wordslength	strmatch.h	/^	STATE      wordslength;$/;"	m	struct:__anon2
+wordslength	test/New_Hot_MicroBlog/src/strmatch.h	/^	STATE      wordslength;$/;"	m	struct:__anon18
+wordsnum	strmatch.h	/^	int	   wordsnum;$/;"	m	struct:__anon2
+wordsnum	test/New_Hot_MicroBlog/src/strmatch.h	/^	int	   wordsnum;$/;"	m	struct:__anon18
+wordvalue	TextKeyTool/inc_seg/lexicon.h	/^   unsigned char wordvalue;$/;"	m	struct:__anon8
+wordvalue	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^   unsigned char wordvalue;$/;"	m	struct:__anon24
+ws	TextKeyTool/inc_seg/lexicon.h	/^	IWordSegment* ws[MAX_IWORDSEGMENT];	\/\/分词接口$/;"	m	struct:__anon12
+ws	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	IWordSegment* ws[MAX_IWORDSEGMENT];	\/\/分词接口$/;"	m	struct:__anon28
+ws_sel	TextKeyTool/inc_seg/lexicon.h	/^	int ws_sel;					\/\/词典当前选择的语种$/;"	m	struct:__anon7
+ws_sel	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int ws_sel;					\/\/词典当前选择的语种$/;"	m	struct:__anon23
+ws_stat	TextKeyTool/inc_seg/lexicon.h	/^	int ws_stat[MAX_IWORDSEGMENT];		\/\/分词接口状态 0:表示没有被占用；１表示已经被占用$/;"	m	struct:__anon12
+ws_stat	test/New_Hot_MicroBlog/src/TextKeyTool/inc_seg/lexicon.h	/^	int ws_stat[MAX_IWORDSEGMENT];		\/\/分词接口状态 0:表示没有被占用；１表示已经被占用$/;"	m	struct:__anon28
+zip	test/New_Hot_MicroBlog/shell/grab_img/download.php	/^	$zip = new ZipArchive;$/;"	v
+~CAmuseEvaluater	test/New_Hot_MicroBlog/src/CAmuseEvaluater.cpp	/^CAmuseEvaluater::~CAmuseEvaluater()$/;"	f	class:CAmuseEvaluater
+~CBayesClassifier	test/New_Hot_MicroBlog/src/CBayesClassifier.cpp	/^CBayesClassifier::~CBayesClassifier()$/;"	f	class:CBayesClassifier
+~CBeautyEvaluater	test/New_Hot_MicroBlog/src/CBeautyEvaluater.cpp	/^CBeautyEvaluater::~CBeautyEvaluater()$/;"	f	class:CBeautyEvaluater
+~CClassifier	test/New_Hot_MicroBlog/src/CClassifier.cpp	/^CClassifier::~CClassifier()$/;"	f	class:CClassifier
+~CClassifyEvaluater	test/New_Hot_MicroBlog/src/CClassifyEvaluater.cpp	/^CClassifyEvaluater::~CClassifyEvaluater()$/;"	f	class:CClassifyEvaluater
+~CCmtPreProcessor	test/New_Hot_MicroBlog/src/CCmtPreProcessor.cpp	/^CCmtPreProcessor::~CCmtPreProcessor()$/;"	f	class:CCmtPreProcessor
+~CConfigInfo	CConfigInfo.cpp	/^CConfigInfo::~CConfigInfo()$/;"	f	class:CConfigInfo
+~CConfigInfo	test/New_Hot_MicroBlog/src/CConfigInfo.cpp	/^CConfigInfo::~CConfigInfo()$/;"	f	class:CConfigInfo
+~CEvaluater	test/New_Hot_MicroBlog/src/CEvaluater.cpp	/^CEvaluater::~CEvaluater()$/;"	f	class:CEvaluater
+~CKeyWordsManager	CKeyWordsManager.cpp	/^CKeyWordsManager::~CKeyWordsManager()$/;"	f	class:CKeyWordsManager
+~CKeyWordsManager	test/New_Hot_MicroBlog/src/CKeyWordsManager.cpp	/^CKeyWordsManager::~CKeyWordsManager()$/;"	f	class:CKeyWordsManager
+~CKeywordEvaluater	test/New_Hot_MicroBlog/src/CKeywordEvaluater.cpp	/^CKeywordEvaluater::~CKeywordEvaluater()$/;"	f	class:CKeywordEvaluater
+~CMengEvaluater	test/New_Hot_MicroBlog/src/CMengEvaluater.cpp	/^CMengEvaluater::~CMengEvaluater()$/;"	f	class:CMengEvaluater
+~CProcessedCmt	test/New_Hot_MicroBlog/src/CProcessedCmt.cpp	/^CProcessedCmt::~CProcessedCmt()$/;"	f	class:CProcessedCmt
+~CProcessedWeibo	test/New_Hot_MicroBlog/src/CProcessedWeibo.cpp	/^CProcessedWeibo::~CProcessedWeibo()$/;"	f	class:CProcessedWeibo
+~CStreetEvaluater	test/New_Hot_MicroBlog/src/CStreetEvaluater.cpp	/^CStreetEvaluater::~CStreetEvaluater()$/;"	f	class:CStreetEvaluater
+~CSubmission	test/New_Hot_MicroBlog/src/CSubmission.cpp	/^CSubmission::~CSubmission()$/;"	f	class:CSubmission
+~CTextKeyTool	CTextKeyTool.cpp	/^CTextKeyTool::~CTextKeyTool()$/;"	f	class:CTextKeyTool
+~CTextKeyTool	test/New_Hot_MicroBlog/src/CTextKeyTool.cpp	/^CTextKeyTool::~CTextKeyTool()$/;"	f	class:CTextKeyTool
+~CWeiboPreProcessor	test/New_Hot_MicroBlog/src/CWeiboPreProcessor.cpp	/^CWeiboPreProcessor::~CWeiboPreProcessor()$/;"	f	class:CWeiboPreProcessor
+~WeiboProcessor	WeiboProcessor.cpp	/^WeiboProcessor::~WeiboProcessor()$/;"	f	class:WeiboProcessor
