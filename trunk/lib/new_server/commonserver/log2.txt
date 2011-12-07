@@ -1,0 +1,3 @@
+g_host:localhost	g_port:20230
+g_host:localhost	g_port:20230
+commonclient: commonclient.c:49: Parse: Assertion `sock>0' failed.
