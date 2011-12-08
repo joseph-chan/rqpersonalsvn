@@ -1,17 +1,16 @@
-#include "TagEXtrtProcessor.h"
+#include "TagExtractor.h"
 #include <iostream>
 
 /**
  * @file TagExtract.cpp
- * @brief 提取tag的主程序
+ * @brief 
  * @author RuQiang (ruqiang@staff.sina.com.cn)
- * @version 1.0.0
- * @date 2011-12-05
+ * @version 
+ * @date 2011-12-07
  */
 
 using namespace std;
 
-ngx_log_t        *gNxlog;
 
 /**
  * @brief 
@@ -29,23 +28,21 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 	int ret=0;
-	ngx_time_init();
-	gNxlog = ngx_log_init((unsigned char *)"./");
-	gNxlog->log_level = NGX_LOG_DEBUG;
-	TagEXtrtProcessor* pTagEx = new TagEXtrtProcessor();
-	ret = pTagEx->Init(argv[1]);
+	ret = nx_log_init((unsigned char *)"./logs/tagextract.");
 	if (ret < 0)
 	{
+		frpintf(stderr,"init log error");
 		return -1;
 	}
-	nx_log_write(NGX_LOG_WARN,gNxlog,"Init end sucessfully!");
 
-	ret = pTagEx->ProcessOriginalData();
+	TagExtractor* pTagEx = new TagExtractor();
+	ret = pTagEx->TagExtractInit(argv[1]);
 	if (ret < 0)
 	{
-		nx_log_write(NGX_LOG_ERR,gNxlog,"ProcessClassifiedData error");
 		return -1;
 	}
+	nx_log(NGX_LOG_WARN,"Init end sucessfully!");
+
 
 	delete pTagEx;
 	nx_log_write(NGX_LOG_WARN,gNxlog,"Program end sucessfully!");
