@@ -9,6 +9,12 @@
 #ifndef WEIBOPROCESSOR_H
 #define WEIBOPROCESSOR_H
 
+#include "CJParser.h"
+#include "CStringTool.h"
+#include "CTypeTool.h"
+#include "CTextKeyTool.h"
+//#include "CKeyWordsManager.h"
+#include "CMBTextTool.h"
 #include "CConfigInfo.h"
 #include "CResource.h"
 #include "lexicon.h"
@@ -16,15 +22,14 @@
 #include "touni.h"
 #include "ustring.h"
 #include "checkArticle.h"
+#include "nx_log.h"
 #include <map>
 #include <set>
 #include <vector>
+#include <math.h>
+#include <fstream>
+#include <iostream>
 
-extern "C"
-{
-	#include "nx_log.h"
-}
-extern ngx_log_t	*gNxlog;
 using namespace std;
 
 class WeiboProcessor
@@ -42,7 +47,15 @@ class WeiboProcessor
 		 *
 		 * @Returns   
 		 */
-		int Init(const char* cResource);
+		int WBProcessorInit(CConfigInfo *pConfigInfo);
+		/**
+		 * @brief 读入所有数据
+		 *
+		 * @Param cResource
+		 *
+		 * @Returns   
+		 */
+		int LoadWeiboAllInfo();
 
 		/**
 		 * @brief 处理分类文件

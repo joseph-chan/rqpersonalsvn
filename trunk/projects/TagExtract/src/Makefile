@@ -1,17 +1,16 @@
-include TextKeyTool/make_key.inc
+#include TextKeyTool/make_key.inc
 
 WORKROOT=../../../
 
 OBJECTS=WeiboProcessor.o 
 OBJECTS+=CStringTool.o 
 OBJECTS+=CJParser.o 
-OBJECTS+=CKeyWordsManager.o 
 OBJECTS+=CConfigInfo.o 
 OBJECTS+=CResource.o 
 OBJECTS+=checkArticle.o 
-OBJECTS+=minilzo.o 
-OBJECTS+=get_keyword2.o 
-OBJECTS+=corelativity.o 
+#OBJECTS+=minilzo.o 
+#OBJECTS+=get_keyword2.o 
+#OBJECTS+=corelativity.o 
 #OBJECTS+=CMBTextTool.o 
 #OBJECTS+=CBayesClassifier.o 
 #OBJECTS+=bayesHM.o 
@@ -26,27 +25,28 @@ INCLUDES=-I$(LEXICON)/include/ \
 		 -I$(LOGLIB)/include \
 		 -I$(WORKROOT)/third/nginx/include/
 LIBS=-L$(WORKROOT)/third/nginx/lib/ -lngx \
+	 -L$(WORKROOT)/lib/nx_log/lib/ -lnx_log \
 	 -lcrypt -lpcre -lcrypto -lcrypto -lz
 
 
-EXES= HotBlog
+EXES= TagExtract
 
 CXX = g++
 DEBUG = 1
 BINPATH = ../bin/
 
 ifneq ($(DEBUG),1) 
-	CFLAGS = -g -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE
+	CFLAGS = -pipe  -O0 -W -Wall -Wpointer-arith -Wno-unused-parameter -Wunused-function -Wunused-variable -Wunused-value -g
 else
-	CFLAGS = -DDEBUG -g -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE
+	CFLAGS = -pipe  -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Wunused-function -Wunused-variable -Wunused-value
 endif
 
 .PHONY: all 
 
 all : $(EXES) 
 
-HotBlog: $(OBJECTS) strmatch.o HotBlog.cpp
-	g++ -g -DDOMAIN_SEMANTIC -o $@ $(OBJECTS) strmatch.o HotBlog.cpp  $(LIBS) $(KEY_O_FILE) $(SEG_O_FILE) -I$(SEG_INC) -I$(KEY_INC) $(INCLUDES) -L. -ldealSVDModel -lxs -L$(SEG_LIB) $(SEG_LIB_FILE) 
+TagExtract: $(OBJECTS) strmatch.o TagExtract.cpp
+	g++ -g -DDOMAIN_SEMANTIC -o $@ $(OBJECTS) strmatch.o TagExtract.cpp  $(LIBS) $(KEY_O_FILE) $(SEG_O_FILE) -I$(SEG_INC) -I$(KEY_INC) $(INCLUDES) -L. -ldealSVDModel -lxs -L$(SEG_LIB) $(SEG_LIB_FILE) 
 
 
 
@@ -54,7 +54,7 @@ HotBlog: $(OBJECTS) strmatch.o HotBlog.cpp
 .SUFFIXES: .o .cpp .h
 
 .cpp.o: 
-	$(CXX) $(CFLAGS) -c $<  -I$(KEY_INC) -I$(SEG_INC) $(INCLUDES)
+	$(CXX) $(CFLAGS) -c $<  $(INCLUDES)
 
 clean: 
 	rm -rf $(EXES)
