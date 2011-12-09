@@ -24,5 +24,5 @@ clean :
 	rm  nx_log.o
 	rm  libnxlog.a
 install :
-	cp nx_log.h ../../lib/nx_log/include/
-	cp libnxlog.a ../../lib/nx_log/lib/
+	cp nx_log.h ../../lib/libnx/include/
+	cp libnxlog.a ../../lib/libnx/lib/
