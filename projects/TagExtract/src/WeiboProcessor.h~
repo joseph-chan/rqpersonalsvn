@@ -9,12 +9,6 @@
 #ifndef WEIBOPROCESSOR_H
 #define WEIBOPROCESSOR_H
 
-#include "CJParser.h"
-#include "CStringTool.h"
-#include "CTypeTool.h"
-#include "CTextKeyTool.h"
-//#include "CKeyWordsManager.h"
-#include "CMBTextTool.h"
 #include "CConfigInfo.h"
 #include "CResource.h"
 #include "lexicon.h"
@@ -22,48 +16,16 @@
 #include "touni.h"
 #include "ustring.h"
 #include "checkArticle.h"
-#include "nx_log.h"
 #include <map>
 #include <set>
 #include <vector>
-#include <math.h>
-#include <fstream>
-#include <iostream>
 
+extern "C"
+{
+	#include "nx_log.h"
+}
+extern ngx_log_t	*gNxlog;
 using namespace std;
-
-
-typedef struct BASEINFO
-{
-	bool has_video;//是否有视频
-	bool has_image;//是否有图片
-	int nType;//分类
-	int nTypeScore;//分类得分
-	int nGarbageScore;//垃圾评分
-	int nYCScore;//数据源 客户端得分
-	int nFilterScore;//filt字段得分
-	int nForwardCount;//转发数
-	int nValidCmtCount;//有效评论数
-	int nContentLen;//微博长度
-	int nAtNum;//微博里包含的@数量
-	//int nClassifyScore;//分类得分
-	//int nKeyWordsScore;//关键词得分
-	//int nWords;//微博的词数
-	//int nUidScore;//作者的分数
-	//int nRubScore;//垃圾倾向评分
-	unsigned long long nUid;//用户id
-	float fTextScore;//微博文本评分
-	string strKeywords;//关键字
-	string strDebugContent;//微博内容，仅调试用
-	string strDebugUrl;//url(如果有)
-	string strType;
-}BaseInfo;
-
-typedef struct WEIBOINFO
-{
-	BaseInfo base_info;
-	int nWeight;//最终权重
-}WeiboInfo;
 
 class WeiboProcessor
 {
@@ -80,17 +42,7 @@ class WeiboProcessor
 		 *
 		 * @Returns   
 		 */
-		int WBProcessorInit(CConfigInfo *pConfigInfo);
-		/**
-		 * @brief 读入所有数据
-		 *
-		 * @Param cResource
-		 *
-		 * @Returns   
-		 */
-		int LoadWeiboAllInfo();
-
-		map<unsigned long long, WeiboInfo*> &  GetAllWeiboInfo();
+		int Init(const char* cResource);
 
 		/**
 		 * @brief 处理分类文件
@@ -172,6 +124,35 @@ class WeiboProcessor
 
 
 	private:
+		typedef struct BASEINFO
+		{
+			bool has_video;//是否有视频
+			bool has_image;//是否有图片
+			int nType;//分类
+			int nGarbageScore;//垃圾评分
+			int nYCScore;//数据源 客户端得分
+			int nFilterScore;//filt字段得分
+			int nForwardCount;//转发数
+			int nValidCmtCount;//有效评论数
+			int nContentLen;//微博长度
+			int nAtNum;//微博里包含的@数量
+			//int nClassifyScore;//分类得分
+			//int nKeyWordsScore;//关键词得分
+			//int nWords;//微博的词数
+			//int nUidScore;//作者的分数
+			//int nRubScore;//垃圾倾向评分
+			unsigned long long nUid;//用户id
+			float nTextScore;//微博文本评分
+			string strKeywords;//关键字
+			string strDebugContent;//微博内容，仅调试用
+			string strDebugUrl;//url(如果有)
+		}BaseInfo;
+
+		typedef struct WEIBOINFO
+		{
+			BaseInfo base_info;
+			int nWeight;//最终权重
+		}WeiboInfo;
 
 		/**
 		 * @brief 加载资源
@@ -202,7 +183,6 @@ class WeiboProcessor
 		 * @Returns   
 		 */
 		bool HaveDuplicates(string& strContent);
-
 
 		void Clear();
 

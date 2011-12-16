@@ -1,5 +1,6 @@
+
+
 #include "TagExtractor.h"
-#include <iostream>
 
 /**
  * @file TagExtract.cpp
@@ -8,9 +9,7 @@
  * @version 
  * @date 2011-12-07
  */
-
 using namespace std;
-
 
 /**
  * @brief 
@@ -28,10 +27,10 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 	int ret=0;
-	ret = nx_log_init((unsigned char *)"./logs/tagextract.");
+	ret = nx_log_init("./logs/tagextract.");
 	if (ret < 0)
 	{
-		frpintf(stderr,"init log error");
+		fprintf(stderr,"init log error");
 		return -1;
 	}
 
@@ -42,10 +41,22 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 	nx_log(NGX_LOG_WARN,"Init end sucessfully!");
+	ret = pTagEx->LoadWeibo();
+	if (ret < 0)
+	{
+		return -1;
+	}
+	nx_log(NGX_LOG_WARN,"load weibo sucessfully!");
 
+	ret = pTagEx->ExtractTag();
+	if (ret < 0)
+	{
+		return -1;
+	}
+	nx_log(NGX_LOG_WARN,"extract tag sucessfully!");
 
 	delete pTagEx;
-	nx_log_write(NGX_LOG_WARN,gNxlog,"Program end sucessfully!");
+	nx_log_write(NGX_LOG_WARN,"Program end sucessfully!");
 
 
 	return 0;

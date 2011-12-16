@@ -1,0 +1,20 @@
+#ifndef CJPARSER_H
+#define CJPARSER_H
+#include <string>
+#include <map>
+#include <vector>
+using namespace std;
+
+class CJParser
+{
+	public:
+		// 初始化解析器
+		void InitParser(vector<string>& fields);
+
+		// 解析json
+		int ParseJson(string& strJson, map<string, string>& mapJson);
+
+	private:
+		vector<string> m_vecFields;
+};
+#endif
