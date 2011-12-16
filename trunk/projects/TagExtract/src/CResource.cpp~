@@ -25,8 +25,7 @@ int CResource::GetValue(string strValue,vector<string> &vOutput)
 	map<string, vector<string> >::iterator iter = m_mapResource.find(strValue);
 	if(iter == m_mapResource.end())
 	{
-		vOutput.clear();
-		return 1;
+	  return 1;
 	}
 	vOutput = iter->second;
 	return 0;
@@ -102,7 +101,7 @@ void CResource::LoadResource(const char* cResourceFile,int nBlockNum, char cSpli
 		vecData.erase(vecData.begin());
 		pair <string,vector<string> > tmp_pair(strTmp,vecData);
 		m_mapResource.insert(tmp_pair);
-		//cout << "add to resource" << strTmp << ":" << vecData[0] << "..." <<endl;
+		cout << "add to resource" << strTmp << ":" << vecData[0] << "..." <<endl;
 	}
 	fin.close();
 }
