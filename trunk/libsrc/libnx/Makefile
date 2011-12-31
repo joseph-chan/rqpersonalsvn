@@ -6,6 +6,7 @@ LINK =	$(CC)
 WORKROOT=../../
 NGX=$(WORKROOT)/thirdsrc/nginx-1.0.10/
 OBJS= nx_log.o
+OBJS+= dictmatch.o
 LIBDIR=$(WORKROOT)/third/nginx/lib/
 INCLUDES = -I $(NGX)src/core \
 	-I $(NGX)src/event \
@@ -13,16 +14,19 @@ INCLUDES = -I $(NGX)src/core \
 	-I $(NGX)src/os/unix \
 	-I $(NGX)objs
 
-all : $(OBJS)
+all : $(OBJS) libnxlib.a
 
 $(OBJS): %.o: %.cpp
 	$(CC) -c $< -o $@ $(INCLUDES) $(CFLAGS)
-	ar -ruv libnxlog.a nx_log.o $(LIBDIR)/libngx.a
+
+libnxlib.a: $(OBJS)
+	ar -ruv $@ $^ $(LIBDIR)/libngx.a
 
 .PHONY : clean
 clean :
-	rm  nx_log.o
-	rm  libnxlog.a
+	rm  *.o
+	rm  libnxlib.a
 install :
 	cp nx_log.h ../../lib/libnx/include/
-	cp libnxlog.a ../../lib/libnx/lib/
+	cp dictmatch.h ../../lib/libnx/include/
+	cp libnxlib.a ../../lib/libnx/lib/

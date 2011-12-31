@@ -22,7 +22,7 @@ extern "C"
 
 #define NX_LOG_NAME "log"
 
-int nx_log_init(const char *prefix);
+int nx_log_init(const char *prefix,int log_level= NGX_LOG_NOTICE);
 
 
 void nx_log_write(int level,const char *fmt,...);
