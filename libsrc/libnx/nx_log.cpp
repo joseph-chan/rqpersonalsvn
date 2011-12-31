@@ -31,7 +31,7 @@ static void log_fd_init()
 	    pthread_key_create(&g_log_fd, NULL);
 }
 
-int nx_log_init(const char *prefix)
+int nx_log_init(const char *prefix, int log_level)
 {
 
 	ngx_log_t  *ngx_log ;
@@ -53,7 +53,7 @@ int nx_log_init(const char *prefix)
 		return -1;
 	}
 	ngx_log->file= ngx_log_file;
-	ngx_log->log_level = NGX_LOG_NOTICE;
+	ngx_log->log_level = log_level;
 	ngx_log->handler = NULL;
 	ngx_log->connection = 0;
 	ngx_log->data = NULL;
