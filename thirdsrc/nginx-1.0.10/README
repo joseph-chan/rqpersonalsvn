@@ -1,0 +1,22 @@
+/**
+* @file README
+* @brief 
+* @author RuQiang (ruqiang@staff.sina.com.cn)
+* @version 
+* @date 2011-12-09
+*/
+把nginx做成了一个lib
+
+如果需要修改:
+1. make clean
+2. ./configure
+3. cp Makefile.objs objs/Makefile
+4. make 
+会重新生成libngx.a
+
+如果需要编译nginx, 用./configure 生成的Makefile编译
+
+
+
+Documentation is available at http://nginx.org
+
