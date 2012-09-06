@@ -1,2 +1,0 @@
-g_host:localhost	g_port:23202
-g_host:localhost	g_port:23202
