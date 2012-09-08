@@ -25,7 +25,7 @@ namespace shogun
 template<class T> class CCache;
 
 /** index */
-typedef int64_t index_t;
+typedef int32_t index_t;
 
 /** @brief shogun vector */
 template<class T> class SGVector
