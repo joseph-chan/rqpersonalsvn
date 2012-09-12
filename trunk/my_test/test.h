@@ -5,7 +5,9 @@
 
 
 #include <nx_log.h>
+#include <dictmatch.h>
 
 #include <semaphore.h>
 #include <iostream>
+#include <fstream>
 //using namespace std;
