@@ -1,0 +1,109 @@
+#include <shogun/labels/MulticlassLabels.h>
+#include <shogun/features/DenseFeatures.h>
+#include <shogun/kernel/GaussianKernel.h>
+#include <shogun/multiclass/MulticlassLibSVM.h>
+#include <shogun/lib/SGSparseMatrix.h>
+#include <shogun/io/AsciiFile.h>
+#include <shogun/features/SparseFeatures.h>
+#include <shogun/base/init.h>
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+
+using namespace shogun;
+
+void print_message(FILE* target, const char* str)
+{
+	fprintf(target, "%s", str);
+}
+
+int main(int argc, char** argv)
+{
+	init_shogun(&print_message);
+	index_t num_vec=3*7;
+	index_t num_feat=2*9;
+	index_t num_class=5;
+
+
+	// create some data
+	SGSparseMatrix<uint64_t> train_data;
+	char train_fname[32] = "train.input";
+	FILE *train_file = fopen(train_fname,"r");
+	//char test_fname[32] = "test.input";
+	//FILE *test_file = fopen(test_fname,"r");
+	//int num_feat2, num_vec2;
+
+	CAsciiFile *Cfile=new CAsciiFile(train_file,train_fname);
+	Cfile->get_ulong_sparsematrix(train_data.sparse_matrix,num_feat,num_vec);
+	train_data.num_vectors = num_vec;
+	train_data.num_features = num_feat;
+
+	std::cout<< "train_data(m*n):" <<train_data.num_vectors << " " <<  train_data.num_features << std::endl;
+	for (int i=0 ; i< train_data.num_vectors ;i++)
+	{
+		for(int j=0; j<train_data.sparse_matrix[i].num_feat_entries;j++)
+		{
+			std::cout <<  train_data.sparse_matrix[i].features[j].feat_index << ":" << train_data.sparse_matrix[i].features[j].entry << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	// create vectors
+	// shogun will now own the matrix created
+	CSparseFeatures<uint64_t>* train_features = new CSparseFeatures<uint64_t>(train_data);
+	std::cout << train_features->get_num_features() << std::endl;
+	std::cout << train_features->get_num_vectors() << std::endl;
+
+	//CSparseFeatures<uint64_t>* test_features = new CSparseFeatures<uint64_t>(test_data);
+
+	// create train labels
+	char fname_label[32] = "labels.input";
+	CAsciiFile *Cfile_label=new CAsciiFile((const char *)fname_label,'r',(const char *)fname_label);
+	//Cfile_label->set_variable_name((const char *)fname_label);
+	
+	CMulticlassLabels* labels=new CMulticlassLabels(Cfile_label);
+	//CLabels* labels=new CLabels(Cfile_label);
+	int nu = labels->get_num_classes();
+	fprintf(stderr,"num_class %d ,num_labels %d\n",nu,labels->get_num_labels());
+	//std::cout << "load label over, class num " << labels->get_num_classes();
+
+	std::cout << "id  and labels:" << std::endl;
+	for(int i=0 ; i<labels->get_num_labels(); i++ )
+	{
+		std::cout << i << ":" << labels->get_label(i) << " ";	
+	}
+	std::cout << std::endl;
+
+	// create gaussian kernel with cache 10MB, width 0.5
+	CGaussianKernel* kernel = new CGaussianKernel(10, 0.5);
+	kernel->init(train_features, train_features);
+
+	// create libsvm with C=10 and train
+	CMulticlassLibSVM* svm = new CMulticlassLibSVM(10, kernel, labels);
+	svm->train();
+	std::cout << svm->get_num_machines() << std::endl;
+	std::cout<< "svm trained over" << std::endl;
+
+	// classify on training examples
+	CMulticlassLabels* output=CMulticlassLabels::obtain_from_generic(svm->apply());
+	std::cout<< "svm apply over" << std::endl;
+	SGVector<float64_t>::display_vector(output->get_labels().vector, output->get_num_labels(),
+			"batch output");
+
+	/* assert that batch apply and apply(index_t) give same result */
+	for (index_t i=0; i<output->get_num_labels(); ++i)
+	{
+		float64_t label=svm->apply_one(i);
+		SG_SPRINT("single output[%d]=%f\n", i, label);
+		ASSERT(output->get_label(i)==label);
+	}
+	SG_UNREF(output);
+
+	// free up memory
+	SG_UNREF(svm);
+
+	exit_shogun();
+	return 0;
+}
+
