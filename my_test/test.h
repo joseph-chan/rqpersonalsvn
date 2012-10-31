@@ -4,8 +4,7 @@
 //#include <vector>
 
 
-#include <nx_log.h>
-#include <dictmatch.h>
+//#include <nx_log.h>
 
 #include <semaphore.h>
 #include <iostream>

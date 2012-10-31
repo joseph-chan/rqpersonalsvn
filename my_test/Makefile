@@ -9,10 +9,11 @@ WORKROOT=../
 OBJS=test.o
 
 INCLUDEDIR=-I$(WORKROOT)/lib/libnx/include\
-		   -I$(WORKROOT)/lib/jsoncpp/include \
+		   -I$(WORKROOT)/include\
 		   -I$(WORKROOT)/third/nginx/include/ \
 		   -I$(WORKROOT)/third/pcre/include/ \
-		   -I$(WORKROOT)/lib/jenkins_hash/include/
+		   -I$(WORKROOT)/lib/jenkins_hash/include/ \
+		   -I$(WORKROOT)/lib/utf8_utils/include/
 
 
 #LIBDIR=-lpthread -lcrypt -lpcre -lcrypto -lcrypto -lz -lstdc++ \
@@ -20,10 +21,7 @@ INCLUDEDIR=-I$(WORKROOT)/lib/libnx/include\
 #LIBDIR=-L$(WORKROOT)/lib/nx_log/lib -lnxlog \
 #		-L$(WORKROOT)/third/nginx/lib -lngx \
 #	-lpthread -lcrypt -lpcre -lcrypto -lcrypto -lz
-LIBDIR=-L$(WORKROOT)/lib/libnx/lib -lnxlib \
-	   -L$(WORKROOT)/third/nginx/lib -lngx \
-	   -L$(WORKROOT)/third/pcre/lib -lpcre \
-	   -L$(WORKROOT)/lib/jsoncpp/lib -ljson_linux-gcc-4.6_libmt\
+LIBDIR=-L$(WORKROOT)/lib/ -ljson_linux-gcc-4.6_libmt -lleveldb\
 	   -lpthread -lcrypt -lpcre -lcrypto -lz
 
 #-L$(WORKROOT)/lib/jenkins_hash/lib -llookup \
