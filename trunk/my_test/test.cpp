@@ -16,22 +16,37 @@
 #include "json/json.h"
 #include "json/reader.h"
 
+#include <boost/algorithm/string/join.hpp>
 #include <boost/functional/hash.hpp>
 #include <boost/lexical_cast.hpp>   
 
-#include <assert>
+#include <errno.h>
+
+#include <assert.h>
 #include "leveldb/db.h"
+
+#include <utf8.h>
 
 using namespace std;
 
 int omit_invalid=1;
 #define int2ll(a,b) (((long long) a << 32) + b)
+#define js_data_merge(x) (x[0]+x[1]+x[2])
 bool cmpr(int i, int j) { return i<j; }
 struct tst{
 	int a;
 	long b;
 	char c;
 	char * d;
+};
+enum  test_enum
+{
+	test_enum_a=0,
+	test_enum_b,
+	test_enum_c,
+	test_enum_d,
+	test_enum_e,
+	test_enum_f
 };
 
 	static int
@@ -158,11 +173,20 @@ int main(int argc,char * argv[])
 {
 	unsigned int nx=10;
 	int temp,tmp;
-	nx_log_init("logs/temp.",NGX_LOG_DEBUG);
-	nx_log(NGX_LOG_NOTICE,"a [%c]" ,nx);
+
+	char *s="sldkjf速度快了积分ksdjf思考的积分ddd";
+	int i=0;
+	std::cout<< s << std::endl;
+	u8_inc(s,&i);
+	std::cout<< s << std::endl;
+	
 
 
-
+	
+	/*
+	string key1,key2;
+	key1="ItemBase:lsdjkf:lsdjkf";
+	key2="ItemProfile:sldkjf:sdlkj";
 	leveldb::DB* db;
 	leveldb::Options options;
 	options.create_if_missing = true;
@@ -171,12 +195,43 @@ int main(int argc,char * argv[])
 	assert(status.ok());
 
 	std::string value;
-	leveldb::Status s = db->Get(leveldb::ReadOptions(), key1, &value);
+	leveldb::Status s;
+
+	value="value:key2";
 	if (s.ok()) s = db->Put(leveldb::WriteOptions(), key2, value);
-	if (s.ok()) s = db->Delete(leveldb::WriteOptions(), key1);
+	value="value:key1";
+	if (s.ok()) s = db->Put(leveldb::WriteOptions(), key1, value);
+	value="value:key1update";
+	if (s.ok()) s = db->Put(leveldb::WriteOptions(), key1, value);
+	value="value:key1uxxxxpdate";
+	if (s.ok()) s = db->Put(leveldb::WriteOptions(), key1, value);
+	value = "";
+	cout << value <<endl;
+
+	value="";
+	s = db->Get(leveldb::ReadOptions(), key1, &value);
+	assert(s.ok());
+	cout << value <<endl;
 
 
-	/*
+	leveldb::Iterator* it = db->NewIterator(leveldb::ReadOptions());
+	for (it->SeekToFirst(); it->Valid(); it->Next()) {
+		cout << it->key().ToString() << ": "  << it->value().ToString() << endl;
+	}
+	assert(it->status().ok());  // Check for any errors found during the scan
+	delete it;
+	//if (s.ok()) s = db->Put(leveldb::WriteOptions(), key2, value);
+	//if (s.ok()) s = db->Delete(leveldb::WriteOptions(), key1);
+
+
+	std::vector<std::string> list;
+	list.push_back("Hello");
+	list.push_back("World!");
+
+	std::string joined = boost::algorithm::join(list, "");
+	std::cout << joined << std::endl;
+
+
 
 	boost::hash<std::string> string_hash;
 
@@ -649,6 +704,5 @@ int main(int argc,char * argv[])
 		   c= c * (((float(d)/10.0) + 1.0));
 		   string g="abcdefgkhtl";
 		   */
-
-
 }
+

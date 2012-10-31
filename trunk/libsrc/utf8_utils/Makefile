@@ -23,3 +23,4 @@ clean :
 install :
 	cp utf8.h ../../lib/utf8_utils/include/
 	cp libutf8_utils.a ../../lib/utf8_utils/lib/
+	cp libutf8_utils.a ../../lib/
