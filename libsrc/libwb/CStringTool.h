@@ -2,7 +2,6 @@
 //////////////////////////////////////////////////
 //字符串工具
 //
-//作者：开江
 //
 //日期：2011-08-10
 //		增加：按照字符串拆分字符串的方法
@@ -10,12 +9,14 @@
 //版本：0.3
 //
 //
-#ifndef KAIJIANG_STRINGTOOL_H
-#define KAIJIANG_STRINGTOOL_H
+#ifndef _STRINGTOOL_H
+#define _STRINGTOOL_H
 
 #include <vector>
 #include <string>
 #include <ctype.h>
+//#include <iostream>
+
 using namespace std;
 
 	class CStringTool

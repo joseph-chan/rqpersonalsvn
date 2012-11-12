@@ -52,6 +52,7 @@ class CMBTextTool
 		//		总共的昵称个数
 		//
 		static int ExtractNickName(string& text, map<string, int>& mapAt, bool bRemoveAt = false);
+		static int KillNickName(string& text);
 
 		// 抹掉微博中的url
 		// 参数：
@@ -60,7 +61,8 @@ class CMBTextTool
 		// 返回：
 		//		被抹掉的url总个数
 		//
-		static int KillURL(string& text, map<string, int>& mapURL);
+		static int GetURL(string& text, map<string, int>& mapURL);
+		static int KillURL(string& text);
 
 		// 抹掉微博中的话题
 		// 参数：

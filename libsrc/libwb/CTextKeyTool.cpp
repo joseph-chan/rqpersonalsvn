@@ -65,7 +65,8 @@ bool CTextKeyTool::GetKey(const char* cText, unsigned long long& ullKey, int nMi
 	if(m_unFlag & 0x0002)
 	{
 		mapNames.clear();
-		CMBTextTool::KillURL(strText, mapNames);
+		//CMBTextTool::KillURL(strText, mapNames);
+		CMBTextTool::KillURL(strText);
 	}
 	if(m_unFlag & 0x0004)
 	{
@@ -112,7 +113,8 @@ bool CTextKeyTool::GetKey(const char* cText, vector<unsigned long long>& vecKeys
 	if(m_unFlag & 0x0002)
 	{
 		map<string, int> mapNames;
-		CMBTextTool::KillURL(strText, mapNames);
+		//CMBTextTool::KillURL(strText, mapNames);
+		CMBTextTool::KillURL(strText);
 	}
 	if(m_unFlag & 0x0004)
 	{

@@ -95,6 +95,63 @@ int CMBTextTool::ExtractNickName(const char* text, map<string, int>& mapAt)
 	return atnum;
 }
 
+int CMBTextTool::KillNickName(string& text)
+{
+	unsigned int atPos = text.find_first_of("@", 0);
+	int atnum = 0;
+	while(atPos != text.npos)
+	{
+		int pos = 0;
+		text[atPos] = ' ';
+		atPos++;
+		if(atPos == text.npos)
+		  break;
+		// 根据微博昵称的规范，不能超过20个字节
+		bool chn = false;//以汉字标点结束的昵称
+		bool enp = false;//以ascii码结束的昵称
+		while(pos <= 20 && text[atPos+pos] != '\0')
+		{
+			// 如果是ascii码则调用cctype中的函数ispunct判断是否英文标点或者空格
+			if(' ' == text[atPos+pos])
+			{
+				enp = true;
+				break;
+			}
+			else if(text[atPos+pos] >= 0 && text[atPos+pos] <= 127)
+			{
+				if(('-' != text[atPos+pos] && '_' != text[atPos+pos] && 
+							(ispunct(text[atPos+pos])  )) )
+				{
+					enp = true;
+					break;
+				}
+			}
+			// 如果是汉字则取两个字节拼成一个字符并判断是不是中文标点
+			else
+			{
+				int postmp = atPos+pos;
+				pos++;
+				if(IsPunction(text.substr(postmp, 2).c_str()))
+				{
+					chn = true;
+					break;
+				}
+			}
+			pos++;
+		}
+		if(chn || enp || atPos+pos == text.size())
+		{
+			int len  = pos;
+			if(chn)
+			{
+			  len--;
+			}
+			text.replace(atPos, len, " ");
+		}
+		atPos = text.find_first_of('@', atPos);
+	}
+	return atnum;
+}
 // 为了兼容之前的方法，不得不重复写了这个方法
 int CMBTextTool::ExtractNickName(string& text, map<string, int>& mapAt, bool bRemoveAt)
 {
@@ -170,7 +227,33 @@ bool CMBTextTool::IsPunction(const char* ch)
 }
 
 // 去除微博中的url
-int CMBTextTool::KillURL(string& text, map<string, int>& mapURL)
+int CMBTextTool::KillURL(string& text)
+{
+	unsigned int start = text.find("http://");
+	int urlnum = 0;
+	while(start != text.npos)
+	{
+		unsigned int end = text.find(" ", start);
+		if(end == text.npos)
+		{
+			for(unsigned int i = start; i != text.size(); i++)
+			{
+				if(!(text[i] >= 0 && text[i] <= 127))
+				{
+					end = i;
+					break;
+				}
+			}
+		}
+		text.replace(start, end - start, " ");
+		start = text.find("http://", end);
+		urlnum++;
+	}
+	return urlnum;
+}
+
+// 获得微博中的url
+int CMBTextTool::GetURL(string& text, map<string, int>& mapURL)
 {
 	mapURL.clear();
 	unsigned int start = text.find("http://");
@@ -195,7 +278,7 @@ int CMBTextTool::KillURL(string& text, map<string, int>& mapURL)
 		  mapURL[url] = 0;
 		else
 		  iter->second++;
-		text.replace(start, end - start, " ");
+		//text.replace(start, end - start, " ");
 		start = text.find("http://", end);
 		urlnum++;
 	}
