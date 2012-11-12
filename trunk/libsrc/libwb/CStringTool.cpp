@@ -1,6 +1,16 @@
 #include "CStringTool.h"
 #include <algorithm> 
-#include <functional>   
+#include <iostream>
+#include <functional>
+
+
+//#include <iostream>
+//#include <functional>
+//#include <algorithm>
+//#include <cstdlib>
+//#include <numeric>
+
+//#include <cctype>
 
 using namespace std;
 
@@ -13,13 +23,23 @@ vector<string> CStringTool::SpliteByChar(string& input, char ch)
 	do
 	{
 		pos = input.find(ch, pos);
-		if(pos == input.npos)
-		  pos = input.size();
-		
-		string tmp = input.substr(prepos, pos - prepos);
-		result.push_back(tmp);
-		if(pos >= input.size() - 1)
+		if(pos != string::npos && pos == input.size() -1)
+		{// found but at tail
+		  string tmp = input.substr(prepos, pos - prepos);
+		  result.push_back(tmp);
+		  result.push_back("");
 		  break;
+		}
+		if(pos == string::npos)
+		{ // not found
+		  pos = input.size()-1;
+		}
+	    string tmp = input.substr(prepos, pos - prepos);
+	    result.push_back(tmp);
+		if(pos >= input.size() - 1)
+		{
+		  break;
+		}
 		pos++;
 		prepos = pos;
 	}while(pos != input.npos);
@@ -31,13 +51,20 @@ vector<string> CStringTool::SpliteByChar(string& input, char ch)
 vector<string> CStringTool::SpliteByStr(string& input, string str)
 {
 	vector<string> result;
-	unsigned pos = 0;
-	unsigned int prepos = 0;
+	size_t pos = 0;
+	size_t prepos = 0;
+	if(str.size() > input.size())
+	{
+		return result;
+	}
+
 	do
 	{
 		pos = input.find(str, pos);
-		if(pos == input.npos)
+		if(pos == string::npos)
+		{
 		  pos = input.size();
+		}
 		
 		string tmp = input.substr(prepos, pos - prepos);
 		result.push_back(tmp);
@@ -45,7 +72,7 @@ vector<string> CStringTool::SpliteByStr(string& input, string str)
 		  break;
 		pos += str.size();
 		prepos = pos;
-	}while(pos != input.npos);
+	}while(pos != string::npos);
 
 	return result;
 }
@@ -60,13 +87,13 @@ void CStringTool::Trim(string& str)
 // È¥µô×ó±ßµÄ¿Õ°××Ö·û
 void CStringTool::LeftTrim(string& ss)
 {
-	string::iterator p=find_if(ss.begin(),ss.end(),not1(ptr_fun(isspace))); 
+	string::iterator p=find_if(ss.begin(),ss.end(),not1(ptr_fun(::isspace))); 
 	ss.erase(ss.begin(),p);
 }
 
 // È¥µôÓÒ±ßµÄ¿Õ°××Ö·û
 void CStringTool::RightTrim(string& ss)
 {
-	string::reverse_iterator p=find_if(ss.rbegin(),ss.rend(),not1(ptr_fun(isspace))); 
+	string::reverse_iterator p=find_if(ss.rbegin(),ss.rend(),not1(ptr_fun(::isspace))); 
 	ss.erase(p.base(),ss.end()); 
 }
