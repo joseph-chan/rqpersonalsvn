@@ -96,7 +96,7 @@ namespace CRFPP {
 		
 		//根据特征模板p和当前位置pos，拼合出特征函数feature_function
         //正常返回为0， 错误返回<0
-		int CrfTag::apply_rule( const char *p,bool flag,size_t *in_pos,int *id); 
+		int apply_rule( const char *p,bool flag,size_t *in_pos,int *id); 
 		
 		//计算节点node[x][y]的alpha值
 	    void calcAlpha(int x_num, int y_num);
