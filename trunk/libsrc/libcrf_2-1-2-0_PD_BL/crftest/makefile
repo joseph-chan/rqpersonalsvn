@@ -22,7 +22,7 @@ LIB_PATH=-L$(CRFLIB)/lib -lcrf \
 	 -L$(ULLIB_PATH)/lib/ -lullib \
 	 -lpthread
 
-CPPFLAGS= -g -pg -Wall $(SHA) -W -Winline -Werror  -Wno-unused-parameter   -Wno-unused-function \
+CPPFLAGS= -g -pg -Wall $(SHA) -W -Winline -Wno-unused-parameter   -Wno-unused-function \
 		   -DVERSION="\"$(OBJ) 2.1.2.0\"" -DCVSTAG="\"$(OBJ)_2-1-2-0_PD_BL\"" \
 		   -DPROJNAME=\"$(OBJ)\" -DNDEBUG
 
