@@ -1,0 +1,299 @@
+if [ ! -d lib ]; then mkdir lib; fi
+ar -ruv lib/libsegment.a src/chinese_gbk.o src/hinshi_map.o src/international.o src/scw_crf.o src/segdict.o src/segimpl.o src/segment.o src/segout.o src/segutil.o 	
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/buildDict.cpp -o test/buildDict -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from test/buildDict.cpp:4:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from test/buildDict.cpp:4:0:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/buildDict.cpp:7:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+test/buildDict.cpp: 在函数‘int add_gbk_words(scw_worddict_t*)’中:
+test/buildDict.cpp:267:18: 警告： 不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+mv test/buildDict bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/checkresult.cpp -o test/checkresult -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/checkresult.cpp:10:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/checkresult.cpp:10:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/checkresult.cpp:10:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+test/checkresult.cpp: 在函数‘int main(int, char**)’中:
+test/checkresult.cpp:23:6: 警告： variable ‘flag’ set but not used [-Wunused-but-set-variable]
+mv test/checkresult bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/searchDict.cpp -o test/searchDict -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/searchDict.cpp:4:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/searchDict.cpp:4:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/searchDict.cpp:4:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/searchDict bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/testDict.cpp -o test/testDict -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/testDict.cpp:11:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/testDict.cpp:11:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/testDict.cpp:11:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/testDict bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/test_goi.cpp -o test/test_goi -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/test_goi.cpp:5:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/test_goi.cpp:5:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/test_goi.cpp:5:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/test_goi bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/testMultiThread1.cpp -o test/testMultiThread1 -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/testMultiThread1.cpp:15:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/testMultiThread1.cpp:15:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/testMultiThread1.cpp:15:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+test/testMultiThread1.cpp: 在函数‘int main(int, char**)’中:
+test/testMultiThread1.cpp:142:6: 警告： variable ‘flag’ set but not used [-Wunused-but-set-variable]
+mv test/testMultiThread1 bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/testMultiThread.cpp -o test/testMultiThread -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/testMultiThread.cpp:15:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/testMultiThread.cpp:15:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/testMultiThread.cpp:15:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+test/testMultiThread.cpp: 在函数‘int main(int, char**)’中:
+test/testMultiThread.cpp:144:6: 警告： variable ‘flag’ set but not used [-Wunused-but-set-variable]
+mv test/testMultiThread bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/testRandomText.cpp -o test/testRandomText -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from include/isegment.h:15,
+                 from test/testRandomText.cpp:12:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from include/isegment.h:15,
+                 from test/testRandomText.cpp:12:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from include/isegment.h:15,
+                 from test/testRandomText.cpp:12:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/testRandomText bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/testSingleThread.cpp -o test/testSingleThread -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/testSingleThread.cpp:10:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/testSingleThread.cpp:10:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/testSingleThread.cpp:10:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/testSingleThread bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/updateDict.cpp -o test/updateDict -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/updateDict.cpp:8:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/updateDict.cpp:8:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/updateDict.cpp:8:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/updateDict bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/wordseg1.cpp -o test/wordseg1 -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/wordseg1.cpp:10:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/wordseg1.cpp:10:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/wordseg1.cpp:10:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/wordseg1 bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/wordseg2.cpp -o test/wordseg2 -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/wordseg2.cpp:12:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/wordseg2.cpp:12:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/wordseg2.cpp:12:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/wordseg2 bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/wordseg3.cpp -o test/wordseg3 -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/wordseg3.cpp:5:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/wordseg3.cpp:5:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/wordseg3.cpp:5:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/wordseg3 bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/wordseg4.cpp -o test/wordseg4 -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/wordseg4.cpp:4:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/wordseg4.cpp:4:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/wordseg4.cpp:4:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/wordseg4 bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/wordseg5.cpp -o test/wordseg5 -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/wordseg5.cpp:4:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/wordseg5.cpp:4:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/wordseg5.cpp:4:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+test/wordseg5.cpp: 在函数‘void dump_item(scw_item_t*)’中:
+test/wordseg5.cpp:151:6: 警告： variable ‘offset’ set but not used [-Wunused-but-set-variable]
+test/wordseg5.cpp: 在函数‘void dump_item1(scw_item_t*, int)’中:
+test/wordseg5.cpp:165:6: 警告： variable ‘offset’ set but not used [-Wunused-but-set-variable]
+mv test/wordseg5 bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/wordseg6.cpp -o test/wordseg6 -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/wordseg6.cpp:4:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/wordseg6.cpp:4:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/wordseg6.cpp:4:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+test/wordseg6.cpp: 在函数‘void dump_item(scw_item_t*)’中:
+test/wordseg6.cpp:149:6: 警告： variable ‘offset’ set but not used [-Wunused-but-set-variable]
+test/wordseg6.cpp: 在函数‘void dump_item1(scw_item_t*, int)’中:
+test/wordseg6.cpp:163:6: 警告： variable ‘offset’ set but not used [-Wunused-but-set-variable]
+mv test/wordseg6 bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall  test/wordseg.cpp -o test/wordseg -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from test/wordseg.cpp:14:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from test/wordseg.cpp:14:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from test/wordseg.cpp:14:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+mv test/wordseg bin/
+g++ -Wall -O3 -fPIC  -Wno-deprecated -DLINUX -DDEBUG_OFF -D_REENTRANT -DSEGVER=\"2-0-5\" -Wall   -shared -g -o so/libwordseg.so so/wordseg_so.cpp src/*.o  -Iinclude/ -I../../lib/others-ex/include -I../../lib/dict/include -I../../lib/ullib/include -I../../lib/ccode/include -I../../lib/libcrf/include -I../../public/odict/output//include/ -lsegment -Llib/ -L../../lib/others-ex/lib -L../../lib/ullib/lib -L../../public/odict/output// -lodict -L../../lib/dict/lib -L../../lib/ccode/lib -lulccode -L../../lib/libcrf/lib -lcrf -luldict -lullib -lullib_ex -lcrypto -lm -lz -lpthread -lc
+In file included from ../../lib/ullib/include/ul_log.h:98:0,
+                 from include/scwdef.h:15,
+                 from so/wordseg_so.cpp:2:
+../../lib/ullib/include/dep/dep_log.h:56:16: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:15:0,
+                 from so/wordseg_so.cpp:2:
+../../lib/ullib/include/ul_log.h:176:1: 警告： 此声明中的‘typedef’被忽略 [默认启用]
+In file included from include/scwdef.h:23:0,
+                 from so/wordseg_so.cpp:2:
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5(unsigned char*)’中:
+../../lib/ccode/include/ul_ccode.h:372:51: 警告： 建议在‘||’的操作数中出现的‘&&’前后加上括号 [-Wparentheses]
+../../lib/ccode/include/ul_ccode.h: 在函数‘int is_big5_str(const char*)’中:
+../../lib/ccode/include/ul_ccode.h:418:17: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+so/wordseg_so.cpp: 在函数‘int main_thread_init(Ul_confdata*)’中:
+so/wordseg_so.cpp:33:49: 警告： 不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+so/wordseg_so.cpp: 在函数‘int filter_query(char*)’中:
+so/wordseg_so.cpp:165:7: 警告： variable ‘len’ set but not used [-Wunused-but-set-variable]
+if [ ! -d output ]; then mkdir output; fi
+cp lib/libsegment.a include/*.h output
+if [ ! -d tools ]; then mkdir tools; fi                       
+chmod +x test/checkworddictman.pl                                              
+cp test/checkworddictman.pl tools/ 
+if [ ! -d output/so ]; then mkdir output/so; fi
+cp so/libwordseg.so output/so	
