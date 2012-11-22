@@ -1,8 +1,10 @@
-LIB_PATH=/usr/lib
+#LIB_PATH=/usr/lib
+LIB_PATH=/home/qiang.ru/svn/code/service/trunk/DataPlatform/lib/
 INC_PATH=/usr/include
 VALGRINDOPTS=--tool=memcheck --error-limit=no --trace-children=yes --leak-check=full --show-reachable=yes
 
-INCLUDES=-I/usr/include/atlas -I/usr/include/eigen3
+#INCLUDES=-I/usr/include/atlas -I/usr/include/eigen3
+INCLUDES=-I/home/qiang.ru/svn/code/service/trunk/DataPlatform/include/
 LIBS=
 LIBS_ADD=-lshogun
 
@@ -99,6 +101,7 @@ TARGETS = basic_minimal \
 		  so_multiclass_BMRM \
 		  balanced_conditional_probability_tree \
 		  classifier_multiclass_ecoc \
+		  classifier_perceptron \
 		  classifier_multiclass_ecoc_discriminant \
 		  classifier_multiclass_ecoc_random \
 
