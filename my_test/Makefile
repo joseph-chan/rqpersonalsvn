@@ -21,7 +21,7 @@ INCLUDEDIR=-I$(WORKROOT)/lib/libnx/include\
 #LIBDIR=-L$(WORKROOT)/lib/nx_log/lib -lnxlog \
 #		-L$(WORKROOT)/third/nginx/lib -lngx \
 #	-lpthread -lcrypt -lpcre -lcrypto -lcrypto -lz
-LIBDIR=-L$(WORKROOT)/lib/ -ljson_linux-gcc-4.6_libmt -lleveldb\
+LIBDIR=-L$(WORKROOT)/lib/ -ljson_linux-gcc-4.6_libmt -lleveldb -lutf8_utils\
 	   -lpthread -lcrypt -lpcre -lcrypto -lz
 
 #-L$(WORKROOT)/lib/jenkins_hash/lib -llookup \

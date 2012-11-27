@@ -8,10 +8,11 @@
  * Written (W) 2012 Heiko Strathmann
  * Copyright (C) 2008-2009 Fraunhofer Institute FIRST and Max Planck Society
  */
+#include <iostream>
 #include <shogun/kernel/GaussianKernel.h>
 #include <shogun/labels/BinaryLabels.h>
 #include <shogun/features/DenseFeatures.h>
-#include <shogun/classifier/svm/LibSVM.h>
+#include <shogun/classifier/Perceptron.h>
 
 using namespace shogun;
 
@@ -50,6 +51,7 @@ void test_libsvm()
 	const float64_t svm_C=10;
 	const float64_t svm_eps=0.001;
 
+  /*
 	index_t num=100;
 	index_t dims=2;
 	float64_t dist=0.5;
@@ -67,34 +69,68 @@ void test_libsvm()
 			feature_cache);
 	SG_REF(features);
 	features->set_feature_matrix(feat);
+  */
 
 	// create gaussian kernel
-	CGaussianKernel* kernel=new CGaussianKernel(kernel_cache, rbf_width);
-	SG_REF(kernel);
-	kernel->init(features, features);
+//	CGaussianKernel* kernel=new CGaussianKernel(kernel_cache, rbf_width);
+//	SG_REF(kernel);
+//	kernel->init(features, features);
+
+
+
+	init_shogun_with_defaults();
+
+	// create some data
+	SGMatrix<float64_t> matrix(4,4);
+	for (int32_t i=0; i<4*4; i++)
+  {
+    if ((i/4)%2 ==0)
+    {
+	    matrix.matrix[i]=i;
+      std::cout << i << " 0" <<std::endl; 
+    }
+    else
+    {
+	    matrix.matrix[i]=-i;
+      std::cout << i << " 1" <<std::endl; 
+    }
+  }
+
+	CDenseFeatures<float64_t>* features= new CDenseFeatures<float64_t>(matrix);
+
+	// create three labels
+	CBinaryLabels* labels=new CBinaryLabels(4);
+	labels->set_label(0, -1);
+	labels->set_label(1, +1);
+	labels->set_label(2, -1);
+	labels->set_label(3, +1);
+
+
+
 
 	// create svm via libsvm and train
-	CLibSVM* svm=new CLibSVM(svm_C, kernel, labels);
-	SG_REF(svm);
-	svm->set_epsilon(svm_eps);
-	svm->train();
+  CPerceptron* perceptron = new CPerceptron(features,labels);
+	SG_REF(perceptron);
+	perceptron->set_learn_rate(0.001);
+  perceptron->set_max_iter(5000);
+  perceptron->train();
 
-	SG_SPRINT("num_sv:%d b:%f\n", svm->get_num_support_vectors(),
-			svm->get_bias());
+  perceptron->get_w().display_vector();
+
 
 	// classify + display output
-	CBinaryLabels* out_labels=CBinaryLabels::obtain_from_generic(svm->apply());
-
-	for (int32_t i=0; i<num; i++)
-	{
-		SG_SPRINT("out[%d]=%f (%f)\n", i, out_labels->get_label(i),
-				out_labels->get_confidence(i));
-	}
-
-	SG_UNREF(out_labels);
-	SG_UNREF(kernel);
-	SG_UNREF(features);
-	SG_UNREF(svm);
+//	CBinaryLabels* out_labels=CBinaryLabels::obtain_from_generic(svm->apply());
+//
+//	for (int32_t i=0; i<num; i++)
+//	{
+//		SG_SPRINT("out[%d]=%f (%f)\n", i, out_labels->get_label(i),
+//				out_labels->get_confidence(i));
+//	}
+//
+//	SG_UNREF(out_labels);
+//	SG_UNREF(kernel);
+//	SG_UNREF(features);
+//	SG_UNREF(svm);
 }
 
 int main()
