@@ -8,19 +8,19 @@ OBJS= utf8.o
 LIBDIR=$(WORKROOT)/third/utf8_utils/lib/
 INCLUDES = 
 
-all : $(OBJS) libutf8_utils.a
+all : $(OBJS) librqlib.a
 
 $(OBJS): %.o: %.c
 	$(CC) -c $< -o $@ $(INCLUDES) $(CFLAGS)
 
-libutf8_utils.a: $(OBJS)
+librqlib.a: $(OBJS)
 	ar -ruv $@ $^
 
 .PHONY : clean
 clean :
 	rm  *.o
-	rm  libutf8_utils.a
+	rm  librqlib.a
 install :
-	cp utf8.h ../../lib/utf8_utils/include/
-	cp libutf8_utils.a ../../lib/utf8_utils/lib/
-	cp libutf8_utils.a ../../lib/
+	cp utf8.h ../../lib/rqlib/include/
+	cp librqlib.a ../../lib/rqlib/lib/
+	cp librqlib.a ../../lib/
