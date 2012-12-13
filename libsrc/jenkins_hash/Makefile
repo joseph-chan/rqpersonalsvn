@@ -19,9 +19,9 @@ DEBUG = 0
 BINPATH = ../bin/
 
 ifeq ($(DEBUG),1) 
-	CFLAGS = -pipe  -O0 -W -Wall -Wpointer-arith -Wno-unused-parameter -Wunused-function -Wunused-variable -Wunused-value -g
+	CFLAGS = -pipe  -fPIC -O0 -W -Wall -Wpointer-arith -Wno-unused-parameter -Wunused-function -Wunused-variable -Wunused-value -g
 else
-	CFLAGS = -pipe  -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Wunused-function -Wunused-variable -Wunused-value
+	CFLAGS = -pipe  -fPIC -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Wunused-function -Wunused-variable -Wunused-value
 endif
 
 .PHONY: all 

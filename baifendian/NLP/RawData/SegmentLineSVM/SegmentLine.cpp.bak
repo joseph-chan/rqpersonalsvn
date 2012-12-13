@@ -1,0 +1,102 @@
+/**
+ * @file SegmentLine.cpp
+ * @brief 
+ * @author RuQiang (qiang.ru@baifendian.com)
+ * @version 
+ * @date 2012-08-10
+ */
+
+#include <stdio.h>
+#include <assert.h>
+#include <Token.h>
+#include "Tokenizar.h"
+#include "string_utils.h"
+#include <boost/algorithm/string_regex.hpp>
+#include <boost/algorithm/string.hpp>
+
+using namespace std;
+using namespace log4cxx;
+using namespace bfd::token;
+namespace tokenizar_config = baifendian_tokenizar::tokenizar_config; // namespace alias
+
+tokenizar_config::ConfigVariable g_cfg_var;
+LoggerPtr g_tokenizar_logger(Logger::getLogger("TokenServer")); // declared in Tokenizar.h
+
+CConfigInfo * pConfigInfo;
+
+
+baifendian_tokenizar::Tokenizar* mTokenizar;
+
+#define MAX_LINE_SIZE 100*1024 
+
+int main(int argc,char* argv[])
+{
+	if (argc != 4)
+	{
+		printf("usage:./%s file_tobe_segment\n",argv[0]);
+		return 1;
+	}
+	int ret;
+	FILE *FileToBeSeg;
+	pConfigInfo = new CConfigInfo(argv[1]);
+
+
+	string my_cfg_path;
+	string log4cxx_path; // lo4cxx config path
+	log4cxx_path = argv[3];
+	string cfg_path; // configfile path
+	cfg_path = argv[2];
+
+	// 读取配置文件
+	tokenizar_config::Config config(cfg_path);
+	config.initConfigVariable();
+	config.setConfigVariable(g_cfg_var);
+	PropertyConfigurator::configure(log4cxx_path.c_str());
+
+
+	FileToBeSeg = fopen(pConfigInfo->GetValue("file_to_be_segment").c_str(),"r");
+	assert(FileToBeSeg != NULL && "file not exist!");
+
+	mTokenizar = new baifendian_tokenizar::Tokenizar(pConfigInfo->GetValue("ICTCLAS_conf").c_str());
+	assert(mTokenizar!=NULL);
+
+	ofstream output(pConfigInfo->GetValue("output_fname").c_str());
+	assert(output.is_open() == true);
+
+	string line;
+	char line_buf[MAX_LINE_SIZE];
+
+	while(fgets(line_buf,MAX_LINE_SIZE,FileToBeSeg) != NULL)
+	{
+		line=line_buf;
+		vector<string> VStrField;
+
+		VStrField = boost::algorithm::split(VStrField,line,boost::is_any_of("\t"));
+		
+		snprintf(line_buf,MAX_LINE_SIZE,"%s %s %s",VStrField[3].c_str(),VStrField[8].c_str(),VStrField[18].c_str());
+
+		vector<string> seg_out;
+		vector<string> post_tag;
+		int word_count;
+		word_count = mTokenizar->segment(line_buf, seg_out,post_tag);
+		//cout << line_buf << " ";
+		//cout << "word_count " << word_count <<endl;
+		if(word_count <=0)
+		{
+			output<< endl;
+			continue;
+		}
+		for(int i=0; i < word_count ; i++)
+		{
+			if(is_digit(seg_out[i]) || (is_letter(seg_out[i]) && seg_out.size()<4)) 
+			{
+
+				LOG(TRACE,"digit term  " << seg_out[i]);
+				continue;
+			}
+			output << seg_out[i] << " ";
+		}
+		output << endl;
+	}
+	return 0;
+}
