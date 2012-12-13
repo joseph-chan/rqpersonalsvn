@@ -70,7 +70,9 @@ bool CPerceptron::train_machine(CFeatures* data)
 			if (CMath::sign<float64_t>(output[i]) != train_labels.vector[i])
 			{
 				converged=false;
+				// w0 = w0 + label * learnrate
 				bias+=learn_rate*train_labels.vector[i];
+				// W dot i_th feature * learn_rate
 				features->add_to_dense_vec(learn_rate*train_labels.vector[i], i, w.vector, w.vlen);
 			}
 		}

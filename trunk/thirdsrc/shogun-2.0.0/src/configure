@@ -384,6 +384,7 @@ EOF
 						4.[0-2]*)
 							cc_version="$cc_version, bad"
 							cc_found=no
+							echo $cc_version
 							;;
 						*)
 						_cc_major=`echo $cc_version | cut -d '.' -f 1`
