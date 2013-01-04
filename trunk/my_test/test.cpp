@@ -180,6 +180,17 @@ int main(int argc,char * argv[])
 {
   unsigned int nx=10;
   int temp,tmp;
+
+  int wpbtermpos;
+  int offset=4;
+  int len=3;
+
+  wpbtermpos = (offset & 0x00FFFFFF) + (len << 24);
+  cout << wpbtermpos<<std::endl;
+  cout << (wpbtermpos & 0x00FFFFFF) << std::endl;
+  cout << ((unsigned)wpbtermpos >> 24) << std::endl;
+
+  /*
   string ss="this is a test function;";
   locale loc;
 
@@ -200,6 +211,7 @@ int main(int argc,char * argv[])
       int cx;
         cx = count_if ( values, values+5, IsOdd() );
           cout << "There are " << cx << " elements with even values.\n";
+  */
 
   /*
      char *s="sldkjf速度快了积分ksdjf思考的积分ddd";
