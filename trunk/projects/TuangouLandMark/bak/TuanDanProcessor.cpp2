@@ -1,0 +1,963 @@
+#include "TermsProcessor.h"
+using namespace std;
+
+/**
+ * @brief 排序算法比较函数
+ *
+ * @Param weibo1
+ * @Param weibo2
+ *
+ * @Returns   
+ */
+
+typedef struct _cooc_t
+{
+	u_int his;
+	u_int now;
+	int score;
+}cooc_t;
+
+bool CmpWeibo(pair<unsigned long long, int> weibo1, pair<unsigned long long, int> weibo2)
+{   
+    return weibo1.second > weibo2.second;
+}  
+
+bool CmpTerm(pair<string, cooc_t> term1, pair<string,cooc_t> term2)
+{
+    return (term1.second.score) >( term2.second.score);
+}
+
+int heapify_r(sort_item_t* input,unsigned int len, int i)
+{
+    if(input==NULL)
+    {
+        return -1;
+    }
+
+    int min;
+	sort_item_t tmp;
+	min = i;
+	// number of left child must smaller than the length of the heap
+	if( (2*i+1) <= len -1 && input[2*i+1].sort_int<input[i].sort_int)
+	{
+		min = 2*i+1;
+	}
+	// number of right child must smaller than the length of the heap
+	if( (2*i+2) <= len -1 && input[2*i+2].sort_int<input[min].sort_int)
+	{
+		min = 2*i +2;
+	}
+
+	if ( min != i && min <= len -1)
+	{
+		tmp=input[min];
+		input[min]=input[i];
+		input[i]=tmp;
+		heapify_r(input,len,min);
+	}
+
+    return 0;
+
+}
+
+int build_min_heap(sort_item_t* input,unsigned int len)
+{
+    if(input==NULL)
+    {
+        return -1;
+    }
+
+    int i;
+
+	for(i=(len-1)/2;i>=0;i--)
+	{
+		heapify_r(input,len,i);
+	}
+    return 0;
+}
+
+/**
+ * @brief Constructor
+ */
+TermsProcessor::TermsProcessor()
+{
+	m_pConfigInfo= NULL;
+}
+
+/**
+ * @brief Destructor
+ */
+TermsProcessor::~TermsProcessor()
+{
+	Clear();
+}
+/**
+ * @brief 读入所有微博数据
+ *
+ * @Param cResource
+ *
+ * @Returns   
+ */
+int TermsProcessor::LoadTermsToIndex()
+{
+	int ret=0;
+
+	mload_history=1 ;
+	mload_history = CTypeTool<int>::StrTo(m_pConfigInfo->GetValue("load_history"));
+
+	nx_log(NGX_LOG_DEBUG,"load_history : [%d]",mload_history);
+	if (1==mload_history)
+	{
+		WordNetIndexor * cIndexor = new WordNetIndexor;
+
+		ret = cIndexor->LoadIndex("data/index/word_net","data/index/term_info.index","data/index/relate_info.index",mTermIndex,mTermInfo,mRelateInfo,&m_total_info);
+
+		if (ret < 0)
+		{
+			nx_log(NGX_LOG_ERR,"load old index error");
+			return -1;
+		}
+		nx_log(NGX_LOG_NOTICE,"load old index successful!");
+	}
+
+	ret = ProcessTerms();
+	if (ret < 0)
+	{
+		nx_log(NGX_LOG_ERR,"ProcessOriginalData error");
+		return -1;
+	}
+	return 0;
+}
+
+/**
+ * @brief 初始化实例
+ *
+ * @Param cResource
+ *
+ * @Returns   
+ */
+int TermsProcessor::WBProcessorInit(const char  *pConfigFile)
+{
+	int ret =0 ;
+
+	m_pConfigInfo = new CConfigInfo(pConfigFile);
+	m_total_info.term_num=0;
+	m_total_info.relate_term_num=0;
+	m_total_info.weibo_num=0;
+	m_total_info.sorted_relate_term_num =0;
+	mNoMemory=false;
+
+
+	// 装载其他资源
+	string strYCConfig = m_pConfigInfo->GetValue("yc_source_conf");
+	if(strYCConfig.size() == 0)
+	{
+		nx_log(NGX_LOG_ERR,"load resource error");
+		return -1;
+	}
+
+	/*
+	string strLexiconConf = m_pConfigInfo->GetValue("seg_data");
+
+	ret = LoadLexicon(strLexiconConf.c_str());
+	if (ret <0)
+	{
+		return -1;
+	}
+	
+	// 加载需要处理的分类信息
+	string tmp_string = m_pConfigInfo->GetValue("types_required");
+	vector<string> type_string = CStringTool::SpliteByChar(tmp_string,'\t');
+	if(type_string.size() < 1)
+	{
+		nx_log(NGX_LOG_ERR,"classified data format error");
+		return -1;
+	}
+	for(vector<string>::iterator iter = type_string.begin(); iter != type_string.end(); iter++)
+	{
+		int tmp;
+		tmp = CTypeTool<int>::StrTo(*iter);
+		m_types.push_back(tmp);
+		nx_log(NGX_LOG_DEBUG,"add type: [%d]",tmp);
+	}
+	*/
+	// 初始化文本指纹产生器，用于排重
+	//return CTextKeyTool::GetInstance()->InitInstance(m_pConfigInfo->GetValue("seg_data").c_str(), 31);
+	return 0;
+}
+
+/**
+ * @brief 处理原始json数据
+ *
+ * @Returns   >=0 正常
+ *            <0  错误
+ */
+int TermsProcessor::ProcessTerms()
+{
+	const char * szInputFile;
+
+	szInputFile=m_pConfigInfo->GetValue("original_data").c_str();
+	ifstream fin(szInputFile);
+	if(!fin.is_open())
+	{
+		nx_log(NGX_LOG_ERR,"can not open input file");
+		return -1;
+	}
+	string line;
+	int ret;
+	int line_num=0;
+	while(!fin.eof())
+	{
+		++line_num;
+		getline(fin, line);
+		if(line.size() == 0)
+		  continue;
+		ret = ParseLineTerms(line);
+		if(ret < 0 )
+		{
+			nx_log(NGX_LOG_ERR,"original data line parse fail ! line [%s]",line.c_str());
+		}
+		nx_log(NGX_LOG_NOTICE,"original data line [%d] parsed over",line_num);
+	}
+	fin.close();
+	return 0;
+
+}
+
+int TermsProcessor::RecordTerm(char * term)
+{
+	if (term == NULL)
+	{
+		return -1;
+	}
+	u_int hash_value=0;
+	u_int term_index=0;
+	term_info_t *local_term_info = new term_info_t;
+	__gnu_cxx::hash_map<u_int,u_int>::iterator iterhm;
+
+
+
+	hash_value= hashlittle(term, strlen(term), 1);
+	iterhm = mTermIndex.find(hash_value);
+
+	nx_log(NGX_LOG_DEBUG,"record term: term [%s] hash_value [%ud]",term,hash_value);
+	// have never record this term,brand new
+	if (iterhm == mTermIndex.end())
+	{
+		//record global info of this term
+		snprintf(local_term_info->termstr,MAX_TERM_LENGTH,"%s",term);
+		local_term_info->df_now =1;
+		local_term_info->df_history = 0;
+		local_term_info->relate_term_num = 0;
+
+		mTermIndex[hash_value] = m_total_info.term_num;
+
+		// term count ++
+		mTermInfo.push_back(*local_term_info);
+		m_total_info.term_num ++;
+		if (mTermInfo.size() != m_total_info.term_num)
+		{
+			nx_log(NGX_LOG_STDERR,"mTermInfo size may be error size [%d] m_term_num [%d]",mTermInfo.size(), m_total_info.term_num);
+		}
+		nx_log(NGX_LOG_DEBUG,"new term added: term [%s] hash_value [%ud] term_index [%ud]",term,hash_value,mTermIndex[hash_value]);
+	}
+	else
+	{
+		term_index=iterhm->second;
+		mTermInfo[term_index].df_now += 1 ;
+		nx_log(NGX_LOG_DEBUG,"update term: term [%s] hash_value [%ud] index [%d] df_now [%d] df_his [%d] relate_term_num [%d]",mTermInfo[term_index].termstr,hash_value,term_index,mTermInfo[term_index].df_now,mTermInfo[term_index].df_history,mTermInfo[term_index].relate_term_num);
+	}
+	delete local_term_info;
+	return 0;
+
+}
+
+/**
+ * @brief 处理一行term原始数据
+ *
+ * @Param szIine
+ *
+ * @Returns   
+ */
+int TermsProcessor::ParseLineTerms(string strLine)
+{
+	char term[100];
+
+	int ret;
+	string strContent ;
+	unsigned int hash_value;
+	vector<unsigned int> hash_values;
+
+	__gnu_cxx::hash_map<u_int,u_int>::iterator iterhm_local;
+
+	hmInWeibo.clear();
+	
+	vector<string> term_string = CStringTool::SpliteByChar(strLine,'\t');
+	vector<string>::iterator iterstr;
+
+	if (term_string.empty()== true)
+	{
+		nx_log(NGX_LOG_NOTICE,"no term in line,check term data");
+		return 1;
+	}
+	//recurse every term ,record the term info
+	//record wordlist
+	for(iterstr=term_string.begin(); iterstr!=term_string.end(); iterstr ++)
+	{
+		// first column is mid
+		if(iterstr == term_string.begin())
+		{
+			continue;
+		}
+
+		snprintf(term,100,"%s",(*iterstr).c_str());
+		
+		hash_value= hashlittle(term, strlen(term), 1);
+		
+		iterhm_local = hmInWeibo.find(hash_value);
+
+		if (iterhm_local == hmInWeibo.end())
+		{ //this term turned out first time in this weibo
+			ret= RecordTerm(term);
+			if (ret < 0)
+			{
+				nx_log(NGX_LOG_ALERT,"record term error [%s]",term);
+				continue;
+			}
+
+			hash_values.push_back(hash_value);
+
+			hmInWeibo[hash_value] = 1;
+		}
+		else
+		{
+			nx_log(NGX_LOG_DEBUG,"term turned out twice in this weibo [%s]",term);
+		}
+	}
+
+	AddCooc(hash_values);
+
+	m_total_info.weibo_num++;
+	return 0;
+
+}
+
+
+
+
+// 判断微博是否有重复的
+/*
+bool TermsProcessor::HaveDuplicates(string& strContent)
+{
+	static unsigned long long key = 0l;
+	key = 0l;
+	if(!CTextKeyTool::GetInstance()->GetKey(strContent.c_str(), key, 8))
+	  return false;
+	if(m_setContentKey.count(key))
+	  return true;
+	m_setContentKey.insert(key);
+	return false;
+}
+*/
+// 清空
+void TermsProcessor::Clear()
+{
+	/*
+	CKeyWordsManager::ReleaseInstance();
+	CTextKeyTool::ReleaseInstance();
+	if(m_pConfigInfo != NULL)
+	  delete m_pConfigInfo;
+	m_pConfigInfo = NULL;
+	*/
+}
+
+bool TermsProcessor::IsGoodTerm(int postagid)
+{
+	if ( (postagid <= POSTAG_ID_A) || 
+			(postagid >= POSTAG_ID_H_T && postagid <= POSTAG_ID_H_N)  ||
+			(postagid >= POSTAG_ID_N && postagid <= POSTAG_ID_N_RB)  ||
+			(postagid == POSTAG_ID_Q_H)  ||
+			(postagid == POSTAG_ID_T_Z)  ||
+			(postagid >= POSTAG_ID_V && postagid <= POSTAG_ID_V_Q)  ||
+			(postagid == POSTAG_ID_Z)  ||
+			(postagid >= POSTAG_ID_X && postagid <= POSTAG_ID_VN)
+	   )
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+int TermsProcessor::AddCooc(vector<unsigned int> &hash_values)
+{
+	int ret;
+	u_int term_index;
+	__gnu_cxx::hash_map<u_int,u_int>::iterator iterhm;
+	for(int i=0;i<hash_values.size();i++)
+	{
+		term_index=mTermIndex[hash_values[i]];	
+		nx_log(NGX_LOG_DEBUG,"in AddCooc hash_value [%ud] term_index [%ud]",hash_values[i],term_index);
+		for(int j=0;j<hash_values.size();j++)
+		{
+			if (i==j)
+			{
+				//do not co-oc with itself
+				continue;
+			}
+			else
+			{
+				iterhm = mTermInfo[term_index].cooc_term.find(hash_values[j]);
+				
+				if(iterhm == mTermInfo[term_index].cooc_term.end())
+				{
+					//i and j co-occurrence for the first time
+					relate_term_info_t tmp_relate_info;
+					int cooc_index;
+
+					tmp_relate_info.num_now=1;
+					tmp_relate_info.num_history=0;
+					tmp_relate_info.relation=0;
+
+
+					if(mNoMemory == false)
+					{
+						//cooc_index = mRelateInfo.size();
+						cooc_index = mRelateInfo.size();
+						try
+						{
+							mRelateInfo.push_back(tmp_relate_info);
+							mTermInfo[term_index].cooc_term[hash_values[j]] = cooc_index;
+						}
+						catch (bad_alloc err)
+						{
+							nx_log(NGX_LOG_ALERT,"no memory, catch exception. total_relate_num [%d]",cooc_index);
+							SortIndex(int(1));
+							//once become true ,never back to false
+							mNoMemory = true;
+
+							//after sortindex ,we have momery
+							cooc_index = GetIndexSlot();
+							if(cooc_index < 0)
+							{
+								nx_log(NGX_LOG_STDERR,"run out of memory,quit! relate info size [%d]",mRelateInfo.size());
+								return -1;
+							}
+							mTermInfo[term_index].cooc_term[hash_values[j]] = cooc_index;
+						}
+					}
+					//mNoMemory == true
+					else
+					{
+						cooc_index = GetIndexSlot();
+						if(cooc_index < 0)
+						{
+							nx_log(NGX_LOG_STDERR,"run out of memory,quit! relate info size [%d]",mRelateInfo.size());
+							return -1;
+						}
+						mTermInfo[term_index].cooc_term[hash_values[j]] = cooc_index;
+					}
+					if(cooc_index >= mRelateInfo.size()) 
+					{
+						nx_log(NGX_LOG_ALERT,"add relate index error! relate index exceeds max num [%d] [%d]",cooc_index,mRelateInfo.size());
+						return -1;
+
+					}
+
+					mTermInfo[term_index].relate_term_num++ ;
+					m_total_info.relate_term_num++;
+
+					nx_log(NGX_LOG_DEBUG,"term [%s] [%ud] term [%s] cooc for the first time, hash_value [%ud] relate_term_num [%d]",mTermInfo[term_index].termstr,term_index,mTermInfo[mTermIndex[hash_values[j]]].termstr,hash_values[j],mTermInfo[term_index].relate_term_num);
+				}
+				else
+				{
+					u_int relate_index;
+					relate_index=iterhm->second;
+					nx_log(NGX_LOG_DEBUG,"TEMP_DEBUG: original term  hash [%ud] relate term hash [%ud] index [%ud]", hash_values[i],iterhm->first,iterhm->second);
+
+					if(relate_index >= mRelateInfo.size()) 
+					{
+						nx_log(NGX_LOG_ALERT,"add relate index error! relate index exceeds max num [%d] [%d]",relate_index,mRelateInfo.size());
+						return -1;
+
+					}
+
+					mRelateInfo[relate_index].num_now ++;
+					nx_log(NGX_LOG_DEBUG,"term [%s] [%ud] term [%s] cooc once more hash_value [%ud] relate_index [%ud] cooc_times [%d]",mTermInfo[term_index].termstr,term_index,mTermInfo[mTermIndex[hash_values[j]]].termstr,hash_values[j],relate_index,mRelateInfo[relate_index].num_now);
+				}
+
+			}
+		}
+
+	}
+	return 0;
+}
+
+int TermsProcessor::SortIndex(int threshold)
+{
+
+	__gnu_cxx::hash_map<u_int,u_int>::iterator hmIndex;
+
+	vector<term_info_t>::iterator iterv;
+	nx_log(NGX_LOG_DEBUG,"####begin sort index#### ");
+
+	for(iterv= mTermInfo.begin();iterv!=mTermInfo.end();iterv++)
+	{
+		int relate_term_num=0;
+		u_int df=0;
+		u_int relation=0;
+		df = (*iterv).df_now + (*iterv).df_history;
+		
+		__gnu_cxx::hash_map<u_int,u_int>::iterator iterhm;
+		for(iterhm= (*iterv).cooc_term.begin();iterhm != (*iterv).cooc_term.end();)
+		{
+			relation = mRelateInfo[iterhm->second].num_history + mRelateInfo[iterhm->second].num_now ;
+			if (relation < threshold)
+			{
+				nx_log(NGX_LOG_DEBUG,"delete a relate info: low cooc df [%ud] relation [%ud] term [%s] cooc_term [%s]",df,relation,(*iterv).termstr,mTermInfo[mTermIndex[iterhm->first]].termstr);
+				//record this slot in mRelateIndexSlot
+				mRelateIndexSlot.push_back(iterhm->second);
+
+				(*iterv).cooc_term.erase(iterhm++);
+			}
+			else
+			{
+				++ iterhm;
+				relate_term_num++;
+			}
+		}
+		//update relate_term_num
+		(*iterv).relate_term_num = relate_term_num;
+	}
+
+	return 0;
+
+}
+
+int TermsProcessor::SortIndex(float threshold)
+{
+	__gnu_cxx::hash_map<u_int,u_int>::iterator hmIndex;
+
+	vector<term_info_t>::iterator iterv;
+
+	for(iterv= mTermInfo.begin();iterv!=mTermInfo.end();iterv++)
+	{
+		int relate_term_num=0;
+		u_int df=0;
+		float relation=0.0;
+		df = (*iterv).df_now + (*iterv).df_history;
+		
+		__gnu_cxx::hash_map<u_int,u_int>::iterator iterhm;
+		for(iterhm= (*iterv).cooc_term.begin();iterhm != (*iterv).cooc_term.end();)
+		{
+			//int relate_df,relate_idf;
+			//relate_df = mTermInfo[mTermIndex[iterhm->first]].df_history + mTermInfo[mTermIndex[iterhm->first]].df_now;
+
+			//relate_idf = (int)log2(float (m_total_info.weibo_num) / float (relate_df) / 1000.0);
+
+			relation = mRelateInfo[iterhm->second].num_history + mRelateInfo[iterhm->second].num_now;
+
+			if (float(relation) / float(df) < threshold)
+			{
+				nx_log(NGX_LOG_DEBUG,"delete a relate info: low cooc df [%ud] relation [%ud] term [%s] cooc_term [%s]",df,relation,(*iterv).termstr,mTermInfo[mTermIndex[iterhm->first]].termstr);
+				//record this slot in mRelateIndexSlot
+				mRelateIndexSlot.push_back(iterhm->second);
+
+				(*iterv).cooc_term.erase(iterhm++);
+			}
+			else
+			{
+				++ iterhm;
+				relate_term_num++;
+			}
+		}
+		(*iterv).relate_term_num = relate_term_num;
+	}
+
+	return 0;
+
+}
+
+int TermsProcessor::FiltIndex(int K)
+{
+	__gnu_cxx::hash_map<u_int,u_int>::iterator hmIndex;
+
+	vector<term_info_t>::iterator iterv;
+
+	int ret;
+	sort_item_t* filt_buf_his;
+	sort_item_t* filt_buf_now;
+
+	filt_buf_his= (sort_item_t* )malloc(K * sizeof(sort_item_t));
+	filt_buf_now= (sort_item_t* )malloc(K * sizeof(sort_item_t));
+
+	if(filt_buf_his == NULL || filt_buf_now == NULL )
+	{
+		nx_log(NGX_LOG_ALERT,"filt index fail.");
+		return -1;
+	}
+
+	for(iterv= mTermInfo.begin();iterv!=mTermInfo.end();iterv++)
+	{
+		int relate_term_num=0;
+		if ((*iterv).relate_term_num < K) 
+		{
+			continue;
+		}
+
+		
+		__gnu_cxx::hash_map<u_int,u_int>::iterator iterhm;
+
+		int i=0;
+		//build heap, find the top K cooc term
+		for(iterhm= (*iterv).cooc_term.begin();iterhm != (*iterv).cooc_term.end();++ iterhm )
+		{
+			if(i<K)
+			{
+				filt_buf_his[i].sort_int= mRelateInfo[iterhm->second].num_history;
+				filt_buf_his[i].appendix=iterhm->first;
+
+				filt_buf_now[i].sort_int= mRelateInfo[iterhm->second].num_now;
+				filt_buf_now[i].appendix=iterhm->first;
+				if (i == K -1)
+				{
+					build_min_heap(filt_buf_his,K);
+					build_min_heap(filt_buf_now,K);
+				}
+				//nx_log(NGX_LOG_DEBUG,"add to heap. num_his num_now [%ud %ud] index [%d] term [%s] ",mRelateInfo[iterhm->second].num_history,mRelateInfo[iterhm->second].num_now,iterhm->second,(*iterv).termstr);
+			}
+			else
+			{
+				if (mRelateInfo[iterhm->second].num_history > filt_buf_his[0].sort_int)
+				{
+					filt_buf_his[0].sort_int= mRelateInfo[iterhm->second].num_history;
+					filt_buf_his[0].appendix=iterhm->first;
+					heapify_r(filt_buf_his,K,0);
+				}
+				if (mRelateInfo[iterhm->second].num_now > filt_buf_now[0].sort_int)
+				{
+					filt_buf_now[0].sort_int= mRelateInfo[iterhm->second].num_now;
+					filt_buf_now[0].appendix=iterhm->first;
+					heapify_r(filt_buf_now,K,0);
+				}
+
+			}
+			i++;
+		}
+
+		//loop again, delete the term outside top K
+		for(iterhm= (*iterv).cooc_term.begin();iterhm != (*iterv).cooc_term.end(); )
+		{
+			if ( (relate_term_num < K *2) && 
+					((mRelateInfo[iterhm->second].num_now  > filt_buf_now[0].sort_int )	|| ( mRelateInfo[iterhm->second].num_history > filt_buf_his[0].sort_int )))
+			{
+				nx_log(NGX_LOG_DEBUG,"in filt index: save a relate info: low cooc. cooc_his [%ud] cooc_now [%ud] cooc_K [%ud %ud]  term [%s] cooc_term [%s]",mRelateInfo[iterhm->second].num_history,mRelateInfo[iterhm->second].num_now,filt_buf_his[0],filt_buf_now[0],(*iterv).termstr,mTermInfo[mTermIndex[iterhm->first]].termstr);
+				++ iterhm;
+				relate_term_num++;
+			}
+			else
+			{
+				nx_log(NGX_LOG_DEBUG,"in filt index: delete a relate info: low cooc. cooc_his [%ud] cooc_now [%ud] cooc_K [%ud %ud]  term [%s] cooc_term [%s]",mRelateInfo[iterhm->second].num_history,mRelateInfo[iterhm->second].num_now,filt_buf_his[0],filt_buf_now[0],(*iterv).termstr,mTermInfo[mTermIndex[iterhm->first]].termstr);
+				//record this slot in mRelateIndexSlot
+				mRelateIndexSlot.push_back(iterhm->second);
+
+				(*iterv).cooc_term.erase(iterhm++);
+			}
+		}
+		(*iterv).relate_term_num = relate_term_num;
+	}
+
+	return 0;
+
+}
+
+
+int TermsProcessor::DumpIndex()
+{
+	FILE* fp_index1;
+	FILE* fp_index2;
+	FILE* fp_indexn;
+	char buf[128];
+	int ret1,ret2;
+
+	fp_index1=fopen("output/word_net.ind1","w");
+	fp_index2=fopen("output/word_net.ind2","w");
+	if (NULL ==fp_index1 || NULL == fp_index2 || NULL == fp_indexn )
+	{
+		nx_log(NGX_LOG_ERR,"dump index error: can't not open file");
+		return -1;
+	}
+
+	__gnu_cxx::hash_map<u_int,u_int>::iterator hmIndex;
+
+
+	for(hmIndex= mTermIndex.begin();hmIndex!= mTermIndex.end();hmIndex++)
+	{
+		ret1 = fwrite(&(hmIndex->first),sizeof(int),1,fp_index1);
+		ret2 = fwrite(&(hmIndex->second),sizeof(int),1,fp_index2);
+		if(ret1 !=  1 || ret2 != 1)
+		{
+			nx_log(NGX_LOG_ERR,"dump index error: can't not write file [%d] [%d]",ret1,ret2);
+			return -1;
+
+		}
+	}
+
+
+
+	FILE* fp_term_info;
+	vector<term_info_t>::iterator iterv;
+
+	FILE* fp_relate_info;
+	vector<relate_term_info_t>::iterator iterRelateInfo;
+
+	fp_relate_info=fopen("output/relate_info.index","w");
+
+	fp_term_info=fopen("output/term_info.index","w");
+	if (NULL ==fp_term_info || NULL == fp_relate_info)
+	{
+		nx_log(NGX_LOG_ERR,"dump index error: can't not open file");
+		return -1;
+	}
+	m_total_info.sorted_relate_term_num =0;
+
+	for(iterv= mTermInfo.begin();iterv!=mTermInfo.end();iterv++)
+	{
+		ret1 = fwrite((*iterv).termstr,sizeof(char),MAX_TERM_LENGTH,fp_term_info);
+		ret1 += fwrite(&((*iterv).df_history),sizeof(int),1,fp_term_info);
+		ret1 += fwrite(&((*iterv).df_now),sizeof(int),1,fp_term_info);
+		ret1 += fwrite(&((*iterv).relate_term_num),sizeof(int),1,fp_term_info);
+		
+		if (ret1 != ( MAX_TERM_LENGTH + 3))
+		{
+			nx_log(NGX_LOG_ERR,"dump index error: write index error");
+			return -1;
+		}
+		__gnu_cxx::hash_map<u_int,u_int>::iterator iterhm;
+
+		for(iterhm= (*iterv).cooc_term.begin();iterhm != (*iterv).cooc_term.end();iterhm++)
+		{
+			ret1 = fwrite(&(iterhm->first),sizeof(int),1,fp_term_info);
+
+			//write relate info
+			ret1= fwrite(&(mRelateInfo[iterhm->second]),sizeof(relate_term_info_t),1,fp_relate_info);
+			if(ret1 != 1)
+			{
+				nx_log(NGX_LOG_ERR,"dump index error: can't not open file");
+				return -1;
+			}
+
+			//change relate_info index, because there is some deleted relate info slot;
+			//iterhm->second = m_total_info.sorted_relate_term_num;
+			//write index
+			//ret2 = fwrite(&(iterhm->second),sizeof(int),1,fp_term_info);
+			ret2 = fwrite(&(m_total_info.sorted_relate_term_num),sizeof(int),1,fp_term_info);
+			if(ret1 != 1 || ret2 !=  1)
+			{
+				nx_log(NGX_LOG_ERR,"dump index error: write file error");
+				return -1;
+			}
+			nx_log(NGX_LOG_DEBUG,"dump a relate index: term [%s] cooc_term [%s] relate_index [%ud]",(*iterv).termstr,mTermInfo[mTermIndex[iterhm->first]].termstr,iterhm->second);
+			//relate info index ++
+			m_total_info.sorted_relate_term_num ++;
+		}
+	}
+
+/*
+	FILE* fp_relate_info;
+	vector<relate_term_info_t>::iterator iterRelateInfo;
+
+	fp_relate_info=fopen("relate_info.index","w");
+	if (NULL ==fp_relate_info)
+	{
+		nx_log(NGX_LOG_ERR,"dump index error: can't not open file");
+		return -1;
+	}
+	for(iterRelateInfo= mRelateInfo.begin();iterRelateInfo!=mRelateInfo.end();iterRelateInfo++)
+	{
+		ret1= fwrite(&(*iterRelateInfo),sizeof(relate_term_info_t),1,fp_relate_info);
+		if(ret1 != 1)
+		{
+			nx_log(NGX_LOG_ERR,"dump index error: can't not open file");
+			return -1;
+		}
+	}
+	*/
+
+	fp_indexn=fopen("output/word_net.n","w");
+	snprintf(buf,128,"total_term:%u\ntotal_relate_term:%u\nsorted_relate_term:%u\ntotal_weibo:%llu",m_total_info.term_num,m_total_info.relate_term_num,m_total_info.sorted_relate_term_num,m_total_info.weibo_num);
+	ret1 = fwrite(buf,sizeof(char),strlen(buf),fp_indexn);
+	return 0;
+
+}
+
+
+int TermsProcessor::GetIndexSlot()
+{
+	if (mRelateIndexSlot.empty()==true)
+	{
+		return -1;
+	}
+	else
+	{
+		int index=mRelateIndexSlot.back();
+		mRelateIndexSlot.pop_back();
+		return index;
+	}
+
+}
+/*
+int TermsProcessor::LoadLexicon(const char *cLexiconPath)
+{
+	// 打开词典 
+	m_Lexicon = OpenLexicon_Opt(cLexiconPath, 0x1F);//第一个参数，即根目录，词典
+	if(m_Lexicon == NULL)
+	{
+		nx_log(NGX_LOG_ERR,"load lexicon error");
+		return -1;
+	}
+	// 设置语种 
+	setLexiconWS(m_Lexicon, 0);
+	//存放分词结果的空间
+	m_Wordseg = InitWordSeg(1024);			//只初始化一次即可	
+	if(m_Wordseg==NULL)
+	{
+		ReleaseWordSeg();
+		return -2;
+	}
+	//step1:设置分词的参数选项
+	unsigned short segopt = SEG_OPT_ALL | SEG_OPT_ZUHEQIYI | SEG_OPT_PER | SEG_OPT_SUFFIX;;
+	unsigned short postagopt = 0x7FFF;
+	unsigned short appopt = AOP_TERM_ALL;
+	unsigned short lexiconopt = 0x0104;
+				
+	m_WordSegFlags = lexiconopt;
+	m_WordSegFlags = m_WordSegFlags<<16;
+	m_WordSegFlags = m_WordSegFlags | appopt;
+	m_WordSegFlags = m_WordSegFlags<<16;
+	m_WordSegFlags = m_WordSegFlags | postagopt;
+	m_WordSegFlags = m_WordSegFlags<<16;		
+	m_WordSegFlags = m_WordSegFlags | segopt;
+
+	return 0;
+}
+void TermsProcessor::ReleaseWordSeg()
+{
+	if(m_Wordseg != NULL)
+	{
+		FreeWordSeg(m_Wordseg);
+		m_Wordseg = NULL;
+	}
+				
+	if(m_Lexicon != NULL)
+	{		
+		CloseLexicon(m_Lexicon);
+		m_Lexicon = NULL;
+	}
+}
+*/
+int TermsProcessor::DumpIndexAsText()
+{
+	char buf[128];
+	int ret1,ret2;
+	int idf;
+	FILE *fp_indexn;
+	ofstream fp_relate_info("output/relate_info.txt");
+	ofstream terms_info("output/terms_info.txt");
+
+	vector<term_info_t>::iterator iterv;
+
+	vector<relate_term_info_t>::iterator iterRelateInfo;
+
+
+	if (false== fp_relate_info.is_open() || false == terms_info.is_open())
+	{
+		nx_log(NGX_LOG_ERR,"dump index error: can't not open file");
+		return -1;
+	}
+	m_total_info.sorted_relate_term_num =0;
+
+	for(iterv= mTermInfo.begin();iterv!=mTermInfo.end();iterv++)
+	{
+		__gnu_cxx::hash_map<u_int,u_int>::iterator iterhm;
+		vector<pair<string,cooc_t> > v_tmp;
+		vector<pair<string,cooc_t> >::iterator iter_tmp;
+		cooc_t cooc_tmp;
+
+		//now info
+		/*
+		fp_relate_info << (*iterv).termstr << ":" << (*iterv).df_now << ":"  << (*iterv).df_history << ":"  <<(*iterv).relate_term_num << "\t";
+		
+
+		for(iterhm= (*iterv).cooc_term.begin();iterhm != (*iterv).cooc_term.end();iterhm++)
+		{
+			v_tmp.push_back(pair<string,u_int>(mTermInfo[mTermIndex[iterhm->first]].termstr,mRelateInfo[iterhm->second].num_now));
+		}
+
+		sort(v_tmp.begin(),v_tmp.end(),CmpTerm);
+
+		for(iter_tmp=v_tmp.begin();iter_tmp!=v_tmp.end();iter_tmp++)
+		{
+			fp_relate_info << iter_tmp->first << ":" << iter_tmp->second << "\t";
+		}
+		fp_relate_info << endl;
+		*/
+
+
+		//history info
+		idf = int(log2(float(m_total_info.weibo_num)/float((*iterv).df_history + (*iterv).df_now)));
+		terms_info << (*iterv).termstr << "\t" << idf << endl;
+
+
+		v_tmp.clear();
+		fp_relate_info << (*iterv).termstr << ":" << (*iterv).df_now << ":"  << (*iterv).df_history << ":"  <<(*iterv).relate_term_num << "\t";
+		for(iterhm= (*iterv).cooc_term.begin();iterhm != (*iterv).cooc_term.end();iterhm++)
+		{
+			int idf;
+			cooc_tmp.his = mRelateInfo[iterhm->second].num_history;
+			cooc_tmp.now = mRelateInfo[iterhm->second].num_now;
+			idf = int(log10(float(m_total_info.weibo_num) / float(cooc_tmp.his + cooc_tmp.now)));
+			cooc_tmp.score = (cooc_tmp.his + cooc_tmp.now) *idf * idf;
+
+			v_tmp.push_back(pair<string,cooc_t>(mTermInfo[mTermIndex[iterhm->first]].termstr,cooc_tmp));
+		}
+
+		sort(v_tmp.begin(),v_tmp.end(),CmpTerm);
+
+		for(iter_tmp=v_tmp.begin();iter_tmp!=v_tmp.end();iter_tmp++)
+		{
+			fp_relate_info << iter_tmp->first << ":" << iter_tmp->second.score << ":" << iter_tmp->second.his << ":" << iter_tmp->second.now << "\t";
+		}
+
+		fp_relate_info << endl;
+	}
+
+/*
+	FILE* fp_relate_info;
+	vector<relate_term_info_t>::iterator iterRelateInfo;
+
+	fp_relate_info=fopen("relate_info.index","w");
+	if (NULL ==fp_relate_info)
+	{
+		nx_log(NGX_LOG_ERR,"dump index error: can't not open file");
+		return -1;
+	}
+	for(iterRelateInfo= mRelateInfo.begin();iterRelateInfo!=mRelateInfo.end();iterRelateInfo++)
+	{
+		ret1= fwrite(&(*iterRelateInfo),sizeof(relate_term_info_t),1,fp_relate_info);
+		if(ret1 != 1)
+		{
+			nx_log(NGX_LOG_ERR,"dump index error: can't not open file");
+			return -1;
+		}
+	}
+	*/
+
+	fp_indexn=fopen("output/word_net.n.txt","w");
+	snprintf(buf,128,"total_term:%u\ntotal_relate_term:%u\nsorted_relate_term:%u\ntotal_weibo:%llu",m_total_info.term_num,m_total_info.relate_term_num,m_total_info.sorted_relate_term_num,m_total_info.weibo_num);
+	ret1 = fwrite(buf,sizeof(char),strlen(buf),fp_indexn);
+	return 0;
+
+}
