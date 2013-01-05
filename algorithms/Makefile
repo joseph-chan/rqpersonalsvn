@@ -3,7 +3,7 @@ CFLAGS =  -pipe  -O0 -W -Wall -Wpointer-arith -Wno-unused-parameter -Wunused-fun
 CPP =   g++
 LINK =  $(CC)
 
-OBJS=head_sort quick_sort
+OBJS=heap_sort quick_sort binary_search_tree
 
 all: $(OBJS)
 
