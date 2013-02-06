@@ -95,7 +95,6 @@ void LoadImportantKey(const char * filename, map<string,pair<string,string> >* i
 bool InTag(const int curse,const std::multiset<pair<int,int>, setcomp >& match_set, map<int,string>& TagNameMap){
 	for(std::multiset<pair<int,int> , setcomp>::iterator it = match_set.begin(); it!=match_set.end();++it){
 		int len=TagNameMap[it->first].size();
-		LOG(INFO)<< "debug InTag curse ["<< curse << "] begin [" << it->second << "] len ["  << len << "]";
 		// ac machine match the right offset
 		if(curse > it->second-len && curse <= it->second)
 		{
@@ -103,6 +102,55 @@ bool InTag(const int curse,const std::multiset<pair<int,int>, setcomp >& match_s
 		}
 	}
 	return false;
+}
+
+
+/**
+ * @brief  
+ *
+ * @Param curse
+ * @Param Scwout
+ *
+ * @Returns 0: beginning of word   
+ * 			1: Middle of word
+ * 			2: end of word
+ */
+int InWord(const int curse,scw_out_t *Scwout){
+	int pos,len;
+	char buf[1024];
+	for(int i = 0;i < Scwout->wpbtermcount; i++ ) {
+		pos = GET_TERM_POS(Scwout->wpbtermpos[i]);
+		len = GET_TERM_LEN(Scwout->wpbtermpos[i]);
+
+		strncpy(buf,Scwout->wpcompbuf + pos , len);
+
+		buf[len]=0;
+		// pos + i : because there is a \0 in every end of word
+		if(curse > pos + len -1 - i){
+			//LOG(INFO) << "curse < pos :" << buf << "curse:" <<  curse  << " pos: " << pos << " len : " << len;
+			continue;
+		}
+		else if (curse == pos + len -1 - i)
+		{
+			//LOG(INFO) << "end of word :" << buf << "curse:" <<  curse << "pos: " << pos << " len : " << len;
+			return 2;
+		}
+		else if (curse > pos - i && curse < pos + len - 1 - i)
+		{
+			//LOG(INFO) << "middle of word :" << buf<< "curse:" <<  curse  << " pos: " << pos << " len : " << len;
+			return 1;
+		}
+		else if(curse == pos - i)
+		{
+			//LOG(INFO) << "beginning of word :" << buf << "curse:" <<  curse  << " pos: " << pos << " len : " << len;
+			return 0;
+		}
+		else {
+			LOG(INFO) << "no match of word :" << buf << "curse:" <<  curse << "pos: " << pos << " len : " << len;
+			break;
+		}
+	}
+	return 0;
 }
 
 void MergeSet(std::multiset<pair<int,int>, setcomp >& dest_set, const std::multiset<pair<int,int>, setcomp > sour_set){
@@ -128,6 +176,15 @@ int main(int argc,char* argv[])
 	int omit_digit_term=1;
 	map<string,map<string,int> > all_tags;
 	pConfigInfo = new CConfigInfo(argv[1]);
+
+	BfdSegment *pSegmentor;
+	scw_out_t* Scwout;
+	u_int ScwFlag= SCW_OUT_ALL | SCW_OUT_PROP;
+
+	pSegmentor = new BfdSegment;
+	pSegmentor->BfdSegment_Init(pConfigInfo);
+
+	Scwout=scw_create_out(100000, ScwFlag);
 
 	BfdClassTree ClassTree;
 	ClassTree.BfdClassTree_Init(argv[1]);
@@ -180,6 +237,8 @@ int main(int argc,char* argv[])
 		snprintf(name_buf,MAX_LINE_SIZE-1,"%s",v_s[1].c_str());
 		boost::algorithm::split(v_s_tmp,v_s[0],boost::is_any_of(":"));
 
+	  	ret = pSegmentor->bfd_segment_utf8_orig(v_s[1], Scwout);
+
 		int cate_id = CTypeTool<int>::StrTo(v_s_tmp[v_s_tmp.size()-1]);
 		ClassNode* class_node= ClassTree.GetClassNode(cate_id);
 		if (class_node == NULL){
@@ -216,7 +275,7 @@ int main(int argc,char* argv[])
 			char* curse=name_buf;
 			char buf[16];
 			bool Bflag=true;
-			bool 
+			int wordBflag=0;
 			while ( *curse!='\0')
 			{
 				i=0;
@@ -227,22 +286,40 @@ int main(int argc,char* argv[])
 					continue;
 				}
 
+				wordBflag = InWord(curse-name_buf,Scwout);
+				//LOG(INFO)<<"token :[" << buf <<"] curse: [" << curse-name_buf<< "] wordflag: [" << wordBflag <<"]" ;
+				//LOG(INFO)<<"token :[" << buf <<"] curse: [" << curse-name_buf<< "] wordflag: [" << wordBflag <<"]" ;
+				if (wordBflag==0){
+
+					output<<buf<< "\tB";
+				}
+				else if (wordBflag==1){
+					output<< buf<<"\tM";
+				}
+				else if (wordBflag==2){
+					output<< buf<<"\tE";
+				}
+				else{
+					output<< buf<<"\tN";
+				}
+
 				if (InTag(curse-name_buf,total_set,TagNameMap)){
 
 					if(Bflag==true){
-						output<< buf <<"\tB"<< std::endl;
+						output<< "\tB";
 					}
 					else{
-						output<< buf <<"\tE"<< std::endl;
+						output<< "\tE";
 					}
 					Bflag=false;
-					//LOG(INFO)<<"token :[" << buf <<"] is E in line [" << curse<< "]" ;
+					//LOG(INFO)<<"token :[" << buf <<"] is B/E in line curse [" << curse-name_buf<< "]" ;
 				}
 				else{
-					output<< buf << "\tN"<<std::endl;
+					output<<  "\tN";
 					Bflag=true;
-					//LOG(INFO)<<"token :[" << buf <<"] is B in line [" << curse<< "]" ;
+					//LOG(INFO)<<"token :[" << buf <<"] is N in line, curse [" << curse - name_buf<< "]" ;
 				}
+				output << std::endl;
 				curse=curse+i;
 			}
 		output<< std::endl;
