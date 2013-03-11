@@ -145,6 +145,11 @@ typedef struct _relate_term_info_t
   u_int relation;
 }relate_term_info_t;
 
+struct TreeNode{
+  int value;
+  TreeNode* next;
+};
+
 class mycomparison
 {
   bool reverse;
@@ -173,45 +178,63 @@ class setcomp {
 };
 
 struct IsOdd : unary_function<int,bool> {
-    bool operator() (const int& x) const {return x%2==1;}
+  bool operator() (const int& x) const {return x%2==1;}
 };
+
+void testaa(int* b,int** a){
+  *a=b;
+}
+
+void testaa(int* b){
+  *b=55;
+}
 
 int main(int argc,char * argv[])
 {
-  unsigned int nx=10;
-  int temp,tmp;
+  int** a;
+  int* b;
+  int c=1234;
+  int d=12;
+  b=&c;
+  a=&b;
+  cout << **a << endl;
+  cout << *b << endl;
+  cout << c << endl;
 
-  int wpbtermpos;
-  int offset=4;
-  int len=3;
+  b=&d;
+  testaa(b,a);
+  cout << **a << endl;
+  cout << *b << endl;
+  cout << c << endl;
 
-  wpbtermpos = (offset & 0x00FFFFFF) + (len << 24);
-  cout << wpbtermpos<<std::endl;
-  cout << (wpbtermpos & 0x00FFFFFF) << std::endl;
-  cout << ((unsigned)wpbtermpos >> 24) << std::endl;
+  testaa(b);
+  cout << **a << endl;
+  cout << *b << endl;
+  cout << c << endl;
+
 
   /*
-  string ss="this is a test function;";
-  locale loc;
+     string ss="this is a test function;";
+     locale loc;
 
 
-  string::iterator p=find_if(ss.begin(),ss.end(),ptr_fun<int,int>(isspace));
-  ss.erase(ss.begin(),p);
-  cout << ss << endl;
+     string::iterator p=find_if(ss.begin(),ss.end(),ptr_fun<int,int>(isspace));
+     ss.erase(ss.begin(),p);
+     cout << ss << endl;
 
-  char* foo[] = {"10","20","30","40","50"};
-  int bar[5];
-  int sum;
-  transform (foo, foo+5, bar, ptr_fun(atoi) );
-  sum = accumulate (bar, bar+5, 0);
-  cout << "sum = " << sum << endl;
+     char* foo[] = {"10","20","30","40","50"};
+     int bar[5];
+     int sum;
+     transform (foo, foo+5, bar, ptr_fun(atoi) );
+     sum = accumulate (bar, bar+5, 0);
+     cout << "sum = " << sum << endl;
 
 
-    int values[] = {1,2,3,4,5};
-      int cx;
-        cx = count_if ( values, values+5, IsOdd() );
-          cout << "There are " << cx << " elements with even values.\n";
-  */
+     int values[] = {1,2,3,4,5};
+     int cx;
+     cx = count_if ( values, values+5, IsOdd() );
+     cout << "There are " << cx << " elements with even values.\n";
+   */
 
   /*
      char *s="sldkjf速度快了积分ksdjf思考的积分ddd";
@@ -229,7 +252,7 @@ int main(int argc,char * argv[])
      std::cout<< b << std::endl;
      std::cout<< i << std::endl;
      }
-     */
+   */
 
   /*
      string key1,key2;
@@ -299,7 +322,7 @@ int main(int argc,char * argv[])
   cout << value["name"].asString()<< endl;
   }
   }
-  */
+   */
 
   return 0;
 
@@ -322,7 +345,7 @@ int main(int argc,char * argv[])
      outputbuf[outlen]='\0';
      cout << "inbuf "<< addr << " outlen "<< outlen<< "outputbuf :[" <<outputbuf <<"]" <<endl;
      }
-     */
+   */
   /*
      set<string> myset;
      set<string> myset2;
@@ -691,7 +714,7 @@ int main(int argc,char * argv[])
          {
          nx_log(NGX_LOG_NOTICE,"dm match query: [%s] num [%d]",  ((_dm_pack->ppseg)[i])->pstr,((_dm_pack->ppseg)[i])->prop);
          }
-         */
+       */
 
 
 
@@ -716,7 +739,7 @@ int main(int argc,char * argv[])
 
          }
 
-*/
+       */
 
 
       //nx_log(NGX_LOG_NOTICE, "failed b new binary process path %d",ret);
@@ -751,6 +774,6 @@ int main(int argc,char * argv[])
 
          c= c * (((float(d)/10.0) + 1.0));
          string g="abcdefgkhtl";
-         */
+       */
 }
 
