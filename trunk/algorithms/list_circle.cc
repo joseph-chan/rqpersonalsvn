@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <assert.h>
 
 struct ListNode{
   ListNode* next;
@@ -42,9 +41,29 @@ int main(){
   node5 = new ListNode(5);
   root->next=node1;
   node1->next=node2;
-  node2->next=node1;
+  node2->next=node3;
   node3->next=node4;
   node4->next=node5;
-  printf("%d\n",ListCircle(node1)) ;
+
+  ListNode *root2,*node6,*node7,*node8,*node9,*node10;
+  root2 = new ListNode(0);
+  node6 = new ListNode(1);
+  node7 = new ListNode(2);
+  node8 = new ListNode(3);
+  node9 = new ListNode(4);
+  node10 = new ListNode(5);
+  root2->next=node6;
+  node6->next=node7;
+  node7->next=node8;
+  node8->next=node9;
+  node9->next=node5;
+
+  printf("%d\n",ListCircle(root)) ;
+  printf("%d\n",ListCircle(root2)) ;
+
+  node5->next=root2;
+
+  printf("%d\n",ListCircle(root)) ;
+  printf("%d\n",ListCircle(root2)) ;
   return 0;
 }
