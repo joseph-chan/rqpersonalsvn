@@ -18,8 +18,8 @@
 #include "math.h"
 #include <iconv.h>
 //#include "lookup.h"
-#include "json/json.h"
-#include "json/reader.h"
+//#include "json/json.h"
+//#include "json/reader.h"
 
 #include <boost/algorithm/string/join.hpp>
 #include <boost/functional/hash.hpp>
@@ -28,9 +28,9 @@
 #include <errno.h>
 
 #include <assert.h>
-#include "leveldb/db.h"
+//#include "leveldb/db.h"
 
-#include <utf8.h>
+//#include <utf8.h>
 
 using namespace std;
 
@@ -191,6 +191,18 @@ void testaa(int* b){
 
 int main(int argc,char * argv[])
 {
+  char* end;
+  int res_help = strtol("100help2", &end, 2);
+
+  if (!*end)
+    printf("Converted successfully\n");
+  else
+    printf("Conversion error, non-convertible part: %s\n", end);
+  cout << res_help << endl;
+
+  return 0;
+
+  /*
   int** a;
   int* b;
   int c=1234;
@@ -211,6 +223,7 @@ int main(int argc,char * argv[])
   cout << **a << endl;
   cout << *b << endl;
   cout << c << endl;
+  */
 
 
   /*
